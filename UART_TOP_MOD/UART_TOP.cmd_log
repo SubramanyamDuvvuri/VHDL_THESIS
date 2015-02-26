@@ -1,0 +1,124 @@
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 
+xst -intstyle ise -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -ifn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.xst" -ofn "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s400a-ft256-4 UART_TOP.ngc UART_TOP.ngd  
+map -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -intstyle ise -p xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o UART_TOP_map.ncd UART_TOP.ngd UART_TOP.pcf 
+par -filter "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 UART_TOP_map.ncd UART_TOP.ncd UART_TOP.pcf 
+trce -filter /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/iseconfig/filter.filter -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TOP.twx UART_TOP.ncd -o UART_TOP.twr UART_TOP.pcf -ucf pins.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f UART_TOP.ut UART_TOP.ncd 

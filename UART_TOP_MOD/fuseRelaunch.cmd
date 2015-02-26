@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP_isim_beh.exe" -prj "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP_beh.prj" "work.UART_TOP" 

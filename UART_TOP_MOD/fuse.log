@@ -1,0 +1,11 @@
+Running: /home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP_isim_beh.exe -prj /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP_beh.prj work.UART_TOP 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/../../../../fpgaSVN/FPGA/lib/UART_module/trunk/UART_mod.vhd" into library work
+Parsing VHDL file "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/../UART_BYTE_SEND_SubDesign/UART_BYTE_SEND.vhd" into library work
+Parsing VHDL file "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.vhd" into library work
+ERROR:HDLCompiler:432 - "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.vhd" Line 82: Formal <rxdataack_i> has no actual or default value.
+ERROR:HDLCompiler:854 - "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.vhd" Line 41: Unit <behavioral> ignored due to previous errors.
+VHDL file /home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.vhd ignored due to errors

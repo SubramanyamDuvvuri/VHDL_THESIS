@@ -1,0 +1,5 @@
+set -tmpdir "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/xst/projnav.tmp"
+set -xsthdpdir "/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/xst"
+elaborate
+-ifn UART_BYTE_SEND.prj
+-ifmt mixed

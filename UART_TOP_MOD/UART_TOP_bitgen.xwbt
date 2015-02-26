@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.ncd
+OUTFILE=/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD/UART_TOP.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s400a-4ft256
+WORKINGDIR=/home/sduvvuri/Documents/Xilinx/Xilinx/UART_TOP_MOD
+LICENSE=ISE
+USER_INFO=210968112_1777503518_210590533_664
