@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sduvvuri/thesis.git/UART_TOP_MOD_II/UART_TOP_MOD_II_design.ncd
+OUTFILE=/home/sduvvuri/thesis.git/UART_TOP_MOD_II/UART_TOP_MOD_II_design.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s400a-4ft256
+WORKINGDIR=/home/sduvvuri/thesis.git/UART_TOP_MOD_II
+LICENSE=ISE
+USER_INFO=210968112_1777503518_210590533_664

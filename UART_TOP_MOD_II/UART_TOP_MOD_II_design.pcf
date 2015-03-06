@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Mar 06 16:17:51 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "TX" LOCATE = SITE "A8" LEVEL 1;
+COMP "CLOCK" LOCATE = SITE "N9" LEVEL 1;
+COMP "RESET" LOCATE = SITE "H4" LEVEL 1;
+SCHEMATIC END;
+

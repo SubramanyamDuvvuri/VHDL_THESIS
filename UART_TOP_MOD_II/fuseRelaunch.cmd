@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sduvvuri/thesis.git/UART_TOP_MOD_II/UART_TOP_MOD_II_design_isim_beh.exe" -prj "/home/sduvvuri/thesis.git/UART_TOP_MOD_II/UART_TOP_MOD_II_design_beh.prj" "work.UART_TOP_MOD_II_design" 

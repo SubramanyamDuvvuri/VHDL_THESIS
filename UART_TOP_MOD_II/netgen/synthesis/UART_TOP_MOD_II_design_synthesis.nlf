@@ -1,0 +1,22 @@
+Release 14.7 - netgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -filter
+/home/sduvvuri/thesis.git/UART_TOP_MOD_II/iseconfig/filter.filter -intstyle ise
+-ar Structure -tm UART_TOP_MOD_II_design -w -dir netgen/synthesis -ofmt vhdl
+-sim UART_TOP_MOD_II_design.ngc UART_TOP_MOD_II_design_synthesis.vhd  
+
+Reading design 'UART_TOP_MOD_II_design.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'/home/sduvvuri/thesis.git/UART_TOP_MOD_II/netgen/synthesis/UART_TOP_MOD_II_desi
+gn_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 314792 kilobytes

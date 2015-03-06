@@ -1,0 +1,3 @@
+vhdl work "UART_Controller.vhd"
+vhdl work "../../fpgaSVN/FPGA/lib/UART_module/trunk/UART_mod.vhd"
+vhdl work "UART_TOP_MOD_II_design.vhd"
