@@ -57,7 +57,7 @@ begin
 							start_tx_flag_sig <= '0' ;
 						else		
 							 start_tx_flag_sig <= '1';
-							 byte_in2uart_tx_sig 	<= "11001010";
+							 byte_in2uart_tx_sig 	<=	rx2tx_connection 	;
 						end if ;
 				end if;		
 							

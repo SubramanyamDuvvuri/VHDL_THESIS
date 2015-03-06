@@ -12,7 +12,7 @@ Target Device  : xc3s400a
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Fri Mar  6 16:17:48 2015
+Mapped Date    : Fri Mar  6 18:26:40 2015
 
 Design Summary
 --------------
@@ -112,7 +112,7 @@ Section 6 - IOB Properties
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLOCK                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | RESET                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
-| RX                                 | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| RX                                 | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 

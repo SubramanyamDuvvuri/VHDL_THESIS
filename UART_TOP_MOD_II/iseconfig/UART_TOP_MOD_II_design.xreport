@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-06T15:02:13</DateModified>
+  <DateModified>2015-03-06T18:14:00</DateModified>
   <ModuleName>UART_TOP_MOD_II_design</ModuleName>
   <SummaryTimeStamp>2015-03-06T14:57:18</SummaryTimeStamp>
   <SavedFilePath>/home/sduvvuri/thesis.git/UART_TOP_MOD_II/iseconfig/UART_TOP_MOD_II_design.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/sduvvuri/thesis.git/UART_TOP_MOD_II</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/sduvvuri/thesis.git/UART_TOP_MOD_II/</ImplementationReportsDirectory>
   <DateInitialized>2015-03-06T10:56:42</DateInitialized>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>

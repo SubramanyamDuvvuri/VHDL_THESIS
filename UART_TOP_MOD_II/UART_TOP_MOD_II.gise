@@ -78,8 +78,8 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/UART_TOP_MOD_II_design_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/UART_TOP_MOD_II_design_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/UART_TOP_MOD_II_design_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/UART_TOP_MOD_II_design_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -91,6 +91,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1425636716" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1425636716">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1425653911" xil_pn:in_ck="-6028280589260861727" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1425653911">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -154,6 +155,7 @@
     </transform>
     <transform xil_pn:end_ts="1425654707" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1425654707">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1425654707" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7023104336939171554" xil_pn:start_ts="1425654707">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -179,7 +181,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1425655061" xil_pn:in_ck="-6028280589260861727" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8189463523912431113" xil_pn:start_ts="1425655051">
+    <transform xil_pn:end_ts="1425662793" xil_pn:in_ck="-6028280589260861727" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4250582554598305131" xil_pn:start_ts="1425662783">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -199,11 +201,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1425654716" xil_pn:in_ck="3506905375878" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3052071996762134191" xil_pn:start_ts="1425654716">
+    <transform xil_pn:end_ts="1425662619" xil_pn:in_ck="3506905375878" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3052071996762134191" xil_pn:start_ts="1425662619">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1425655066" xil_pn:in_ck="-9166275423924144317" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1984766645102852197" xil_pn:start_ts="1425655061">
+    <transform xil_pn:end_ts="1425662798" xil_pn:in_ck="-9166275423924144317" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1984766645102852197" xil_pn:start_ts="1425662793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART_TOP_MOD_II_design.bld"/>
@@ -212,7 +214,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1425655072" xil_pn:in_ck="-9166275423924144316" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="517675102620734198" xil_pn:start_ts="1425655066">
+    <transform xil_pn:end_ts="1425662804" xil_pn:in_ck="-9166275423924144316" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="517675102620734198" xil_pn:start_ts="1425662798">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART_TOP_MOD_II_design.pcf"/>
@@ -225,7 +227,7 @@
       <outfile xil_pn:name="UART_TOP_MOD_II_design_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1425655088" xil_pn:in_ck="3298182843313850461" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3373904778572030817" xil_pn:start_ts="1425655072">
+    <transform xil_pn:end_ts="1425662820" xil_pn:in_ck="3298182843313850461" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3373904778572030817" xil_pn:start_ts="1425662804">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART_TOP_MOD_II_design.ncd"/>
@@ -239,7 +241,7 @@
       <outfile xil_pn:name="UART_TOP_MOD_II_design_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1425655094" xil_pn:in_ck="-9115510432909809990" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="-426368325978129584" xil_pn:start_ts="1425655088">
+    <transform xil_pn:end_ts="1425662827" xil_pn:in_ck="-9115510432909809990" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="8242823369169169445" xil_pn:start_ts="1425662820">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART_TOP_MOD_II_design.bgn"/>
@@ -251,7 +253,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1425655088" xil_pn:in_ck="-9166275423924144448" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1425655085">
+    <transform xil_pn:end_ts="1425662820" xil_pn:in_ck="-9166275423924144448" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1425662817">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART_TOP_MOD_II_design.twr"/>
