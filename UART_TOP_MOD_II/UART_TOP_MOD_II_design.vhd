@@ -110,33 +110,6 @@ begin
 					);	
 					 
 
---				UART_TOP_MOD_portmap : uart_mod generic map ( CLK_FREQ => 12000000)
---				port map (
---								clk_i 	=> 	CLOCK ,
---								rst_i 		=> 	RESET , 
---								
---								tx_o 		=> 	TX,
---								txData_i => txData_i_sig,
---								txReady_o=> txReady_o_sig,
---								txStart_i=> txStart_i_sig,
---								
---								rx_i		=> RX,
---								rxData_o => rxData_o_sig,
---								rxNewData_o => rxNewData_o_sig
---								
---							);
---							
---							
---				UART_CONTROLLER_portmap : UART_Controller
---					port map (
---									clk						=> CLOCK,
---									rst						=> RESET,
---									byte_in2uart_tx		=> txData_i_sig,
---									start_tx_flag			=> txStart_i_sig,
---									transmission_ready_flag=> txReady_o_sig,
---									rx2tx_connection		=> rxData_o_sig,
---									reveivedNewData_flag => rxNewData_o_sig
---								);
 					 
 end Behavioral;
 

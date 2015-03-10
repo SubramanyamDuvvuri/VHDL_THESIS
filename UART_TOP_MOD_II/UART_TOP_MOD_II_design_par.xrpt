@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Fri Mar  6 18:26:47 2015">
+  <application stringID="par" timeStamp="Tue Mar 10 13:56:38 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -24,7 +24,7 @@
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/PlanAhead/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/sduvvuri/bin"/>
+          <item stringID="value" value="/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/PlanAhead/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/sduvvuri/bin:/usr/local/rvm/bin"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="LMC_HOME"/>
@@ -63,16 +63,16 @@
     </task>
     <task stringID="PAR_DEVICE_UTILIZATION">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item AVAILABLE="3584" dataType="int" stringID="PAR_SLICES" value="103"></item>
+        <item AVAILABLE="3584" dataType="int" stringID="PAR_SLICES" value="107"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
         <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="11 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="10 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="11 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="11 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="12 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="11 secs "/>
       </section>
     </task>
@@ -92,9 +92,25 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y1"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="50.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.070000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.045000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="48.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.052000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.027000"/>
+          </row>
+          <row stringID="row" value="2">
+            <item label="Clock Net" stringID="CLOCK_NET" value="UART_CONTROLLER_portmap/present_state_FSM_FFd1"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="Local"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="6.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.891000"/>
+          </row>
+          <row stringID="row" value="3">
+            <item label="Clock Net" stringID="CLOCK_NET" value="UART_CONTROLLER_portmap/start_tx_flag_sig_or0000"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="Local"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.118000"/>
           </row>
         </table>
       </section>
