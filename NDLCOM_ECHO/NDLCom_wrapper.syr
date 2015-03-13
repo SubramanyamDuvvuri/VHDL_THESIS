@@ -1,0 +1,1573 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: NDLCom_wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NDLCom_wrapper.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NDLCom_wrapper"
+Output Format                      : NGC
+Target Device                      : xc3s400a-4-ft256
+
+---- Source Options
+Top Module Name                    : NDLCom_wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_pkg.vhd" in Library decode_8b10b.
+Architecture decode_8b10b_pkg of Entity decode_8b10b_pkg is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd" in Library encode_8b10b.
+Architecture encode_8b10b_pkg of Entity encode_8b10b_pkg is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_disp.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_disp is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut_base.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_lut_base is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_lut_base is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_lut is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_bram.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_bram is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_lut is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_bram is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_rtl.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_rtl is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_rtl is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_top.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_config_pack.vhd" in Library Spartan6.
+Architecture asynch_sercomm_config_pack of Entity asynch_sercomm_config_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_frontend.vhd" in Library Spartan6.
+Architecture asynch_sercomm_rx_frontend_pack of Entity asynch_sercomm_rx_frontend_pack is up to date.
+Architecture behavioral of Entity asynch_sercomm_rx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_frontend.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_tx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_config_pack.vhd" in Library Zynq.
+Architecture asynch_sercomm_config_pack of Entity asynch_sercomm_config_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_frontend.vhd" in Library Zynq.
+Architecture asynch_sercomm_rx_frontend_pack of Entity asynch_sercomm_rx_frontend_pack is up to date.
+Architecture behavioral of Entity asynch_sercomm_rx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_frontend.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_tx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_types.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom_config.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_pack.vhd" in Library work.
+Architecture crc_pack of Entity crc_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/DFKI_Pack/trunk/dfki_pack.vhd" in Library work.
+Architecture dfki_pack of Entity dfki_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/basic_clk_rst_mod.vhd" in Library Zynq.
+Architecture behavioral of Entity basic_clk_reset_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_top.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_tx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_top.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_rx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/basic_clk_rst_mod.vhd" in Library Spartan6.
+Architecture behavioral of Entity basic_clk_reset_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_top.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_tx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_top.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_rx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/utils/fifo.vhd" in Library work.
+Architecture fifo_a of Entity fifo is up to date.
+Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/Devices.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/DeviceClasses.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/iStruct/external/Representations.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd" in Library work.
+Architecture behavioral of Entity bram_dp_simple is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd" in Library work.
+Architecture behavioral of Entity uart_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_HS_mod.vhd" in Library work.
+Architecture behaviour of Entity uart_hs_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd" in Library work.
+Architecture behavioral of Entity crc_par_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/config.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_pack.vhd" in Library work.
+Architecture register_pack of Entity register_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" in Library work.
+Architecture behavioral of Entity ndlcom is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" in Library work.
+Architecture behavioral of Entity ndlcom_wrapper is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <NDLCom_wrapper> in library <work> (architecture <behavioral>) with generics.
+	BAUD_RATE = 115200
+	CLK_FREQ = 16000000
+	USE_TELEMETRY = true
+
+Analyzing hierarchy for entity <NDLCom> in library <work> (architecture <Behavioral>) with generics.
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+
+Analyzing hierarchy for entity <bram_dp_simple> in library <work> (architecture <behavioral>) with generics.
+	ADDRWIDTH = 8
+	DATAWIDTH = 8
+
+Analyzing hierarchy for entity <bram_dp_simple> in library <work> (architecture <behavioral>) with generics.
+	ADDRWIDTH = 10
+	DATAWIDTH = 8
+
+Analyzing hierarchy for entity <UART_mod> in library <work> (architecture <Behavioral>) with generics.
+	BAUD_rate = 921600
+	EVEN_parity = 0
+	ODD_parity = 0
+	SYSTEM_speed = 20000000
+
+Analyzing hierarchy for entity <crc_par_mod> in library <work> (architecture <Behavioral>) with generics.
+	DATA_WIDTH = 8
+	INIT_VALUE = "1111111111111111"
+	POLYNOMIAL = "0001000000100001"
+	SYNC_RESET = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <NDLCom_wrapper> in library <work> (Architecture <behavioral>).
+	BAUD_RATE = 115200
+	CLK_FREQ = 16000000
+	USE_TELEMETRY = true
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txNPin' of component 'NDLCom'.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txNPin' of component 'NDLCom'.
+INFO:Xst:2679 - Register <common_recv_addr> in unit <NDLCom_wrapper> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+Entity <NDLCom_wrapper> analyzed. Unit <NDLCom_wrapper> generated.
+
+Analyzing generic Entity <NDLCom> in library <work> (Architecture <Behavioral>).
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" line 269: Unconnected output port 'match_o' of component 'crc_par_mod'.
+Entity <NDLCom> analyzed. Unit <NDLCom> generated.
+
+Analyzing generic Entity <bram_dp_simple.2> in library <work> (Architecture <behavioral>).
+	ADDRWIDTH = 10
+	DATAWIDTH = 8
+Entity <bram_dp_simple.2> analyzed. Unit <bram_dp_simple.2> generated.
+
+Analyzing generic Entity <UART_mod> in library <work> (Architecture <Behavioral>).
+	BAUD_rate = 921600
+	EVEN_parity = 0
+	ODD_parity = 0
+	SYSTEM_speed = 20000000
+Entity <UART_mod> analyzed. Unit <UART_mod> generated.
+
+Analyzing generic Entity <crc_par_mod> in library <work> (Architecture <Behavioral>).
+	DATA_WIDTH = 8
+	INIT_VALUE = "1111111111111111"
+	POLYNOMIAL = "0001000000100001"
+	SYNC_RESET = 1
+Entity <crc_par_mod> analyzed. Unit <crc_par_mod> generated.
+
+Analyzing generic Entity <bram_dp_simple.1> in library <work> (Architecture <behavioral>).
+	ADDRWIDTH = 8
+	DATAWIDTH = 8
+Entity <bram_dp_simple.1> analyzed. Unit <bram_dp_simple.1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <bram_dp_simple_1>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+    Found 256x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_1> synthesized.
+
+
+Synthesizing Unit <bram_dp_simple_2>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+    Found 1024x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_2> synthesized.
+
+
+Synthesizing Unit <UART_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd".
+INFO:Xst:1799 - State paritybit is never reached in FSM <txState>.
+    Found finite state machine <FSM_0> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <rxState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 19                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 8                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idlestate                                      |
+    | Power Up State     | idlestate                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <rxHandShakeState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <rxErr>.
+    Found 1-bit register for signal <TX>.
+    Found 8-bit register for signal <rxData>.
+    Found 1-bit register for signal <actRX>.
+    Found 3-bit comparator lessequal for signal <actRX$cmp_le0000> created at line 107.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit comparator greater for signal <counter$cmp_gt0000> created at line 103.
+    Found 3-bit comparator less for signal <counter$cmp_lt0000> created at line 102.
+    Found 3-bit addsub for signal <counter$share0000> created at line 102.
+    Found 3-bit register for signal <dataBitCounter>.
+    Found 3-bit adder for signal <dataBitCounter$addsub0000> created at line 175.
+    Found 4-bit register for signal <dataCounter>.
+    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 359.
+    Found 1-bit register for signal <edgeCounter<0>>.
+    Found 1-bit register for signal <lastRX>.
+    Found 1-bit register for signal <newData_int>.
+    Found 5-bit register for signal <ones>.
+    Found 5-bit adder for signal <ones$share0000> created at line 242.
+    Found 8-bit register for signal <rxData_int>.
+    Found 5-bit comparator greater for signal <rxData_int_0$cmp_gt0000> created at line 341.
+    Found 5-bit comparator greatequal for signal <rxState$cmp_ge0000> created at line 311.
+    Found 4-bit comparator greatequal for signal <rxState$cmp_ge0001> created at line 315.
+    Found 5-bit comparator greater for signal <rxState$cmp_gt0000> created at line 296.
+    Found 5-bit comparator lessequal for signal <rxState$cmp_le0000> created at line 341.
+    Found 5-bit comparator lessequal for signal <rxState$cmp_le0001> created at line 346.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0000> created at line 286.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0001> created at line 330.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0002> created at line 383.
+    Found 5-bit adder for signal <rxState$sub0000> created at line 341.
+    Found 5-bit register for signal <stateCounter>.
+    Found 5-bit adder for signal <stateCounter$share0000> created at line 242.
+    Found 1-bit register for signal <tmpRX1>.
+    Found 1-bit register for signal <tmpRX2>.
+    Found 1-bit register for signal <triggerData>.
+    Found 6-bit comparator greater for signal <triggerData$cmp_gt0000> created at line 392.
+    Found 6-bit adder for signal <triggerData$sub0000> created at line 392.
+    Found 8-bit register for signal <txData_int>.
+    Found 1-bit 8-to-1 multiplexer for signal <txData_int$mux0000> created at line 165.
+    Found 1-bit register for signal <txParity>.
+    Found 1-bit register for signal <txReady_int>.
+    Found 5-bit comparator less for signal <txState$cmp_lt0000> created at line 156.
+    Found 3-bit comparator less for signal <txState$cmp_lt0001> created at line 174.
+    Found 5-bit comparator less for signal <txState$cmp_lt0002> created at line 203.
+    Found 5-bit register for signal <waitCounter>.
+    Found 5-bit adder for signal <waitCounter$share0000> created at line 137.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  16 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <UART_mod> synthesized.
+
+
+Synthesizing Unit <crc_par_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd".
+WARNING:Xst:646 - Signal <ma<8><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<8><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<8><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <match_o>.
+    Found 16-bit register for signal <crc>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred  16 Xor(s).
+Unit <crc_par_mod> synthesized.
+
+
+Synthesizing Unit <NDLCom>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd".
+WARNING:Xst:647 - Input <rxPPin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <txNPin> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <txPPin> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <rxNPin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <crc_o_s.crc_check_match> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_3> for signal <readInputState>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 16                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag0                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <rxHandShakeState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_5> for signal <sendState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag1                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idlestate                                      |
+    | Power Up State     | idlestate                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <recvUARTState>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 54                                             |
+    | Inputs             | 16                                             |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | receivestartflag                               |
+    | Power Up State     | receivestartflag                               |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <recv_error>.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0000> created at line 802.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0001> created at line 585.
+    Found 8-bit register for signal <crc_i_s.crc_check_buf>.
+    Found 1-bit register for signal <crc_i_s.crc_check_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s.crc_check_reset>.
+    Found 8-bit register for signal <crc_i_s.crc_gen_buf>.
+    Found 1-bit register for signal <crc_i_s.crc_gen_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s.crc_gen_reset>.
+    Found 1-bit register for signal <dataTrigger>.
+    Found 8-bit comparator equal for signal <dataTrigger$cmp_eq0000> created at line 672.
+    Found 1-bit register for signal <escapeFlag>.
+    Found 1-bit register for signal <escapeFlag0>.
+    Found 10-bit register for signal <forward_mem_addr_in>.
+    Found 10-bit adder for signal <forward_mem_addr_in$share0000> created at line 359.
+    Found 10-bit register for signal <forward_mem_addr_out>.
+    Found 10-bit adder for signal <forward_mem_addr_out$share0000> created at line 976.
+    Found 8-bit register for signal <forward_mem_data_in>.
+    Found 1-bit register for signal <forward_mem_wea<0>>.
+    Found 1-bit register for signal <forwardData>.
+    Found 2-bit register for signal <headerCounter>.
+    Found 2-bit adder for signal <headerCounter$addsub0000> created at line 515.
+    Found 2-bit register for signal <headerCounter0>.
+    Found 2-bit adder for signal <headerCounter0$addsub0000> created at line 809.
+    Found 1-bit register for signal <idleFlag>.
+    Found 1-bit register for signal <idleFlag0>.
+    Found 1-bit register for signal <idleFlag1>.
+    Found 8-bit register for signal <input_mem_addr_out>.
+    Found 8-bit adder for signal <input_mem_addr_out$addsub0000> created at line 846.
+    Found 1-bit register for signal <inputBufferReady>.
+    Found 1-bit register for signal <newData_int>.
+    Found 8-bit register for signal <output_mem_addr_in>.
+    Found 8-bit adder for signal <output_mem_addr_in$addsub0000> created at line 588.
+    Found 8-bit register for signal <output_mem_data_in>.
+    Found 1-bit register for signal <output_mem_wea<0>>.
+    Found 1-bit register for signal <outputData>.
+    Found 8-bit comparator equal for signal <outputData$cmp_eq0000> created at line 400.
+    Found 8-bit comparator greatequal for signal <readInputState$cmp_ge0000> created at line 843.
+    Found 2-bit comparator less for signal <readInputState$cmp_lt0000> created at line 808.
+    Found 8-bit subtractor for signal <readInputState$sub0000> created at line 843.
+    Found 10-bit adder for signal <readyToSend$add0000> created at line 916.
+    Found 10-bit adder for signal <readyToSend$addsub0000> created at line 916.
+    Found 10-bit comparator greater for signal <readyToSend$cmp_gt0000> created at line 916.
+    Found 10-bit comparator lessequal for signal <readyToSend$cmp_le0000> created at line 916.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0000> created at line 916.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0001> created at line 916.
+    Found 10-bit subtractor for signal <readyToSend$sub0000> created at line 916.
+    Found 8-bit register for signal <receiverID_buf>.
+    Found 32-bit register for signal <recvHeader>.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0002> created at line 400.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0003> created at line 400.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0006> created at line 622.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0007> created at line 622.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0008> created at line 672.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0009> created at line 672.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0021> created at line 622.
+    Found 8-bit comparator greatequal for signal <recvUARTState$cmp_ge0000> created at line 585.
+    Found 2-bit comparator less for signal <recvUARTState$cmp_lt0000> created at line 514.
+    Found 8-bit subtractor for signal <recvUARTState$sub0000> created at line 585.
+    Found 10-bit register for signal <send_mem_addr_in>.
+    Found 10-bit adder for signal <send_mem_addr_in$share0000> created at line 767.
+    Found 10-bit register for signal <send_mem_addr_out>.
+    Found 10-bit adder for signal <send_mem_addr_out$share0000> created at line 976.
+    Found 8-bit register for signal <send_mem_data_in>.
+    Found 1-bit register for signal <send_mem_wea<0>>.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0000> created at line 978.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0001> created at line 982.
+    Found 1-bit register for signal <startFlag>.
+    Found 1-bit register for signal <startTimeoutCounter>.
+    Found 1-bit register for signal <timeout>.
+    Found 21-bit comparator less for signal <timeout$cmp_lt0000> created at line 937.
+    Found 21-bit up counter for signal <timeoutCounter>.
+    Found 21-bit comparator greatequal for signal <timeoutCounter$cmp_ge0000> created at line 937.
+    Found 1-bit register for signal <uart_dataAck>.
+    Found 1-bit register for signal <uart_startTx>.
+    Found 8-bit register for signal <uart_txData>.
+    Summary:
+	inferred   4 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 171 D-type flip-flop(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  21 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <NDLCom> synthesized.
+
+
+Synthesizing Unit <NDLCom_wrapper>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd".
+WARNING:Xst:1780 - Signal <nc_recv_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nc_recvFrameCounter> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <frameCounter_addr_out> equivalent to <frameCounter_addr_in> has been removed
+    Register <nc_sendReceiver> equivalent to <frameCounter_addr_in> has been removed
+    Register <sendIspDataRequest> equivalent to <isp_cmd_download> has been removed
+INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
+    Found finite state machine <FSM_7> for signal <sendState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 45                                             |
+    | Inputs             | 20                                             |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_8> for signal <registerSendState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_9> for signal <ispRecvState>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 23                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag1                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_10> for signal <recvType>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | common                                         |
+    | Power Up State     | common                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_11> for signal <telemetrySendState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_12> for signal <receiveState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_13> for signal <ispSendState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_14> for signal <registerRecvState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag0                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <receiveDirection>.
+    Using one-hot encoding for signal <sendType>.
+    Using one-hot encoding for signal <isp_sendDirection>.
+    Using one-hot encoding for signal <register_sendDirection>.
+    Using one-hot encoding for signal <nextSendType>.
+    Using one-hot encoding for signal <sendDirection>.
+    Found 16x4-bit ROM for signal <out_len$mux0000> created at line 139.
+    Found 16x4-bit ROM for signal <out_len0$mux0000> created at line 139.
+    Found 16x4-bit ROM for signal <reg_write_type_int$mux0001>.
+    Found 1-bit register for signal <resetDevice>.
+    Found 1-bit register for signal <reg_read>.
+    Found 16-bit register for signal <reg_write_id>.
+    Found 64-bit register for signal <reg_write_data>.
+    Found 1-bit register for signal <reg_write>.
+    Found 1-bit register for signal <isp_cmd_upload>.
+    Found 1-bit register for signal <isp_cmd_data>.
+    Found 1-bit register for signal <isp_cmd_download>.
+    Found 32-bit register for signal <isp_din_addr>.
+    Found 32-bit register for signal <isp_din_len>.
+    Found 8-bit register for signal <isp_din>.
+    Found 1-bit register for signal <isp_dout_ack>.
+    Found 3-bit register for signal <byteCounter>.
+    Found 3-bit adder for signal <byteCounter$addsub0000> created at line 821.
+    Found 4-bit register for signal <byteCounter0>.
+    Found 4-bit adder for signal <byteCounter0$addsub0000> created at line 899.
+    Found 7-bit register for signal <byteCounter1>.
+    Found 7-bit adder for signal <byteCounter1$share0000> created at line 958.
+    Found 7-bit register for signal <byteCounter2>.
+    Found 7-bit adder for signal <byteCounter2$share0000> created at line 1116.
+    Found 1-bit register for signal <common_recvError>.
+    Found 8-bit register for signal <common_send_addr>.
+    Found 8-bit adder for signal <common_send_addr$addsub0000> created at line 201.
+    Found 8-bit register for signal <common_send_data>.
+    Found 1-bit register for signal <common_send_wea<0>>.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit adder for signal <counter$addsub0000> created at line 599.
+    Found 4-bit register for signal <dataCounter>.
+    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 692.
+    Found 8-bit register for signal <frameCounter_addr_in>.
+    Found 8-bit register for signal <frameCounter_data_in>.
+    Found 8-bit adder for signal <frameCounter_data_in$add0001> created at line 201.
+    Found 1-bit register for signal <frameCounter_wea<0>>.
+    Found 18-bit up counter for signal <idleCounter>.
+    Found 1-bit register for signal <idleFlag>.
+    Found 1-bit register for signal <idleFlag0>.
+    Found 1-bit register for signal <idleFlag1>.
+    Found 3-bit register for signal <isp_cmd_int>.
+    Found 1-bit register for signal <isp_din_valid_int>.
+    Found 8-bit register for signal <isp_recv_addr>.
+    Found 8-bit adder for signal <isp_recv_addr$add0001> created at line 201.
+    Found 1-bit register for signal <isp_recvAck>.
+    Found 1-bit register for signal <isp_recvCmdRequest>.
+    Found 1-bit register for signal <isp_recvDataRequest>.
+    Found 1-bit register for signal <isp_recvError>.
+    Found 8-bit register for signal <isp_recvId>.
+    Found 8-bit register for signal <isp_send_addr>.
+    Found 8-bit adder for signal <isp_send_addr$add0001> created at line 201.
+    Found 8-bit register for signal <isp_send_data>.
+    Found 8-bit 4-to-1 multiplexer for signal <isp_send_data$mux0001> created at line 1166.
+    Found 1-bit register for signal <isp_send_wea<0>>.
+    Found 1-bit register for signal <isp_sendAck>.
+    Found 1-bit register for signal <isp_sendCmdRequest>.
+    Found 1-bit register for signal <isp_sendDataRequest>.
+    Found 2-bit register for signal <isp_sendDirection>.
+    Found 1-bit register for signal <isp_startSending>.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0000> created at line 992.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0001> created at line 1061.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0000> created at line 1147.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0001> created at line 1182.
+    Found 1-bit register for signal <nc1_dataAck>.
+    Found 1-bit register for signal <nc1_startSending>.
+    Found 1-bit register for signal <nc2_dataAck>.
+    Found 1-bit register for signal <nc2_startSending>.
+    Found 8-bit register for signal <nc_sendLength>.
+    Found 4-bit register for signal <nextSendType>.
+    Found 2-bit register for signal <receiveDirection>.
+    Found 16-bit register for signal <reg_read_id_int>.
+    Found 4-bit register for signal <reg_write_type_int>.
+    Found 8-bit register for signal <register_recv_addr>.
+    Found 8-bit adder for signal <register_recv_addr$addsub0000> created at line 201.
+    Found 1-bit register for signal <register_recvAck>.
+    Found 1-bit register for signal <register_recvError>.
+    Found 8-bit register for signal <register_recvId>.
+    Found 1-bit register for signal <register_recvReadRequest>.
+    Found 1-bit register for signal <register_recvWriteRequest>.
+    Found 8-bit register for signal <register_send_addr>.
+    Found 8-bit adder for signal <register_send_addr$addsub0000> created at line 896.
+    Found 8-bit register for signal <register_send_data>.
+    Found 1-bit register for signal <register_send_wea<0>>.
+    Found 1-bit register for signal <register_sendAck>.
+    Found 2-bit register for signal <register_sendDirection>.
+    Found 1-bit register for signal <register_sendRequest>.
+    Found 1-bit register for signal <register_startSending>.
+    Found 5-bit comparator less for signal <registerRecvState$cmp_lt0000> created at line 820.
+    Found 5-bit subtractor for signal <registerRecvState$sub0000> created at line 820.
+    Found 4-bit comparator less for signal <registerSendState$cmp_lt0000> created at line 895.
+    Found 2-bit register for signal <sendDirection>.
+    Found 1-bit register for signal <sendIspAckRequest>.
+    Found 3-bit comparator less for signal <sendState$cmp_lt0000> created at line 598.
+    Found 4-bit register for signal <sendType>.
+    Found 4-bit register for signal <sendType_1>.
+    Found 4-bit register for signal <sendType_2>.
+    Found 8-bit register for signal <telemetry_send_addr>.
+    Found 8-bit adder for signal <telemetry_send_addr$add0001> created at line 201.
+    Found 8-bit register for signal <telemetry_send_data>.
+    Found 1-bit register for signal <telemetry_send_wea<0>>.
+    Found 1-bit register for signal <telemetry_sendAck>.
+    Found 1-bit register for signal <telemetry_sendRequest>.
+    Found 1-bit register for signal <telemetry_startSending>.
+    Found 16-bit 16-to-1 multiplexer for signal <telemetry_values$mux0000> created at line 683.
+    Found 4-bit comparator less for signal <telemetrySendState$cmp_lt0000> created at line 691.
+    Summary:
+	inferred   8 Finite State Machine(s).
+	inferred   3 ROM(s).
+	inferred   1 Counter(s).
+	inferred 387 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <NDLCom_wrapper> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 9
+ 1024x8-bit dual-port RAM                              : 4
+ 256x8-bit dual-port RAM                               : 5
+# ROMs                                                 : 3
+ 16x4-bit ROM                                          : 3
+# Adders/Subtractors                                   : 56
+ 10-bit adder                                          : 12
+ 10-bit subtractor                                     : 2
+ 2-bit adder                                           : 4
+ 3-bit adder                                           : 4
+ 3-bit addsub                                          : 2
+ 4-bit adder                                           : 4
+ 5-bit adder                                           : 8
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 11
+ 8-bit subtractor                                      : 4
+# Counters                                             : 3
+ 18-bit up counter                                     : 1
+ 21-bit up counter                                     : 2
+# Registers                                            : 387
+ 1-bit register                                        : 288
+ 10-bit register                                       : 8
+ 16-bit register                                       : 4
+ 2-bit register                                        : 8
+ 3-bit register                                        : 7
+ 4-bit register                                        : 9
+ 5-bit register                                        : 6
+ 7-bit register                                        : 2
+ 8-bit register                                        : 55
+# Comparators                                          : 80
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 2
+ 10-bit comparator not equal                           : 4
+ 11-bit comparator less                                : 4
+ 2-bit comparator less                                 : 4
+ 21-bit comparator greatequal                          : 2
+ 21-bit comparator less                                : 2
+ 3-bit comparator greater                              : 2
+ 3-bit comparator less                                 : 5
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator greatequal                           : 2
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greatequal                           : 2
+ 5-bit comparator greater                              : 4
+ 5-bit comparator less                                 : 11
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator greater                              : 2
+ 7-bit comparator less                                 : 4
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greatequal                           : 4
+# Multiplexers                                         : 8
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 16-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 5
+# Xors                                                 : 96
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_14> for best encoding.
+Optimizing FSM <registerRecvState/FSM> on signal <registerRecvState[1:7]> with one-hot encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000001
+ read_checklength  | 0000010
+ read_copyaddr     | 0001000
+ write_checklength | 0000100
+ write_copyaddr    | 0010000
+ write_copytype    | 0100000
+ write_copyvalue   | 1000000
+-------------------------------
+Analyzing FSM <FSM_13> for best encoding.
+Optimizing FSM <ispSendState/FSM> on signal <ispSendState[1:7]> with one-hot encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 0000001
+ cmd_waitack      | 0000010
+ cmd_writeack     | 0001000
+ cmd_writeaddr    | 0010000
+ data_waitack     | 0000100
+ data_writelength | 0100000
+ data_writedata   | 1000000
+------------------------------
+Analyzing FSM <FSM_12> for best encoding.
+Optimizing FSM <receiveState/FSM> on signal <receiveState[1:2]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ idle                | 00
+ checkid             | 01
+ waitreceiverprocess | 10
+---------------------------------
+Analyzing FSM <FSM_11> for best encoding.
+Optimizing FSM <telemetrySendState/FSM> on signal <telemetrySendState[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 00
+ waitack       | 01
+ writedatalow  | 11
+ writedatahigh | 10
+---------------------------
+Analyzing FSM <FSM_10> for best encoding.
+Optimizing FSM <recvType/FSM> on signal <recvType[1:2]> with sequential encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ common        | 00
+ registervalue | 10
+ telemetry     | unreached
+ isp           | 01
+---------------------------
+Analyzing FSM <FSM_9> for best encoding.
+Optimizing FSM <ispRecvState/FSM> on signal <ispRecvState[1:11]> with one-hot encoding.
+---------------------------------
+ State            | Encoding
+---------------------------------
+ idle             | 00000000001
+ cmd_checklength  | 00000000010
+ cmd_readcmd      | 00000001000
+ cmd_readaddr     | 00000010000
+ cmd_readlength   | 00000100000
+ cmd_waitack      | 00001000000
+ data_checklength | 00000000100
+ data_readaddr    | 00010000000
+ data_readdata    | 00100000000
+ data_waitdataack | 01000000000
+ data_waitack     | 10000000000
+---------------------------------
+Analyzing FSM <FSM_8> for best encoding.
+Optimizing FSM <registerSendState/FSM> on signal <registerSendState[1:5]> with one-hot encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00001
+ waitack   | 00010
+ writeaddr | 00100
+ writetype | 01000
+ writedata | 10000
+-----------------------
+Analyzing FSM <FSM_7> for best encoding.
+Optimizing FSM <sendState/FSM> on signal <sendState[1:2]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 00
+ writetimestamp    | 01
+ waitsenderprocess | 10
+-------------------------------
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <NDLCom1/recvUARTState/FSM> on signal <recvUARTState[1:10]> with one-hot encoding.
+Optimizing FSM <NDLCom2/recvUARTState/FSM> on signal <recvUARTState[1:10]> with one-hot encoding.
+-----------------------------------
+ State               | Encoding
+-----------------------------------
+ receivestartflag    | 0000000001
+ receivereceiverid   | 0000000010
+ checkreceiverid     | 0000001000
+ writereceiverid     | 0000010000
+ receiveheaderbyte   | 0000000100
+ receivedata         | 0001000000
+ outputaddrinc       | 0010000000
+ receivecrcupperbyte | 0100000000
+ receivecrclowerbyte | 0000100000
+ receivestopflag     | 1000000000
+-----------------------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <NDLCom1/sendState/FSM> on signal <sendState[1:3]> with gray encoding.
+Optimizing FSM <NDLCom2/sendState/FSM> on signal <sendState[1:3]> with gray encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ idlestate            | 000
+ sendsenddatastate    | 011
+ sendforwarddatastate | 001
+ sendaddrinc          | 010
+ forwardaddrinc       | 110
+----------------------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <NDLCom1/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom2/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00
+ waitack     | 01
+ waittrigger | 11
+-------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <NDLCom1/readInputState/FSM> on signal <readInputState[1:12]> with one-hot encoding.
+Optimizing FSM <NDLCom2/readInputState/FSM> on signal <readInputState[1:12]> with one-hot encoding.
+-----------------------------------
+ State             | Encoding
+-----------------------------------
+ idle              | 000000000001
+ writestartflag    | 000000000010
+ checkheaderbyte   | 000000000100
+ writeheaderbyte   | 000000001000
+ checkdata         | 000000100000
+ writedata         | 000001000000
+ inputaddrinc      | 000010000000
+ checkcrcupperbyte | 000000010000
+ writecrcupperbyte | 010000000000
+ checkcrclowerbyte | 000100000000
+ writecrclowerbyte | 001000000000
+ writestopflag     | 100000000000
+-----------------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <NDLCom1/ls_mode_gen.UART_inst/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom2/ls_mode_gen.UART_inst/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00
+ waitack     | 01
+ waittrigger | 11
+-------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <NDLCom1/ls_mode_gen.UART_inst/rxState/FSM> on signal <rxState[1:3]> with gray encoding.
+Optimizing FSM <NDLCom2/ls_mode_gen.UART_inst/rxState/FSM> on signal <rxState[1:3]> with gray encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ idlestate       | 000
+ startedgestate  | 001
+ startcountstate | 011
+ waitdatastate   | 010
+ datacountstate  | 111
+ checkdatastate  | 110
+ stopcountstate  | 101
+-----------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <NDLCom1/ls_mode_gen.UART_inst/txState/FSM> on signal <txState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom2/ls_mode_gen.UART_inst/txState/FSM> on signal <txState[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ startbit  | 01
+ databit   | 11
+ paritybit | unreached
+ stopbit   | 10
+-----------------------
+WARNING:Xst:1710 - FF/Latch <nc_sendLength_6> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sendType_1_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_2_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendDirection_1> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <nextSendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+
+Synthesizing (advanced) Unit <NDLCom>.
+INFO:Xst:3226 - The RAM <input_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <input_buffer_inst/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <send_wea>      | high     |
+    |     addrA          | connected to signal <send_addr>     |          |
+    |     diA            | connected to signal <send_data>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <input_mem_addr_out> |          |
+    |     doB            | connected to signal <input_mem_data_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <forward_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <forward_buffer_inst/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <forward_mem_wea> | high     |
+    |     addrA          | connected to signal <forward_mem_addr_in> |          |
+    |     diA            | connected to signal <forward_mem_data_in> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <forward_mem_addr_out> |          |
+    |     doB            | connected to signal <forward_mem_data_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <send_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <send_buffer_inst/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <send_mem_wea>  | high     |
+    |     addrA          | connected to signal <send_mem_addr_in> |          |
+    |     diA            | connected to signal <send_mem_data_in> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <send_mem_addr_out> |          |
+    |     doB            | connected to signal <send_mem_data_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <output_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <output_buffer_inst/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <output_mem_wea> | high     |
+    |     addrA          | connected to signal <output_mem_addr_in> |          |
+    |     diA            | connected to signal <output_mem_data_in> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <recv_addr>     |          |
+    |     doB            | connected to signal <recv_data>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <NDLCom> synthesized (advanced).
+
+Synthesizing (advanced) Unit <NDLCom_wrapper>.
+INFO:Xst:3226 - The RAM <frameCounter_buffer/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <frameCounter_buffer/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <frameCounter_wea> | high     |
+    |     addrA          | connected to signal <frameCounter_addr_in> |          |
+    |     diA            | connected to signal <frameCounter_data_in> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <frameCounter_addr_in> |          |
+    |     doB            | connected to signal <frameCounter_data_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <NDLCom_wrapper> synthesized (advanced).
+WARNING:Xst:2677 - Node <sendType_1_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_2_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendDirection_1> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <nextSendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 9
+ 1024x8-bit dual-port block RAM                        : 4
+ 256x8-bit dual-port block RAM                         : 5
+# ROMs                                                 : 3
+ 16x4-bit ROM                                          : 3
+# Adders/Subtractors                                   : 56
+ 10-bit adder                                          : 12
+ 10-bit subtractor                                     : 2
+ 2-bit adder                                           : 4
+ 3-bit adder                                           : 4
+ 3-bit addsub                                          : 2
+ 4-bit adder                                           : 4
+ 5-bit adder                                           : 8
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 11
+ 8-bit subtractor                                      : 4
+# Counters                                             : 3
+ 18-bit up counter                                     : 1
+ 21-bit up counter                                     : 2
+# Registers                                            : 1016
+ Flip-Flops                                            : 1016
+# Comparators                                          : 80
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 2
+ 10-bit comparator not equal                           : 4
+ 11-bit comparator less                                : 4
+ 2-bit comparator less                                 : 4
+ 21-bit comparator greatequal                          : 2
+ 21-bit comparator less                                : 2
+ 3-bit comparator greater                              : 2
+ 3-bit comparator less                                 : 5
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator greatequal                           : 2
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greatequal                           : 2
+ 5-bit comparator greater                              : 4
+ 5-bit comparator less                                 : 11
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator greater                              : 2
+ 7-bit comparator less                                 : 4
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greatequal                           : 4
+# Multiplexers                                         : 22
+ 1-bit 4-to-1 multiplexer                              : 16
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 16-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 3
+# Xors                                                 : 96
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <nc_sendLength_6> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <nc_sendLength_0> in Unit <NDLCom_wrapper> is equivalent to the following FF/Latch, which will be removed : <nc_sendLength_3> 
+INFO:Xst:2261 - The FF/Latch <nextSendType_2> in Unit <NDLCom_wrapper> is equivalent to the following FF/Latch, which will be removed : <nc_sendLength_5> 
+WARNING:Xst:1710 - FF/Latch <register_send_addr_5> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_send_addr_6> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_send_addr_7> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <NDLCom_wrapper> ...
+
+Optimizing unit <UART_mod> ...
+
+Optimizing unit <crc_par_mod> ...
+
+Optimizing unit <NDLCom> ...
+WARNING:Xst:2677 - Node <NDLCom2/crcGen/match_o> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <NDLCom2/crcCheck/match_o> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <NDLCom1/crcGen/match_o> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <NDLCom1/crcCheck/match_o> of sequential type is unconnected in block <NDLCom_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NDLCom_wrapper, actual ratio is 39.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1066
+ Flip-Flops                                            : 1066
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : NDLCom_wrapper.ngr
+Top Level Output File Name         : NDLCom_wrapper
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 627
+
+Cell Usage :
+# BELS                             : 3218
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 135
+#      LUT2                        : 280
+#      LUT2_D                      : 5
+#      LUT3                        : 593
+#      LUT3_D                      : 14
+#      LUT3_L                      : 5
+#      LUT4                        : 1280
+#      LUT4_D                      : 62
+#      LUT4_L                      : 93
+#      MUXCY                       : 256
+#      MUXF5                       : 242
+#      MUXF6                       : 34
+#      MUXF7                       : 16
+#      VCC                         : 1
+#      XORCY                       : 176
+# FlipFlops/Latches                : 1066
+#      FD                          : 6
+#      FDC                         : 72
+#      FDCE                        : 48
+#      FDE                         : 34
+#      FDP                         : 4
+#      FDR                         : 147
+#      FDRE                        : 611
+#      FDRS                        : 57
+#      FDS                         : 10
+#      FDSE                        : 77
+# RAMS                             : 9
+#      RAMB16BWE                   : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 626
+#      IBUF                        : 443
+#      OBUF                        : 183
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400aft256-4 
+
+ Number of Slices:                     1302  out of   3584    36%  
+ Number of Slice Flip Flops:           1066  out of   7168    14%  
+ Number of 4 input LUTs:               2492  out of   7168    34%  
+ Number of IOs:                         627
+ Number of bonded IOBs:                 627  out of    195   321% (*) 
+ Number of BRAMs:                         9  out of     20    45%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 1075  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 124   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.709ns (Maximum Frequency: 78.684MHz)
+   Minimum input arrival time before clock: 11.350ns
+   Maximum output required time after clock: 7.045ns
+   Maximum combinational path delay: 7.099ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 12.709ns (frequency: 78.684MHz)
+  Total number of paths / destination ports: 201772 / 2318
+-------------------------------------------------------------------------
+Delay:               12.709ns (Levels of Logic = 10)
+  Source:            NDLCom1/send_mem_addr_in_1 (FF)
+  Destination:       common_send_data_1 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: NDLCom1/send_mem_addr_in_1 to common_send_data_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.591   0.963  NDLCom1/send_mem_addr_in_1 (NDLCom1/send_mem_addr_in_1)
+     LUT2:I0->O            0   0.648   0.000  NDLCom1/Madd_readyToSend_add0000C1 (NDLCom1/Madd_readyToSend_add0000C)
+     MUXCY:DI->O           1   0.787   0.000  NDLCom1/Madd_readyToSend_add0000_Madd_cy<2> (NDLCom1/Madd_readyToSend_add0000_Madd_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  NDLCom1/Madd_readyToSend_add0000_Madd_cy<3> (NDLCom1/Madd_readyToSend_add0000_Madd_cy<3>)
+     XORCY:CI->O           1   0.844   0.423  NDLCom1/Madd_readyToSend_add0000_Madd_xor<4> (NDLCom1/readyToSend_add0000<4>)
+     LUT4:I3->O            1   0.648   0.452  NDLCom1/readyToSend36 (NDLCom1/readyToSend36)
+     LUT4:I2->O            2   0.648   0.450  NDLCom1/readyToSend59_SW0 (N508)
+     LUT4:I3->O            9   0.648   0.823  NDLCom1/readyToSend72 (nc1_readyToSend)
+     LUT4:I3->O            1   0.648   0.500  common_send_data_and00021_1 (common_send_data_and00021)
+     LUT3:I1->O           12   0.643   0.964  nextSendType_mux0000<0>1 (nextSendType_mux0000<0>)
+     LUT4:I3->O            2   0.648   0.447  common_send_data_mux0000<1>4 (N138)
+     FDRS:S                    0.869          common_send_data_1
+    ----------------------------------------
+    Total                     12.709ns (7.687ns logic, 5.022ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3417 / 1111
+-------------------------------------------------------------------------
+Offset:              11.350ns (Levels of Logic = 9)
+  Source:            NODE_ID<2> (PAD)
+  Destination:       NDLCom2/forward_mem_addr_in_9 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: NODE_ID<2> to NDLCom2/forward_mem_addr_in_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.849   0.812  NODE_ID_2_IBUF (NODE_ID_2_IBUF)
+     LUT2:I0->O            1   0.648   0.563  NDLCom2/recvUARTState_cmp_eq0002818 (NDLCom2/recvUARTState_cmp_eq0002818)
+     LUT4:I0->O            2   0.648   0.450  NDLCom2/forward_mem_data_in_or00021_SW0 (N662)
+     LUT4_D:I3->O         15   0.648   1.097  NDLCom2/forward_mem_data_in_or00021 (NDLCom2/forward_mem_data_in_or0002)
+     LUT4:I1->O            1   0.643   0.423  NDLCom2/forward_mem_data_in_mux0000<0>11_SW0 (N416)
+     LUT4:I3->O            2   0.648   0.450  NDLCom2/forward_mem_data_in_mux0000<0>11 (NDLCom2/N50)
+     LUT4_D:I3->O          1   0.648   0.423  NDLCom2/forward_mem_addr_in_mux0000<0>111 (NDLCom2/N42)
+     LUT4_D:I3->O          9   0.648   0.852  NDLCom2/forward_mem_addr_in_mux0000<0>1 (NDLCom2/N0)
+     LUT4:I2->O            1   0.648   0.000  NDLCom2/forward_mem_addr_in_mux0000<9>1 (NDLCom2/forward_mem_addr_in_mux0000<9>)
+     FDRE:D                    0.252          NDLCom2/forward_mem_addr_in_9
+    ----------------------------------------
+    Total                     11.350ns (6.280ns logic, 5.070ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 187 / 183
+-------------------------------------------------------------------------
+Offset:              7.045ns (Levels of Logic = 3)
+  Source:            NDLCom2/recv_error (FF)
+  Destination:       commErr (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: NDLCom2/recv_error to commErr
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.590  NDLCom2/recv_error (NDLCom2/recv_error)
+     LUT4:I0->O            1   0.648   0.000  commErr1 (commErr1)
+     MUXF5:I0->O           1   0.276   0.420  commErr_f5 (commErr_OBUF)
+     OBUF:I->O                 4.520          commErr_OBUF (commErr)
+    ----------------------------------------
+    Total                      7.045ns (6.035ns logic, 1.010ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.099ns (Levels of Logic = 3)
+  Source:            isp_din_ack (PAD)
+  Destination:       isp_din_valid (PAD)
+
+  Data Path: isp_din_ack to isp_din_valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.667  isp_din_ack_IBUF (isp_din_ack_IBUF)
+     LUT2:I1->O            1   0.643   0.420  isp_din_valid1 (isp_din_valid_OBUF)
+     OBUF:I->O                 4.520          isp_din_valid_OBUF (isp_din_valid)
+    ----------------------------------------
+    Total                      7.099ns (6.012ns logic, 1.087ns route)
+                                       (84.7% logic, 15.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 31.91 secs
+ 
+--> 
+
+
+Total memory usage is 628280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   84 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

@@ -1,0 +1,194 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'NDLCOM_ECHO_TOP'
+
+Design Information
+------------------
+Command Line   : map -filter
+/home/sduvvuri/thesis.git/NDLCOM_ECHO/iseconfig/filter.filter -intstyle ise -p
+xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o NDLCOM_ECHO_TOP_map.ncd
+NDLCOM_ECHO_TOP.ngd NDLCOM_ECHO_TOP.pcf 
+Target Device  : xc3s400a
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Fri Mar 13 17:46:19 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:         2,551 out of   7,168   35%
+  Number of 4 input LUTs:             5,097 out of   7,168   71%
+Logic Distribution:
+  Number of occupied Slices:          3,078 out of   3,584   85%
+    Number of Slices containing only related logic:   3,078 out of   3,078 100%
+    Number of Slices containing unrelated logic:          0 out of   3,078   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,332 out of   7,168   74%
+    Number used as logic:             5,097
+    Number used as a route-thru:        235
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  4 out of     195    2%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of RAMB16BWEs:                  11 out of      20   55%
+
+Average Fanout of Non-Clock Nets:                4.32
+
+Peak Memory Usage:  671 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_len_rom0010131 failed to merge with F5
+   multiplexer NDLCOM_BASIC/register_access/reg_write_id<5>1_f6/MUXF5.I1.  There
+   is a conflict for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom0000211_inv1 failed to merge
+   with F5 multiplexer
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom0000311_11_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_mem_type_rom0001191_13 failed to merge
+   with F5 multiplexer
+   NDLCOM_BASIC/register_access/Mrom_reg_len_rom0010421_12_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000071_13 failed to merge with
+   F5 multiplexer NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000071_12_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000271_13 failed to merge with
+   F5 multiplexer NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000271_12_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| RESET                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| RX                                 | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

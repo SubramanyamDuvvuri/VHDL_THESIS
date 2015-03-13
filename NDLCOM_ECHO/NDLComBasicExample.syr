@@ -1,0 +1,1868 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: NDLComBasicExample.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NDLComBasicExample.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NDLComBasicExample"
+Output Format                      : NGC
+Target Device                      : xc3s400a-4-ft256
+
+---- Source Options
+Top Module Name                    : NDLComBasicExample
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_pkg.vhd" in Library decode_8b10b.
+Architecture decode_8b10b_pkg of Entity decode_8b10b_pkg is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd" in Library encode_8b10b.
+Architecture encode_8b10b_pkg of Entity encode_8b10b_pkg is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_disp.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_disp is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut_base.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_lut_base is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_lut_base is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_lut is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_bram.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_bram is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_lut is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_bram is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_rtl.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_rtl is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_rtl is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_types.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_top.vhd" in Library decode_8b10b.
+Architecture xilinx of Entity decode_8b10b_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_config_pack.vhd" in Library Spartan6.
+Architecture asynch_sercomm_config_pack of Entity asynch_sercomm_config_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_frontend.vhd" in Library Spartan6.
+Architecture asynch_sercomm_rx_frontend_pack of Entity asynch_sercomm_rx_frontend_pack is up to date.
+Architecture behavioral of Entity asynch_sercomm_rx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd" in Library encode_8b10b.
+Architecture xilinx of Entity encode_8b10b_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_frontend.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_tx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_config_pack.vhd" in Library Zynq.
+Architecture asynch_sercomm_config_pack of Entity asynch_sercomm_config_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_frontend.vhd" in Library Zynq.
+Architecture asynch_sercomm_rx_frontend_pack of Entity asynch_sercomm_rx_frontend_pack is up to date.
+Architecture behavioral of Entity asynch_sercomm_rx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_frontend.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_tx_frontend is up to date.
+Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/Devices.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/DeviceClasses.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/iStruct/external/Representations.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom_config.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_pack.vhd" in Library work.
+Architecture crc_pack of Entity crc_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/DFKI_Pack/trunk/dfki_pack.vhd" in Library work.
+Architecture dfki_pack of Entity dfki_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/basic_clk_rst_mod.vhd" in Library Zynq.
+Architecture behavioral of Entity basic_clk_reset_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_top.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_tx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_top.vhd" in Library Zynq.
+Architecture behavioral of Entity asynch_sercomm_rx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/basic_clk_rst_mod.vhd" in Library Spartan6.
+Architecture behavioral of Entity basic_clk_reset_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_top.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_tx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_top.vhd" in Library Spartan6.
+Architecture behavioral of Entity asynch_sercomm_rx_top is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/utils/fifo.vhd" in Library work.
+Architecture fifo_a of Entity fifo is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/config.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd" in Library work.
+Architecture behavioral of Entity bram_dp_simple is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd" in Library work.
+Architecture behavioral of Entity uart_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_HS_mod.vhd" in Library work.
+Architecture behaviour of Entity uart_hs_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd" in Library work.
+Architecture behavioral of Entity crc_par_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_pack.vhd" in Library work.
+Architecture register_pack of Entity register_pack is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" in Library work.
+Architecture behavioral of Entity ndlcom is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/date.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/rtc_mod/trunk/rtc_mod.vhd" in Library work.
+Architecture behavioral of Entity rtc_mod is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" in Library work.
+Architecture behavioral of Entity ndlcom_wrapper is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/spi_prom/trunk/simple_spiprom_interface.vhd" in Library work.
+Architecture behavioral of Entity simple_spiprom_interface is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" in Library work.
+Architecture behavioral of Entity register_access is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/InSystemProgramming/trunk/InSystemProgramming.vhd" in Library work.
+Architecture behavioral of Entity insystemprogramming is up to date.
+Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd" in Library work.
+Architecture behavioral of Entity ndlcombasicexample is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <NDLComBasicExample> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rtc_mod> in library <work> (architecture <Behavioral>) with generics.
+	SYSTEM_speed = 20000000
+
+Analyzing hierarchy for entity <NDLCom_wrapper> in library <work> (architecture <Behavioral>) with generics.
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+	USE_TELEMETRY = true
+
+Analyzing hierarchy for entity <simple_spiprom_interface> in library <work> (architecture <Behavioral>) with generics.
+	CLK_FREQ = 20000000
+	DATA_LENGTH = 128
+	SPI_CLK_FREQ = 5000000
+	UNLOCK_KEY = "1010"
+
+Analyzing hierarchy for entity <register_access> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <InSystemProgramming> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <NDLCom> in library <work> (architecture <Behavioral>) with generics.
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+
+Analyzing hierarchy for entity <bram_dp_simple> in library <work> (architecture <behavioral>) with generics.
+	ADDRWIDTH = 8
+	DATAWIDTH = 8
+
+Analyzing hierarchy for entity <bram_dp_simple> in library <work> (architecture <behavioral>) with generics.
+	ADDRWIDTH = 10
+	DATAWIDTH = 8
+
+Analyzing hierarchy for entity <UART_mod> in library <work> (architecture <Behavioral>) with generics.
+	BAUD_rate = 921600
+	EVEN_parity = 0
+	ODD_parity = 0
+	SYSTEM_speed = 20000000
+
+Analyzing hierarchy for entity <crc_par_mod> in library <work> (architecture <Behavioral>) with generics.
+	DATA_WIDTH = 8
+	INIT_VALUE = "1111111111111111"
+	POLYNOMIAL = "0001000000100001"
+	SYNC_RESET = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <NDLComBasicExample> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd" line 158: Unconnected output port 'commErr' of component 'NDLCom_wrapper'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd" line 353: Unconnected output port 'debug1' of component 'register_access'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd" line 353: Unconnected output port 'debug2' of component 'register_access'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd" line 353: Unconnected output port 'debug3' of component 'register_access'.
+INFO:Xst:2679 - Register <telemetry<1>> in unit <NDLComBasicExample> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <telemetry<2>> in unit <NDLComBasicExample> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<56>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<55>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<54>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<53>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<52>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<51>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<50>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<49>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<48>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<47>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<46>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<45>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<44>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<43>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<42>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<41>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<40>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<39>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<38>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<37>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<36>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<35>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<34>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<33>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<32>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<31>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<30>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<29>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<28>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<27>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<26>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<25>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<24>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<23>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<22>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<21>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<20>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<19>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<17>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<16>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<15>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<14>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<13>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<12>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<11>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<10>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<9>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<8>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<7>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<6>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<5>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<4>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<3>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<2>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<1>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<0>> in unit <NDLComBasicExample> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><7>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><6>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><5>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><4>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><3>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><2>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <register_memory.ro_registers<18><1>> in unit <NDLComBasicExample> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <NDLComBasicExample> analyzed. Unit <NDLComBasicExample> generated.
+
+Analyzing generic Entity <rtc_mod> in library <work> (Architecture <Behavioral>).
+	SYSTEM_speed = 20000000
+Entity <rtc_mod> analyzed. Unit <rtc_mod> generated.
+
+Analyzing generic Entity <NDLCom_wrapper> in library <work> (Architecture <Behavioral>).
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+	USE_TELEMETRY = true
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txNPin' of component 'NDLCom'.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txNPin' of component 'NDLCom'.
+INFO:Xst:2679 - Register <common_recv_addr> in unit <NDLCom_wrapper> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+Entity <NDLCom_wrapper> analyzed. Unit <NDLCom_wrapper> generated.
+
+Analyzing generic Entity <NDLCom> in library <work> (Architecture <Behavioral>).
+	BAUD_RATE = 921600
+	CLK_FREQ = 20000000
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" line 269: Unconnected output port 'match_o' of component 'crc_par_mod'.
+Entity <NDLCom> analyzed. Unit <NDLCom> generated.
+
+Analyzing generic Entity <bram_dp_simple.2> in library <work> (Architecture <behavioral>).
+	ADDRWIDTH = 10
+	DATAWIDTH = 8
+Entity <bram_dp_simple.2> analyzed. Unit <bram_dp_simple.2> generated.
+
+Analyzing generic Entity <UART_mod> in library <work> (Architecture <Behavioral>).
+	BAUD_rate = 921600
+	EVEN_parity = 0
+	ODD_parity = 0
+	SYSTEM_speed = 20000000
+Entity <UART_mod> analyzed. Unit <UART_mod> generated.
+
+Analyzing generic Entity <crc_par_mod> in library <work> (Architecture <Behavioral>).
+	DATA_WIDTH = 8
+	INIT_VALUE = "1111111111111111"
+	POLYNOMIAL = "0001000000100001"
+	SYNC_RESET = 1
+Entity <crc_par_mod> analyzed. Unit <crc_par_mod> generated.
+
+Analyzing generic Entity <bram_dp_simple.1> in library <work> (Architecture <behavioral>).
+	ADDRWIDTH = 8
+	DATAWIDTH = 8
+Entity <bram_dp_simple.1> analyzed. Unit <bram_dp_simple.1> generated.
+
+Analyzing generic Entity <simple_spiprom_interface> in library <work> (Architecture <Behavioral>).
+	CLK_FREQ = 20000000
+	DATA_LENGTH = 128
+	SPI_CLK_FREQ = 5000000
+	UNLOCK_KEY = "1010"
+Entity <simple_spiprom_interface> analyzed. Unit <simple_spiprom_interface> generated.
+
+Analyzing Entity <register_access> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 198: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 199: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 200: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 207: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 208: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 209: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd" line 247: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:2679 - Register <debug1<15>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<14>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<13>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<12>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<11>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<10>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<9>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<8>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<7>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<6>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<5>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <debug1<4>> in unit <register_access> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <register_access> analyzed. Unit <register_access> generated.
+
+Analyzing Entity <InSystemProgramming> in library <work> (Architecture <Behavioral>).
+Entity <InSystemProgramming> analyzed. Unit <InSystemProgramming> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rtc_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/rtc_mod/trunk/rtc_mod.vhd".
+    Register <time_int> equivalent to <actualTime> has been removed
+    Found 64-bit register for signal <actualTime>.
+    Found 5-bit register for signal <clk_counter>.
+    Found 5-bit adder for signal <clk_counter$addsub0000> created at line 77.
+    Found 4-bit up counter for signal <khz_100_counter>.
+    Found 4-bit comparator greatequal for signal <khz_100_counter$cmp_ge0000> created at line 96.
+    Found 4-bit register for signal <khz_100_extra>.
+    Found 4-bit subtractor for signal <khz_100_extra$addsub0000> created at line 81.
+    Found 4-bit comparator less for signal <khz_100_extra$cmp_lt0000> created at line 96.
+    Found 7-bit up counter for signal <khz_10_counter>.
+    Found 7-bit comparator greatequal for signal <khz_10_counter$cmp_ge0000> created at line 104.
+    Found 5-bit comparator greatequal for signal <khz_10_counter$cmp_ge0001> created at line 74.
+    Found 4-bit comparator lessequal for signal <khz_10_counter$cmp_le0000> created at line 85.
+    Found 4-bit comparator lessequal for signal <khz_10_counter$cmp_le0001> created at line 81.
+    Found 4-bit comparator lessequal for signal <khz_10_counter$cmp_le0002> created at line 77.
+    Found 4-bit register for signal <khz_10_extra>.
+    Found 4-bit subtractor for signal <khz_10_extra$addsub0000> created at line 85.
+    Found 7-bit comparator less for signal <khz_10_extra$cmp_lt0000> created at line 104.
+    Found 10-bit up counter for signal <khz_1_counter>.
+    Found 10-bit comparator greatequal for signal <khz_1_counter$cmp_ge0000> created at line 112.
+    Found 4-bit register for signal <khz_1_extra>.
+    Found 4-bit subtractor for signal <khz_1_extra$addsub0000> created at line 89.
+    Found 10-bit comparator less for signal <khz_1_extra$cmp_lt0000> created at line 112.
+    Found 64-bit adder for signal <time_int$addsub0000> created at line 94.
+    Found 4-bit comparator greater for signal <time_int$cmp_gt0000> created at line 77.
+    Found 4-bit comparator greater for signal <time_int$cmp_gt0001> created at line 81.
+    Found 4-bit comparator greater for signal <time_int$cmp_gt0002> created at line 85.
+    Found 5-bit comparator less for signal <time_int$cmp_lt0000> created at line 74.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  81 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  14 Comparator(s).
+Unit <rtc_mod> synthesized.
+
+
+Synthesizing Unit <register_access>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd".
+WARNING:Xst:647 - Input <reg_write_type> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 566x16-bit ROM for signal <reg_addr$rom0000> created at line 34.
+    Found 566x16-bit ROM for signal <reg_addr$rom0001> created at line 34.
+    Found 566x16-bit ROM for signal <reg_addr$rom0002> created at line 34.
+    Found 566x16-bit ROM for signal <reg_addr$rom0003> created at line 34.
+    Found 566x2-bit ROM for signal <reg_mem_type$rom0000> created at line 33.
+    Found 566x2-bit ROM for signal <reg_mem_type$rom0001> created at line 33.
+    Found 566x4-bit ROM for signal <reg_read_type$rom0000> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0000> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0001> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0002> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0003> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0004> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0005> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0006> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0007> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0008> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0009> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0010> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0011> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0012> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0013> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0014> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0015> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0016> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0017> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0018> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0019> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0020> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0021> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0022> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0023> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0024> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0025> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0026> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0027> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0028> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0029> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0030> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0031> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0032> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0033> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0034> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0035> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0036> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0037> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0038> created at line 32.
+    Found 566x4-bit ROM for signal <reg_len$rom0039> created at line 32.
+    Found finite state machine <FSM_0> for signal <regAccessState>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 15                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | regAccessState$or0000     (negative)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <reg_read_type>.
+    Found 10-bit register for signal <register_memory.tmp_reg_id>.
+    Found 8-bit register for signal <prom_din>.
+    Found 1-bit register for signal <prom_read_trigger>.
+    Found 1-bit register for signal <prom_request>.
+    Found 4-bit register for signal <debug1<3:0>>.
+    Found 16-bit register for signal <debug2>.
+    Found 16-bit register for signal <debug3>.
+    Found 4-bit register for signal <prom_key_input>.
+    Found 1-bit register for signal <prom_write_trigger>.
+    Found 1-bit register for signal <prom_erase_trigger>.
+    Found 64-bit register for signal <reg_read_data>.
+    Found 1-bit register for signal <reg_read_ack>.
+    Found 1-bit register for signal <prom_din_we>.
+    Found 24-bit register for signal <prom_address>.
+    Found 64-bit register for signal <register_memory.tmp_reg>.
+    Found 8-bit 8-to-1 multiplexer for signal <$mux0000> created at line 262.
+    Found 8-bit register for signal <$mux0003>.
+    Found 8-bit register for signal <$mux0004>.
+    Found 8-bit register for signal <$mux0005>.
+    Found 8-bit register for signal <$mux0006>.
+    Found 8-bit register for signal <$mux0007>.
+    Found 8-bit register for signal <$mux0008>.
+    Found 8-bit register for signal <$mux0009>.
+    Found 8-bit register for signal <$mux0010>.
+    Found 8-bit register for signal <$mux0011>.
+    Found 8-bit register for signal <$mux0012>.
+    Found 8-bit register for signal <$mux0013>.
+    Found 8-bit register for signal <$mux0014>.
+    Found 8-bit register for signal <$mux0015>.
+    Found 8-bit register for signal <$mux0016>.
+    Found 8-bit register for signal <$mux0017>.
+    Found 8-bit register for signal <$mux0018>.
+    Found 8-bit register for signal <$mux0019>.
+    Found 8-bit register for signal <$mux0020>.
+    Found 8-bit register for signal <$mux0021>.
+    Found 8-bit register for signal <$mux0022>.
+    Found 8-bit register for signal <$mux0023>.
+    Found 8-bit register for signal <$mux0024>.
+    Found 8-bit register for signal <$mux0025>.
+    Found 8-bit register for signal <$mux0026>.
+    Found 8-bit register for signal <$mux0027>.
+    Found 8-bit register for signal <$mux0028>.
+    Found 8-bit register for signal <$mux0029>.
+    Found 8-bit register for signal <$mux0030>.
+    Found 8-bit register for signal <$mux0031>.
+    Found 8-bit register for signal <$mux0032>.
+    Found 8-bit register for signal <$mux0033>.
+    Found 8-bit register for signal <$mux0034>.
+    Found 8-bit register for signal <$mux0035>.
+    Found 8-bit register for signal <$mux0036>.
+    Found 8-bit register for signal <$mux0037>.
+    Found 8-bit register for signal <$mux0038>.
+    Found 8-bit register for signal <$mux0039>.
+    Found 8-bit register for signal <$mux0040>.
+    Found 8-bit register for signal <$mux0041>.
+    Found 8-bit register for signal <$mux0042>.
+    Found 8-bit register for signal <$mux0043>.
+    Found 8-bit register for signal <$mux0044>.
+    Found 8-bit register for signal <$mux0045>.
+    Found 8-bit register for signal <$mux0046>.
+    Found 8-bit register for signal <$mux0047>.
+    Found 8-bit register for signal <$mux0048>.
+    Found 8-bit register for signal <$mux0049>.
+    Found 8-bit register for signal <$mux0050>.
+    Found 8-bit register for signal <$mux0051>.
+    Found 8-bit register for signal <$mux0052>.
+    Found 8-bit register for signal <$mux0053>.
+    Found 8-bit register for signal <$mux0054>.
+    Found 8-bit register for signal <$mux0055>.
+    Found 8-bit register for signal <$mux0056>.
+    Found 8-bit register for signal <$mux0057>.
+    Found 8-bit register for signal <$mux0058>.
+    Found 8-bit register for signal <$mux0059>.
+    Found 8-bit register for signal <$mux0060>.
+    Found 8-bit register for signal <$mux0061>.
+    Found 8-bit register for signal <$mux0062>.
+    Found 8-bit register for signal <$mux0063>.
+    Found 8-bit register for signal <$mux0064>.
+    Found 8-bit register for signal <$mux0065>.
+    Found 8-bit register for signal <$mux0066>.
+    Found 8-bit register for signal <$mux0067>.
+    Found 8-bit register for signal <$mux0068>.
+    Found 8-bit register for signal <$mux0069>.
+    Found 8-bit register for signal <$mux0070>.
+    Found 8-bit register for signal <$mux0071>.
+    Found 8-bit register for signal <$mux0072>.
+    Found 8-bit register for signal <$mux0073>.
+    Found 8-bit register for signal <$mux0074>.
+    Found 8-bit register for signal <$mux0075>.
+    Found 8-bit register for signal <$mux0076>.
+    Found 8-bit register for signal <$mux0077>.
+    Found 8-bit register for signal <$mux0078>.
+    Found 8-bit register for signal <$mux0079>.
+    Found 8-bit register for signal <$mux0080>.
+    Found 8-bit register for signal <$mux0081>.
+    Found 8-bit register for signal <$mux0082>.
+    Found 8-bit register for signal <$mux0083>.
+    Found 8-bit register for signal <$mux0084>.
+    Found 8-bit register for signal <$mux0085>.
+    Found 8-bit register for signal <$mux0086>.
+    Found 8-bit register for signal <$mux0087>.
+    Found 8-bit register for signal <$mux0088>.
+    Found 8-bit register for signal <$mux0089>.
+    Found 8-bit register for signal <$mux0090>.
+    Found 8-bit register for signal <$mux0091>.
+    Found 8-bit register for signal <$mux0092>.
+    Found 8-bit register for signal <$mux0093>.
+    Found 8-bit register for signal <$mux0094>.
+    Found 8-bit register for signal <$mux0095>.
+    Found 8-bit register for signal <$mux0096>.
+    Found 8-bit register for signal <$mux0097>.
+    Found 8-bit register for signal <$mux0098>.
+    Found 8-bit register for signal <$mux0099>.
+    Found 8-bit register for signal <$mux0100>.
+    Found 8-bit register for signal <$mux0101>.
+    Found 8-bit register for signal <$mux0102>.
+    Found 8-bit register for signal <$mux0103>.
+    Found 8-bit register for signal <$mux0104>.
+    Found 8-bit register for signal <$mux0105>.
+    Found 8-bit register for signal <$mux0106>.
+    Found 8-bit register for signal <$mux0107>.
+    Found 8-bit register for signal <$mux0108>.
+    Found 8-bit register for signal <$mux0109>.
+    Found 8-bit register for signal <$mux0110>.
+    Found 8-bit register for signal <$mux0111>.
+    Found 8-bit register for signal <$mux0112>.
+    Found 8-bit register for signal <$mux0113>.
+    Found 8-bit register for signal <$mux0114>.
+    Found 8-bit register for signal <$mux0115>.
+    Found 8-bit register for signal <$mux0116>.
+    Found 8-bit register for signal <$mux0117>.
+    Found 8-bit register for signal <$mux0118>.
+    Found 8-bit register for signal <$mux0119>.
+    Found 8-bit register for signal <$mux0120>.
+    Found 8-bit register for signal <$mux0121>.
+    Found 8-bit register for signal <$mux0122>.
+    Found 8-bit register for signal <$mux0123>.
+    Found 8-bit register for signal <$mux0124>.
+    Found 8-bit register for signal <$mux0125>.
+    Found 8-bit register for signal <$mux0126>.
+    Found 8-bit register for signal <$mux0127>.
+    Found 8-bit register for signal <$mux0128>.
+    Found 8-bit register for signal <$mux0129>.
+    Found 8-bit register for signal <$mux0130>.
+    Found 8-bit register for signal <$mux0131>.
+    Found 8-bit register for signal <$mux0132>.
+    Found 8-bit register for signal <$mux0133>.
+    Found 8-bit register for signal <$mux0134>.
+    Found 8-bit register for signal <$mux0135>.
+    Found 8-bit register for signal <$mux0136>.
+    Found 8-bit register for signal <$mux0137>.
+    Found 8-bit register for signal <$mux0138>.
+    Found 8-bit register for signal <$mux0139>.
+    Found 8-bit register for signal <$mux0140>.
+    Found 1-bit register for signal <busy_int>.
+    Found 1-bit register for signal <idleFlag>.
+    Found 4-bit comparator greatequal for signal <idleFlag$cmp_ge0000> created at line 303.
+    Found 1-bit register for signal <init_done_int>.
+    Found 4-bit register for signal <mem_offset>.
+    Found 8-bit up counter for signal <prom_din_offset_int>.
+    Found 8-bit up counter for signal <prom_dout_offset_int>.
+    Found 16-bit register for signal <reg_addr>.
+    Found 10-bit register for signal <reg_index>.
+    Found 10-bit adder for signal <reg_index$share0000> created at line 170.
+    Found 4-bit register for signal <reg_len>.
+    Found 2-bit register for signal <reg_mem_type>.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_0$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_1$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_10$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_11$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_12$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_13$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_14$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_15$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_16$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_17$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_18$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_19$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_2$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_20$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_21$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_22$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_23$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_24$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_25$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_26$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_27$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_28$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_29$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_3$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_30$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_31$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_32$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_33$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_34$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_35$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_36$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_37$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_38$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_39$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_4$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_40$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_41$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_42$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_43$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_44$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_45$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_46$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_47$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_48$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_49$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_5$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_50$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_51$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_52$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_53$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_54$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_55$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_56$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_57$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_58$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_59$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_6$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_60$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_61$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_62$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_63$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_7$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_8$mux0001> created at line 230.
+    Found 1-bit 4-to-1 multiplexer for signal <reg_read_data_9$mux0001> created at line 230.
+    Found 16-bit comparator lessequal for signal <reg_read_type$cmp_le0000> created at line 245.
+    Found 4-bit adder for signal <regAccessState$add0000> created at line 241.
+    Found 16-bit comparator lessequal for signal <regAccessState$cmp_le0000> created at line 212.
+    Found 4-bit comparator less for signal <regAccessState$cmp_lt0000> created at line 242.
+    Found 10-bit comparator less for signal <regAccessState$cmp_lt0001> created at line 282.
+    Found 16-bit adder carry out for signal <register_memory.prom_registers$addsub0000> created at line 232.
+    Found 8-bit 109-to-1 multiplexer for signal <register_memory.prom_registers$mux0000> created at line 232.
+    Found 8-bit 29-to-1 multiplexer for signal <register_memory.ram_registers$mux0000> created at line 234.
+    Found 8-bit 57-to-1 multiplexer for signal <register_memory.ro_registers$mux0000> created at line 236.
+    Found 16-bit comparator greater for signal <register_memory.tmp_reg$cmp_gt0000> created at line 212.
+    Found 1-bit register for signal <waitPromAccess>.
+    Found 64-bit register for signal <write_data>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  47 ROM(s).
+	inferred   2 Counter(s).
+	inferred 1428 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  96 Multiplexer(s).
+Unit <register_access> synthesized.
+
+
+Synthesizing Unit <InSystemProgramming>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/InSystemProgramming/trunk/InSystemProgramming.vhd".
+WARNING:Xst:647 - Input <din_len<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <din_len<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <prom_din_we> equivalent to <din_ack> has been removed
+    Found finite state machine <FSM_1> for signal <isp_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | isp_state$or0000          (negative)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <prom_din>.
+    Found 1-bit register for signal <prom_read_trigger>.
+    Found 1-bit register for signal <cmd_ack>.
+    Found 1-bit register for signal <prom_request>.
+    Found 4-bit register for signal <prom_key_input>.
+    Found 7-bit register for signal <prom_dout_offset>.
+    Found 32-bit register for signal <dout_addr>.
+    Found 1-bit register for signal <prom_write_trigger>.
+    Found 1-bit register for signal <prom_erase_trigger>.
+    Found 7-bit register for signal <prom_din_offset>.
+    Found 24-bit register for signal <prom_address>.
+    Found 1-bit register for signal <din_ack>.
+    Found 8-bit register for signal <dout>.
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <dout_valid_int>.
+    Found 1-bit register for signal <idleFlag>.
+    Found 8-bit comparator less for signal <isp_state$cmp_lt0000> created at line 153.
+    Found 7-bit comparator less for signal <isp_state$cmp_lt0001> created at line 173.
+    Found 24-bit adder for signal <prom_address$addsub0000> created at line 148.
+    Found 7-bit adder for signal <prom_dout_offset$add0000> created at line 216.
+    Found 1-bit register for signal <waitPromAccess>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 106 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <InSystemProgramming> synthesized.
+
+
+Synthesizing Unit <bram_dp_simple_1>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+    Found 256x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_1> synthesized.
+
+
+Synthesizing Unit <bram_dp_simple_2>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+    Found 1024x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_2> synthesized.
+
+
+Synthesizing Unit <UART_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd".
+INFO:Xst:1799 - State paritybit is never reached in FSM <txState>.
+    Found finite state machine <FSM_2> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <rxState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 19                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 8                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idlestate                                      |
+    | Power Up State     | idlestate                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <rxHandShakeState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <rxErr>.
+    Found 1-bit register for signal <TX>.
+    Found 8-bit register for signal <rxData>.
+    Found 1-bit register for signal <actRX>.
+    Found 3-bit comparator lessequal for signal <actRX$cmp_le0000> created at line 107.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit comparator greater for signal <counter$cmp_gt0000> created at line 103.
+    Found 3-bit comparator less for signal <counter$cmp_lt0000> created at line 102.
+    Found 3-bit addsub for signal <counter$share0000> created at line 102.
+    Found 3-bit register for signal <dataBitCounter>.
+    Found 3-bit adder for signal <dataBitCounter$addsub0000> created at line 175.
+    Found 4-bit register for signal <dataCounter>.
+    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 359.
+    Found 1-bit register for signal <edgeCounter<0>>.
+    Found 1-bit register for signal <lastRX>.
+    Found 1-bit register for signal <newData_int>.
+    Found 5-bit register for signal <ones>.
+    Found 5-bit adder for signal <ones$share0000> created at line 242.
+    Found 8-bit register for signal <rxData_int>.
+    Found 5-bit comparator greater for signal <rxData_int_0$cmp_gt0000> created at line 341.
+    Found 5-bit comparator greatequal for signal <rxState$cmp_ge0000> created at line 311.
+    Found 4-bit comparator greatequal for signal <rxState$cmp_ge0001> created at line 315.
+    Found 5-bit comparator greater for signal <rxState$cmp_gt0000> created at line 296.
+    Found 5-bit comparator lessequal for signal <rxState$cmp_le0000> created at line 341.
+    Found 5-bit comparator lessequal for signal <rxState$cmp_le0001> created at line 346.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0000> created at line 286.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0001> created at line 330.
+    Found 5-bit comparator less for signal <rxState$cmp_lt0002> created at line 383.
+    Found 5-bit adder for signal <rxState$sub0000> created at line 341.
+    Found 5-bit register for signal <stateCounter>.
+    Found 5-bit adder for signal <stateCounter$share0000> created at line 242.
+    Found 1-bit register for signal <tmpRX1>.
+    Found 1-bit register for signal <tmpRX2>.
+    Found 1-bit register for signal <triggerData>.
+    Found 6-bit comparator greater for signal <triggerData$cmp_gt0000> created at line 392.
+    Found 6-bit adder for signal <triggerData$sub0000> created at line 392.
+    Found 8-bit register for signal <txData_int>.
+    Found 1-bit 8-to-1 multiplexer for signal <txData_int$mux0000> created at line 165.
+    Found 1-bit register for signal <txParity>.
+    Found 1-bit register for signal <txReady_int>.
+    Found 5-bit comparator less for signal <txState$cmp_lt0000> created at line 156.
+    Found 3-bit comparator less for signal <txState$cmp_lt0001> created at line 174.
+    Found 5-bit comparator less for signal <txState$cmp_lt0002> created at line 203.
+    Found 5-bit register for signal <waitCounter>.
+    Found 5-bit adder for signal <waitCounter$share0000> created at line 137.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  16 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <UART_mod> synthesized.
+
+
+Synthesizing Unit <crc_par_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd".
+WARNING:Xst:646 - Signal <ma<8><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<8><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<8><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<7><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<6><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<5><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<4><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<3><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<2><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ma<1><4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<8><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<7><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<6><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<5><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<4><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<3><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<2><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><15:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><11:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <da<1><4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <match_o>.
+    Found 16-bit register for signal <crc>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred  16 Xor(s).
+Unit <crc_par_mod> synthesized.
+
+
+Synthesizing Unit <simple_spiprom_interface>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/spi_prom/trunk/simple_spiprom_interface.vhd".
+    Found finite state machine <FSM_5> for signal <cmd_byte>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 86                                             |
+    | Inputs             | 18                                             |
+    | Outputs            | 10                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <signal_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 40                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <SPI_DO>.
+    Found 5-bit register for signal <bitCounter>.
+    Found 5-bit adder for signal <bitCounter$add0000> created at line 220.
+    Found 8-bit register for signal <byteBuffer>.
+    Found 8-bit register for signal <byteCounter>.
+    Found 8-bit adder for signal <byteCounter$add0000> created at line 273.
+    Found 5-bit comparator less for signal <cmd_byte$cmp_lt0000> created at line 240.
+    Found 5-bit comparator less for signal <cmd_byte$cmp_lt0001> created at line 267.
+    Found 8-bit comparator less for signal <cmd_byte$cmp_lt0002> created at line 272.
+    Found 2-bit up counter for signal <counter>.
+    Found 2-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 137.
+    Found 1-bit register for signal <idleFlag>.
+    Found 1-bit register for signal <ncs_int>.
+    Found 1-bit register for signal <prom_busy_int>.
+    Found 8-bit register for signal <read_buffer_addr_in>.
+    Found 8-bit register for signal <read_buffer_data_in>.
+    Found 1-bit register for signal <read_buffer_we>.
+    Found 1-bit register for signal <sclk_falling>.
+    Found 1-bit register for signal <sclk_int>.
+    Found 1-bit register for signal <sclk_rising>.
+    Found 2-bit comparator less for signal <sclk_rising$cmp_lt0000> created at line 137.
+    Found 5-bit comparator less for signal <signal_state$cmp_lt0000> created at line 202.
+    Found 8-bit register for signal <write_buffer_addr_out>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <simple_spiprom_interface> synthesized.
+
+
+Synthesizing Unit <NDLCom>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd".
+WARNING:Xst:647 - Input <rxPPin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <txNPin> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <txPPin> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <rxNPin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <crc_o_s.crc_check_match> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_7> for signal <readInputState>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 16                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag0                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_8> for signal <rxHandShakeState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_9> for signal <sendState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag1                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idlestate                                      |
+    | Power Up State     | idlestate                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_10> for signal <recvUARTState>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 54                                             |
+    | Inputs             | 16                                             |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | receivestartflag                               |
+    | Power Up State     | receivestartflag                               |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <recv_error>.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0000> created at line 802.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0001> created at line 585.
+    Found 8-bit register for signal <crc_i_s.crc_check_buf>.
+    Found 1-bit register for signal <crc_i_s.crc_check_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s.crc_check_reset>.
+    Found 8-bit register for signal <crc_i_s.crc_gen_buf>.
+    Found 1-bit register for signal <crc_i_s.crc_gen_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s.crc_gen_reset>.
+    Found 1-bit register for signal <dataTrigger>.
+    Found 8-bit comparator equal for signal <dataTrigger$cmp_eq0000> created at line 672.
+    Found 1-bit register for signal <escapeFlag>.
+    Found 1-bit register for signal <escapeFlag0>.
+    Found 10-bit register for signal <forward_mem_addr_in>.
+    Found 10-bit adder for signal <forward_mem_addr_in$share0000> created at line 359.
+    Found 10-bit register for signal <forward_mem_addr_out>.
+    Found 10-bit adder for signal <forward_mem_addr_out$share0000> created at line 976.
+    Found 8-bit register for signal <forward_mem_data_in>.
+    Found 1-bit register for signal <forward_mem_wea<0>>.
+    Found 1-bit register for signal <forwardData>.
+    Found 2-bit register for signal <headerCounter>.
+    Found 2-bit adder for signal <headerCounter$addsub0000> created at line 515.
+    Found 2-bit register for signal <headerCounter0>.
+    Found 2-bit adder for signal <headerCounter0$addsub0000> created at line 809.
+    Found 1-bit register for signal <idleFlag>.
+    Found 1-bit register for signal <idleFlag0>.
+    Found 1-bit register for signal <idleFlag1>.
+    Found 8-bit register for signal <input_mem_addr_out>.
+    Found 8-bit adder for signal <input_mem_addr_out$addsub0000> created at line 846.
+    Found 1-bit register for signal <inputBufferReady>.
+    Found 1-bit register for signal <newData_int>.
+    Found 8-bit register for signal <output_mem_addr_in>.
+    Found 8-bit adder for signal <output_mem_addr_in$addsub0000> created at line 588.
+    Found 8-bit register for signal <output_mem_data_in>.
+    Found 1-bit register for signal <output_mem_wea<0>>.
+    Found 1-bit register for signal <outputData>.
+    Found 8-bit comparator equal for signal <outputData$cmp_eq0000> created at line 400.
+    Found 8-bit comparator greatequal for signal <readInputState$cmp_ge0000> created at line 843.
+    Found 2-bit comparator less for signal <readInputState$cmp_lt0000> created at line 808.
+    Found 8-bit subtractor for signal <readInputState$sub0000> created at line 843.
+    Found 10-bit adder for signal <readyToSend$add0000> created at line 916.
+    Found 10-bit adder for signal <readyToSend$addsub0000> created at line 916.
+    Found 10-bit comparator greater for signal <readyToSend$cmp_gt0000> created at line 916.
+    Found 10-bit comparator lessequal for signal <readyToSend$cmp_le0000> created at line 916.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0000> created at line 916.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0001> created at line 916.
+    Found 10-bit subtractor for signal <readyToSend$sub0000> created at line 916.
+    Found 8-bit register for signal <receiverID_buf>.
+    Found 32-bit register for signal <recvHeader>.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0002> created at line 400.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0003> created at line 400.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0006> created at line 622.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0007> created at line 622.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0008> created at line 672.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0009> created at line 672.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0021> created at line 622.
+    Found 8-bit comparator greatequal for signal <recvUARTState$cmp_ge0000> created at line 585.
+    Found 2-bit comparator less for signal <recvUARTState$cmp_lt0000> created at line 514.
+    Found 8-bit subtractor for signal <recvUARTState$sub0000> created at line 585.
+    Found 10-bit register for signal <send_mem_addr_in>.
+    Found 10-bit adder for signal <send_mem_addr_in$share0000> created at line 767.
+    Found 10-bit register for signal <send_mem_addr_out>.
+    Found 10-bit adder for signal <send_mem_addr_out$share0000> created at line 976.
+    Found 8-bit register for signal <send_mem_data_in>.
+    Found 1-bit register for signal <send_mem_wea<0>>.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0000> created at line 978.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0001> created at line 982.
+    Found 1-bit register for signal <startFlag>.
+    Found 1-bit register for signal <startTimeoutCounter>.
+    Found 1-bit register for signal <timeout>.
+    Found 21-bit comparator less for signal <timeout$cmp_lt0000> created at line 937.
+    Found 21-bit up counter for signal <timeoutCounter>.
+    Found 21-bit comparator greatequal for signal <timeoutCounter$cmp_ge0000> created at line 937.
+    Found 1-bit register for signal <uart_dataAck>.
+    Found 1-bit register for signal <uart_startTx>.
+    Found 8-bit register for signal <uart_txData>.
+    Summary:
+	inferred   4 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 171 D-type flip-flop(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  21 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <NDLCom> synthesized.
+
+
+Synthesizing Unit <NDLCom_wrapper>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd".
+WARNING:Xst:1780 - Signal <nc_recv_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nc_recvFrameCounter> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <frameCounter_addr_out> equivalent to <frameCounter_addr_in> has been removed
+    Register <nc_sendReceiver> equivalent to <frameCounter_addr_in> has been removed
+    Register <sendIspDataRequest> equivalent to <isp_cmd_download> has been removed
+INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
+    Found finite state machine <FSM_11> for signal <sendState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 45                                             |
+    | Inputs             | 20                                             |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_12> for signal <registerSendState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_13> for signal <ispRecvState>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 23                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 14                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag1                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_14> for signal <recvType>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | common                                         |
+    | Power Up State     | common                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_15> for signal <telemetrySendState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_16> for signal <receiveState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag                  (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_17> for signal <ispSendState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_18> for signal <registerRecvState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | idleFlag0                 (negative)           |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <receiveDirection>.
+    Using one-hot encoding for signal <sendType>.
+    Using one-hot encoding for signal <isp_sendDirection>.
+    Using one-hot encoding for signal <register_sendDirection>.
+    Using one-hot encoding for signal <nextSendType>.
+    Using one-hot encoding for signal <sendDirection>.
+    Found 16x4-bit ROM for signal <out_len$mux0000> created at line 139.
+    Found 16x4-bit ROM for signal <out_len0$mux0000> created at line 139.
+    Found 16x4-bit ROM for signal <reg_write_type_int$mux0001>.
+    Found 1-bit register for signal <isp_cmd_download>.
+    Found 1-bit register for signal <isp_cmd_upload>.
+    Found 1-bit register for signal <resetDevice>.
+    Found 1-bit register for signal <isp_dout_ack>.
+    Found 1-bit register for signal <reg_read>.
+    Found 32-bit register for signal <isp_din_len>.
+    Found 8-bit register for signal <isp_din>.
+    Found 16-bit register for signal <reg_write_id>.
+    Found 64-bit register for signal <reg_write_data>.
+    Found 1-bit register for signal <reg_write>.
+    Found 32-bit register for signal <isp_din_addr>.
+    Found 1-bit register for signal <isp_cmd_data>.
+    Found 3-bit register for signal <byteCounter>.
+    Found 3-bit adder for signal <byteCounter$addsub0000> created at line 821.
+    Found 4-bit register for signal <byteCounter0>.
+    Found 4-bit adder for signal <byteCounter0$addsub0000> created at line 899.
+    Found 7-bit register for signal <byteCounter1>.
+    Found 7-bit adder for signal <byteCounter1$share0000> created at line 958.
+    Found 7-bit register for signal <byteCounter2>.
+    Found 7-bit adder for signal <byteCounter2$share0000> created at line 1116.
+    Found 1-bit register for signal <common_recvError>.
+    Found 8-bit register for signal <common_send_addr>.
+    Found 8-bit adder for signal <common_send_addr$addsub0000> created at line 201.
+    Found 8-bit register for signal <common_send_data>.
+    Found 1-bit register for signal <common_send_wea<0>>.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit adder for signal <counter$addsub0000> created at line 599.
+    Found 4-bit register for signal <dataCounter>.
+    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 692.
+    Found 8-bit register for signal <frameCounter_addr_in>.
+    Found 8-bit register for signal <frameCounter_data_in>.
+    Found 8-bit adder for signal <frameCounter_data_in$add0001> created at line 201.
+    Found 1-bit register for signal <frameCounter_wea<0>>.
+    Found 18-bit up counter for signal <idleCounter>.
+    Found 1-bit register for signal <idleFlag>.
+    Found 1-bit register for signal <idleFlag0>.
+    Found 1-bit register for signal <idleFlag1>.
+    Found 3-bit register for signal <isp_cmd_int>.
+    Found 1-bit register for signal <isp_din_valid_int>.
+    Found 8-bit register for signal <isp_recv_addr>.
+    Found 8-bit adder for signal <isp_recv_addr$add0001> created at line 201.
+    Found 1-bit register for signal <isp_recvAck>.
+    Found 1-bit register for signal <isp_recvCmdRequest>.
+    Found 1-bit register for signal <isp_recvDataRequest>.
+    Found 1-bit register for signal <isp_recvError>.
+    Found 8-bit register for signal <isp_recvId>.
+    Found 8-bit register for signal <isp_send_addr>.
+    Found 8-bit adder for signal <isp_send_addr$add0001> created at line 201.
+    Found 8-bit register for signal <isp_send_data>.
+    Found 8-bit 4-to-1 multiplexer for signal <isp_send_data$mux0001> created at line 1166.
+    Found 1-bit register for signal <isp_send_wea<0>>.
+    Found 1-bit register for signal <isp_sendAck>.
+    Found 1-bit register for signal <isp_sendCmdRequest>.
+    Found 1-bit register for signal <isp_sendDataRequest>.
+    Found 2-bit register for signal <isp_sendDirection>.
+    Found 1-bit register for signal <isp_startSending>.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0000> created at line 992.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0001> created at line 1061.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0000> created at line 1147.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0001> created at line 1182.
+    Found 1-bit register for signal <nc1_dataAck>.
+    Found 1-bit register for signal <nc1_startSending>.
+    Found 1-bit register for signal <nc2_dataAck>.
+    Found 1-bit register for signal <nc2_startSending>.
+    Found 8-bit register for signal <nc_sendLength>.
+    Found 4-bit register for signal <nextSendType>.
+    Found 2-bit register for signal <receiveDirection>.
+    Found 16-bit register for signal <reg_read_id_int>.
+    Found 4-bit register for signal <reg_write_type_int>.
+    Found 8-bit register for signal <register_recv_addr>.
+    Found 8-bit adder for signal <register_recv_addr$addsub0000> created at line 201.
+    Found 1-bit register for signal <register_recvAck>.
+    Found 1-bit register for signal <register_recvError>.
+    Found 8-bit register for signal <register_recvId>.
+    Found 1-bit register for signal <register_recvReadRequest>.
+    Found 1-bit register for signal <register_recvWriteRequest>.
+    Found 8-bit register for signal <register_send_addr>.
+    Found 8-bit adder for signal <register_send_addr$addsub0000> created at line 896.
+    Found 8-bit register for signal <register_send_data>.
+    Found 1-bit register for signal <register_send_wea<0>>.
+    Found 1-bit register for signal <register_sendAck>.
+    Found 2-bit register for signal <register_sendDirection>.
+    Found 1-bit register for signal <register_sendRequest>.
+    Found 1-bit register for signal <register_startSending>.
+    Found 5-bit comparator less for signal <registerRecvState$cmp_lt0000> created at line 820.
+    Found 5-bit subtractor for signal <registerRecvState$sub0000> created at line 820.
+    Found 4-bit comparator less for signal <registerSendState$cmp_lt0000> created at line 895.
+    Found 2-bit register for signal <sendDirection>.
+    Found 1-bit register for signal <sendIspAckRequest>.
+    Found 3-bit comparator less for signal <sendState$cmp_lt0000> created at line 598.
+    Found 4-bit register for signal <sendType>.
+    Found 4-bit register for signal <sendType_1>.
+    Found 4-bit register for signal <sendType_2>.
+    Found 8-bit register for signal <telemetry_send_addr>.
+    Found 8-bit adder for signal <telemetry_send_addr$add0001> created at line 201.
+    Found 8-bit register for signal <telemetry_send_data>.
+    Found 1-bit register for signal <telemetry_send_wea<0>>.
+    Found 1-bit register for signal <telemetry_sendAck>.
+    Found 1-bit register for signal <telemetry_sendRequest>.
+    Found 1-bit register for signal <telemetry_startSending>.
+    Found 16-bit 16-to-1 multiplexer for signal <telemetry_values$mux0000> created at line 683.
+    Found 4-bit comparator less for signal <telemetrySendState$cmp_lt0000> created at line 691.
+    Summary:
+	inferred   8 Finite State Machine(s).
+	inferred   3 ROM(s).
+	inferred   1 Counter(s).
+	inferred 387 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <NDLCom_wrapper> synthesized.
+
+
+Synthesizing Unit <NDLComBasicExample>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd".
+WARNING:Xst:1781 - Signal <telemetry<15:3>> is used but never assigned. Tied to default value.
+WARNING:Xst:646 - Signal <resetDevice> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <promInitDone> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <node_id> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <enable>.
+    Found 1-bit register for signal <isp_prom_access>.
+    Found 1-bit register for signal <oldWritePromState>.
+    Found 1-bit register for signal <reg_prom_access>.
+    Found 16-bit register for signal <telemetry<0>>.
+    Found 1-bit register for signal <writePromTrigger>.
+    Found 1-bit register for signal <writePromTrigger_pending>.
+    Summary:
+	inferred  23 D-type flip-flop(s).
+Unit <NDLComBasicExample> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 11
+ 1024x8-bit dual-port RAM                              : 4
+ 256x8-bit dual-port RAM                               : 7
+# ROMs                                                 : 50
+ 16x4-bit ROM                                          : 3
+ 566x16-bit ROM                                        : 4
+ 566x2-bit ROM                                         : 2
+ 566x4-bit ROM                                         : 41
+# Adders/Subtractors                                   : 68
+ 10-bit adder                                          : 13
+ 10-bit subtractor                                     : 2
+ 16-bit adder carry out                                : 1
+ 2-bit adder                                           : 4
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 4
+ 3-bit addsub                                          : 2
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 10
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 64-bit adder                                          : 1
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 12
+ 8-bit subtractor                                      : 4
+# Counters                                             : 9
+ 10-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 2
+# Registers                                            : 670
+ 1-bit register                                        : 398
+ 10-bit register                                       : 10
+ 16-bit register                                       : 8
+ 2-bit register                                        : 9
+ 24-bit register                                       : 2
+ 3-bit register                                        : 7
+ 32-bit register                                       : 1
+ 4-bit register                                        : 17
+ 5-bit register                                        : 8
+ 64-bit register                                       : 3
+ 7-bit register                                        : 5
+ 8-bit register                                        : 202
+# Comparators                                          : 108
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 10-bit comparator not equal                           : 4
+ 11-bit comparator less                                : 4
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 2
+ 2-bit comparator greatequal                           : 1
+ 2-bit comparator less                                 : 5
+ 21-bit comparator greatequal                          : 2
+ 21-bit comparator less                                : 2
+ 3-bit comparator greater                              : 2
+ 3-bit comparator less                                 : 5
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator greatequal                           : 4
+ 4-bit comparator greater                              : 3
+ 4-bit comparator less                                 : 4
+ 4-bit comparator lessequal                            : 3
+ 5-bit comparator greatequal                           : 3
+ 5-bit comparator greater                              : 4
+ 5-bit comparator less                                 : 15
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator greater                              : 2
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 6
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greatequal                           : 4
+ 8-bit comparator less                                 : 2
+# Multiplexers                                         : 76
+ 1-bit 4-to-1 multiplexer                              : 64
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 16-to-1 multiplexer                            : 1
+ 8-bit 109-to-1 multiplexer                            : 1
+ 8-bit 29-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 5
+ 8-bit 57-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 96
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_18> for best encoding.
+Optimizing FSM <NDLCom_wrapper/registerRecvState/FSM> on signal <registerRecvState[1:7]> with one-hot encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000001
+ read_checklength  | 0000010
+ read_copyaddr     | 0001000
+ write_checklength | 0000100
+ write_copyaddr    | 0010000
+ write_copytype    | 0100000
+ write_copyvalue   | 1000000
+-------------------------------
+Analyzing FSM <FSM_17> for best encoding.
+Optimizing FSM <NDLCom_wrapper/ispSendState/FSM> on signal <ispSendState[1:7]> with one-hot encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 0000001
+ cmd_waitack      | 0000010
+ cmd_writeack     | 0001000
+ cmd_writeaddr    | 0010000
+ data_waitack     | 0000100
+ data_writelength | 0100000
+ data_writedata   | 1000000
+------------------------------
+Analyzing FSM <FSM_16> for best encoding.
+Optimizing FSM <NDLCom_wrapper/receiveState/FSM> on signal <receiveState[1:2]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ idle                | 00
+ checkid             | 01
+ waitreceiverprocess | 10
+---------------------------------
+Analyzing FSM <FSM_15> for best encoding.
+Optimizing FSM <NDLCom_wrapper/telemetrySendState/FSM> on signal <telemetrySendState[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 00
+ waitack       | 01
+ writedatalow  | 11
+ writedatahigh | 10
+---------------------------
+Analyzing FSM <FSM_14> for best encoding.
+Optimizing FSM <NDLCom_wrapper/recvType/FSM> on signal <recvType[1:2]> with sequential encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ common        | 00
+ registervalue | 10
+ telemetry     | unreached
+ isp           | 01
+---------------------------
+Analyzing FSM <FSM_13> for best encoding.
+Optimizing FSM <NDLCom_wrapper/ispRecvState/FSM> on signal <ispRecvState[1:11]> with one-hot encoding.
+---------------------------------
+ State            | Encoding
+---------------------------------
+ idle             | 00000000001
+ cmd_checklength  | 00000000010
+ cmd_readcmd      | 00000001000
+ cmd_readaddr     | 00000010000
+ cmd_readlength   | 00000100000
+ cmd_waitack      | 00001000000
+ data_checklength | 00000000100
+ data_readaddr    | 00010000000
+ data_readdata    | 00100000000
+ data_waitdataack | 01000000000
+ data_waitack     | 10000000000
+---------------------------------
+Analyzing FSM <FSM_12> for best encoding.
+Optimizing FSM <NDLCom_wrapper/registerSendState/FSM> on signal <registerSendState[1:5]> with one-hot encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00001
+ waitack   | 00010
+ writeaddr | 00100
+ writetype | 01000
+ writedata | 10000
+-----------------------
+Analyzing FSM <FSM_11> for best encoding.
+Optimizing FSM <NDLCom_wrapper/sendState/FSM> on signal <sendState[1:2]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 00
+ writetimestamp    | 01
+ waitsenderprocess | 10
+-------------------------------
+Analyzing FSM <FSM_10> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/recvUARTState/FSM> on signal <recvUARTState[1:10]> with one-hot encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/recvUARTState/FSM> on signal <recvUARTState[1:10]> with one-hot encoding.
+-----------------------------------
+ State               | Encoding
+-----------------------------------
+ receivestartflag    | 0000000001
+ receivereceiverid   | 0000000010
+ checkreceiverid     | 0000001000
+ writereceiverid     | 0000010000
+ receiveheaderbyte   | 0000000100
+ receivedata         | 0001000000
+ outputaddrinc       | 0010000000
+ receivecrcupperbyte | 0100000000
+ receivecrclowerbyte | 0000100000
+ receivestopflag     | 1000000000
+-----------------------------------
+Analyzing FSM <FSM_9> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/sendState/FSM> on signal <sendState[1:3]> with gray encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/sendState/FSM> on signal <sendState[1:3]> with gray encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ idlestate            | 000
+ sendsenddatastate    | 011
+ sendforwarddatastate | 001
+ sendaddrinc          | 010
+ forwardaddrinc       | 110
+----------------------------------
+Analyzing FSM <FSM_8> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00
+ waitack     | 01
+ waittrigger | 11
+-------------------------
+Analyzing FSM <FSM_7> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/readInputState/FSM> on signal <readInputState[1:12]> with one-hot encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/readInputState/FSM> on signal <readInputState[1:12]> with one-hot encoding.
+-----------------------------------
+ State             | Encoding
+-----------------------------------
+ idle              | 000000000001
+ writestartflag    | 000000000010
+ checkheaderbyte   | 000000000100
+ writeheaderbyte   | 000000001000
+ checkdata         | 000000100000
+ writedata         | 000001000000
+ inputaddrinc      | 000010000000
+ checkcrcupperbyte | 000000010000
+ writecrcupperbyte | 010000000000
+ checkcrclowerbyte | 000100000000
+ writecrclowerbyte | 001000000000
+ writestopflag     | 100000000000
+-----------------------------------
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <spiprom_inst/signal_state/FSM> on signal <signal_state[1:7]> with one-hot encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 0000001
+ write_en   | 0000010
+ send_cmd   | 0000100
+ send_addr  | 0001000
+ send_data  | 0100000
+ recv_data  | 0010000
+ release_cs | 1000000
+------------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <spiprom_inst/cmd_byte/FSM> on signal <cmd_byte[1:3]> with sequential encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 00000000 | 000
+ 11011000 | 001
+ 00000010 | 010
+ 00000011 | 011
+ 00000101 | 100
+----------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/ls_mode_gen.UART_inst/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/rxHandShakeState/FSM> on signal <rxHandShakeState[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00
+ waitack     | 01
+ waittrigger | 11
+-------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/ls_mode_gen.UART_inst/rxState/FSM> on signal <rxState[1:3]> with gray encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/rxState/FSM> on signal <rxState[1:3]> with gray encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ idlestate       | 000
+ startedgestate  | 001
+ startcountstate | 011
+ waitdatastate   | 010
+ datacountstate  | 111
+ checkdatastate  | 110
+ stopcountstate  | 101
+-----------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom1/ls_mode_gen.UART_inst/txState/FSM> on signal <txState[1:2]> with gray encoding.
+Optimizing FSM <NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txState/FSM> on signal <txState[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ startbit  | 01
+ databit   | 11
+ paritybit | unreached
+ stopbit   | 10
+-----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <isp/isp_state/FSM> on signal <isp_state[1:7]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 0000001
+ prom_erase  | 0000010
+ isp_read    | 0000100
+ wait_prom   | 0010000
+ prom_read   | 0001000
+ isp_write   | 0100000
+ isp_waitack | 1000000
+-------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <register_access/regAccessState/FSM> on signal <regAccessState[1:8]> with one-hot encoding.
+-------------------------------------
+ State                   | Encoding
+-------------------------------------
+ idle                    | 00000001
+ readregister            | 00001000
+ writeregister           | 00010000
+ initpromregister_find   | 00000010
+ initpromregister_read   | 00100000
+ writepromregister_find  | 00000100
+ writepromregister_write | 10000000
+ waitprom                | 01000000
+-------------------------------------
+INFO:Xst:2261 - The FF/Latch <prom_address_16> in Unit <register_access> is equivalent to the following 4 FFs/Latches, which will be removed : <prom_address_17> <prom_address_18> <prom_address_19> <prom_address_20> 
+INFO:Xst:2261 - The FF/Latch <prom_address_0> in Unit <register_access> is equivalent to the following 18 FFs/Latches, which will be removed : <prom_address_1> <prom_address_2> <prom_address_3> <prom_address_4> <prom_address_5> <prom_address_6> <prom_address_7> <prom_address_8> <prom_address_9> <prom_address_10> <prom_address_11> <prom_address_12> <prom_address_13> <prom_address_14> <prom_address_15> <prom_address_21> <prom_address_22> <prom_address_23> 
+WARNING:Xst:1710 - FF/Latch <nc_sendLength_6> (without init value) has a constant value of 0 in block <NDLCom_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prom_address_0> (without init value) has a constant value of 0 in block <register_access>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prom_key_input_0> (without init value) has a constant value of 0 in block <register_access>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prom_key_input_2> (without init value) has a constant value of 0 in block <register_access>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prom_key_input_0> (without init value) has a constant value of 0 in block <isp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prom_key_input_2> (without init value) has a constant value of 0 in block <isp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sendType_1_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_2_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendDirection_1> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <sendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <nextSendType_0> of sequential type is unconnected in block <NDLCom_wrapper>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_16> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_17> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_18> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_19> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_20> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_21> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_22> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_23> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_24> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_25> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_26> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_27> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_28> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_29> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_30> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_31> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_32> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_33> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_34> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_35> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_36> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_37> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_38> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_39> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_40> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_41> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_42> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_43> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_44> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_45> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_46> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_47> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_48> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_49> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_50> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_51> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_52> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_53> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_54> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_55> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_56> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_57> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_58> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_59> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_60> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_61> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_62> of sequential type is unconnected in block <register_access>.
+WARNING:Xst:2677 - Node <register_memory.tmp_reg_63> of sequential type is unconnected in block <register_access>.

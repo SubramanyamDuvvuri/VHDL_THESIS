@@ -1,0 +1,1 @@
+xst -intstyle ise -filter "/home/sduvvuri/thesis.git/NDLCOM_ECHO/iseconfig/filter.filter" -ifn "/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCom_wrapper.xst" -ofn "/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCom_wrapper.syr" 

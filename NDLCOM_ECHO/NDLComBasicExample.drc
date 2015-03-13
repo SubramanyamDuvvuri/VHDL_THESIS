@@ -1,0 +1,17 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 12 15:40:10 2015
+
+drc -z NDLComBasicExample.ncd NDLComBasicExample.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RAMB16BWE>.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

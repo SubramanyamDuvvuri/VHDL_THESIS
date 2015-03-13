@@ -1,0 +1,108 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'NDLCOM_ECHO_TOP'
+
+Design Information
+------------------
+Command Line   : map -filter
+/home/sduvvuri/thesis.git/NDLCOM_ECHO/iseconfig/filter.filter -intstyle ise -p
+xc3s400a-ft256-4 -cm area -ir off -pr off -c 100 -o NDLCOM_ECHO_TOP_map.ncd
+NDLCOM_ECHO_TOP.ngd NDLCOM_ECHO_TOP.pcf 
+Target Device  : xc3s400a
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Fri Mar 13 17:46:19 2015
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_len_rom0010131 failed to merge with F5
+   multiplexer NDLCOM_BASIC/register_access/reg_write_id<5>1_f6/MUXF5.I1.  There
+   is a conflict for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom0000211_inv1 failed to merge
+   with F5 multiplexer
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom0000311_11_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_mem_type_rom0001191_13 failed to merge
+   with F5 multiplexer
+   NDLCOM_BASIC/register_access/Mrom_reg_len_rom0010421_12_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000071_13 failed to merge with
+   F5 multiplexer NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000071_12_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator
+   NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000271_13 failed to merge with
+   F5 multiplexer NDLCOM_BASIC/register_access/Mrom_reg_addr_rom000271_12_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<NDLCOM_BASIC/register_access/Mrom_reg_read_type_rom0000>:<RAMB16BWE_RA
+   MB16BWE>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:         2,551 out of   7,168   35%
+  Number of 4 input LUTs:             5,097 out of   7,168   71%
+Logic Distribution:
+  Number of occupied Slices:          3,078 out of   3,584   85%
+    Number of Slices containing only related logic:   3,078 out of   3,078 100%
+    Number of Slices containing unrelated logic:          0 out of   3,078   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,332 out of   7,168   74%
+    Number used as logic:             5,097
+    Number used as a route-thru:        235
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  4 out of     195    2%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of RAMB16BWEs:                  11 out of      20   55%
+
+Average Fanout of Non-Clock Nets:                4.32
+
+Peak Memory Usage:  671 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "NDLCOM_ECHO_TOP_map.mrp" for details.

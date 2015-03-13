@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LED</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TX1</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PROM_nCS</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PROM_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PROM_nWP</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PROM_nHOLD</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_ECHO_TOP.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PROM_MOSI</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLComBasicExample</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">commErr</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd</arg>&quot; line <arg fmt="%d" index="2">353</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug1</arg>&apos; of component &apos;<arg fmt="%s" index="4">register_access</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd</arg>&quot; line <arg fmt="%d" index="2">353</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug2</arg>&apos; of component &apos;<arg fmt="%s" index="4">register_access</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd</arg>&quot; line <arg fmt="%d" index="2">353</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug3</arg>&apos; of component &apos;<arg fmt="%s" index="4">register_access</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">telemetry&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">telemetry&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">register_memory.ro_registers&lt;18&gt;&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLComBasicExample</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rxPPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rxNPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">txPPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">txNPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rxPPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rxNPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">txPPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">txNPin</arg>&apos; of component &apos;<arg fmt="%s" index="4">NDLCom</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">common_recv_addr</arg>&gt; in unit &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd</arg>&quot; line <arg fmt="%d" index="2">269</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">match_o</arg>&apos; of component &apos;<arg fmt="%s" index="4">crc_par_mod</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">198</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">200</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">207</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">208</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/sduvvuri/fpgaSVN/FPGA/lib/register/trunk/register_access.vhd</arg>&quot; line <arg fmt="%d" index="2">247</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">debug1&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reg_write_type</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">din_len&lt;31:24&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">din_len&lt;15:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">paritybit</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">txState</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;8&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;8&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;8&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;7&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;7&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;7&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;6&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;6&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;6&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;5&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;5&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;5&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;4&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;4&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;4&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;3&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;3&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;3&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;2&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;2&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;2&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;1&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;1&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ma&lt;1&gt;&lt;4:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;8&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;8&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;8&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;7&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;7&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;7&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;6&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;6&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;6&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;5&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;5&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;5&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;4&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;4&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;4&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;3&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;3&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;3&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;2&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;2&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;2&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;1&gt;&lt;15:13&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;1&gt;&lt;11:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">da&lt;1&gt;&lt;4:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rxPPin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">txNPin</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">txPPin</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rxNPin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">crc_o_s.crc_check_match</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">nc_recv_addr</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">nc_recvFrameCounter</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">telemetry</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">recvType</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">telemetry&lt;15:3&gt;</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">resetDevice</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">promInitDone</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">node_id</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">write_buffer</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">spiprom_inst</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">isp</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">isp</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spiprom_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">nc_sendLength_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCom_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tmpRX1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ls_mode_gen.UART_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tmpRX2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ls_mode_gen.UART_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendDirection_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">nextSendType_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_40</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_42</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_43</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_44</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_45</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_48</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_49</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_50</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_51</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_52</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_53</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_54</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_55</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_56</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_57</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_58</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_59</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_60</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_61</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_62</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">register_memory.tmp_reg_63</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">register_access</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">prom_address</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">register_access</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">input_buffer_inst/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">forward_buffer_inst/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">send_buffer_inst/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">output_buffer_inst/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">frameCounter_buffer/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_addr_rom0002</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_addr_rom0003</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0020</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0021</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0023</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0022</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0024</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0025</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0026</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0028</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0027</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0029</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0031</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0030</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0032</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0034</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0033</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0035</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0036</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0037</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0039</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3021" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">reg_index</arg>&gt; prevents it from being combined with the ROM &lt;<arg fmt="%s" index="2">Mrom_reg_len_rom0038</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom_reg_read_type_rom0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">reg_read_type_rom0000</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom_reg_read_type_rom0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">read_buffer/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">write_buffer/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendDirection_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sendType_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">nextSendType_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_address_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_address_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug2_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug2_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InSystemProgramming</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prom_key_input_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InSystemProgramming</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">read_buffer_data_in_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byteBuffer_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">simple_spiprom_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">nc_sendLength_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCom_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">prom_address_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">register_access</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;prom_address_17&gt; &lt;prom_address_18&gt; &lt;prom_address_19&gt; &lt;prom_address_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">nc_sendLength_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;nc_sendLength_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">nextSendType_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NDLCom_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;nc_sendLength_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">register_access</arg>&gt;, <arg fmt="%s" index="2">ROM</arg> &lt;<arg fmt="%s" index="3">Mrom_reg_addr_rom0002</arg>&gt; </msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">register_access</arg>&gt;, <arg fmt="%s" index="2">ROM</arg> &lt;<arg fmt="%s" index="3">Mrom_reg_len_rom0000</arg>&gt; </msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">register_access</arg>&gt;, <arg fmt="%s" index="2">ROM</arg> &lt;<arg fmt="%s" index="3">Mrom_reg_len_rom0010</arg>&gt; </msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">register_access</arg>&gt;, <arg fmt="%s" index="2">ROM</arg> &lt;<arg fmt="%s" index="3">Mrom_reg_len_rom0020</arg>&gt; </msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">reg_addr_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">debug3_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">register_access</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">register_send_addr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCom_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">register_send_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCom_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">register_send_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCom_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">khz_1_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">khz_10_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">khz_100_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">khz_1_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">khz_10_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">khz_100_extra_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rtc_mod</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/counter_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCOM_ECHO_TOP</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/tmpRX1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCOM_ECHO_TOP</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/tmpRX2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NDLCOM_ECHO_TOP</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/resetDevice</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/register_recvError</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_recvError</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_len_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/common_recvError</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/isp_din_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/crcGen/match_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/crcCheck/match_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/txData_int_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/TX</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/recv_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/uart_txData_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom1/crcGen/match_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom1/crcCheck/match_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom1/recv_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer_addr_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/ncs_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/SPI_DO</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/spiprom_inst/write_buffer/Mram_mem</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_address_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/isp/prom_din_offset_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug3_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_40</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_42</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_43</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_44</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_45</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_48</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_49</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_50</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_51</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_52</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_53</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_54</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_55</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_56</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_57</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_58</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_59</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_60</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_61</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_62</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/register_memory.tmp_reg_63</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_address_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/debug1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_we</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/register_access/prom_din_offset_int_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">NDLCOM_BASIC/NDLCom_wrapper/NDLCom2/ls_mode_gen.UART_inst/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NDLCOM_ECHO_TOP</arg>&gt;.
+</msg>
+
+</messages>
+
