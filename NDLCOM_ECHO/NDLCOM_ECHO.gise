@@ -105,6 +105,9 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="NDLComBasicExample_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NDLComBasicExample_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="NDLComBasicExample_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NDLCom_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="NDLCom_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="NDLCom_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="NDLCom_wrapper.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="NDLCom_wrapper.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="NDLCom_wrapper.ngc"/>
@@ -113,6 +116,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="NDLCom_wrapper.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="NDLCom_wrapper.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="NDLCom_wrapper.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="NDLCom_wrapper_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="NDLCom_wrapper_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="NDLCom_wrapper_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
@@ -122,11 +126,11 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bram_dp_simple_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="device_reconf_spartan6_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -140,21 +144,65 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1426254470" xil_pn:in_ck="-1940275845994079442" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1426254470">
+    <transform xil_pn:end_ts="1426773081" xil_pn:in_ck="-8760582811186591562" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1426773081">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/DeviceClasses.vhd"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/Devices.vhd"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/representations/vhdl/Representations.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/config.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/date.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_config_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/basic_clk_rst_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_config_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/basic_clk_rst_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_bram.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_disp.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut_base.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_pkg.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_rtl.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/utils/fifo.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/DFKI_Pack/trunk/dfki_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/InSystemProgramming/trunk/InSystemProgramming.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom_config.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/UART_HS_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/device_reconf/trunk/device_reconf_spartan6.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_access.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_types.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/rtc_mod/trunk/rtc_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/spi_prom/trunk/simple_spiprom_interface.vhd"/>
+      <outfile xil_pn:name="NDLCOM_CONTROLLER.vhd"/>
+      <outfile xil_pn:name="NDLCOM_ECHO_TOP.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1426251182" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2173884508205675888" xil_pn:start_ts="1426251182">
+    <transform xil_pn:end_ts="1426779837" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6655039083133555680" xil_pn:start_ts="1426779837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1426251182" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8889583779468697512" xil_pn:start_ts="1426251182">
+    <transform xil_pn:end_ts="1426779837" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6096090783349517400" xil_pn:start_ts="1426779837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -162,40 +210,81 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1426251182" xil_pn:in_ck="2242093869635170537" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1426251182">
+    <transform xil_pn:end_ts="1426773081" xil_pn:in_ck="-8760582811186591562" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1426773081">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/DeviceClasses.vhd"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/Devices.vhd"/>
+      <outfile xil_pn:name="../../Documents/istruct/dev/lib/representations/vhdl/Representations.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/config.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/date.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_config_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/basic_clk_rst_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_config_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_rx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_frontend.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/asynch_sercomm_tx_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Zynq/basic_clk_rst_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_bram.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_disp.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut_base.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_pkg.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_rtl.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/utils/fifo.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/DFKI_Pack/trunk/dfki_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/InSystemProgramming/trunk/InSystemProgramming.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom_config.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/UART_HS_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/device_reconf/trunk/device_reconf_spartan6.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_access.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_pack.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/register/trunk/register_types.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/rtc_mod/trunk/rtc_mod.vhd"/>
+      <outfile xil_pn:name="../../fpgaSVN/FPGA/lib/spi_prom/trunk/simple_spiprom_interface.vhd"/>
+      <outfile xil_pn:name="NDLCOM_CONTROLLER.vhd"/>
+      <outfile xil_pn:name="NDLCOM_ECHO_TOP.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1426251186" xil_pn:in_ck="2242093869635170537" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5356833054958425841" xil_pn:start_ts="1426251182">
+    <transform xil_pn:end_ts="1426779841" xil_pn:in_ck="-8760582811186591562" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3960914259366810863" xil_pn:start_ts="1426779837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="NDLCom_beh.prj"/>
+      <outfile xil_pn:name="NDLCom_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1426779841" xil_pn:in_ck="8846471938014670276" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7554082913958661342" xil_pn:start_ts="1426779841">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1426251186" xil_pn:in_ck="3833056385637734175" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2088869778042720158" xil_pn:start_ts="1426251186">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="NDLCom_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
     </transform>
     <transform xil_pn:end_ts="1426265059" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1426265059">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -229,7 +318,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="NDLCOM_ECHO_TOP.lso"/>
       <outfile xil_pn:name="NDLCOM_ECHO_TOP.ngc"/>
