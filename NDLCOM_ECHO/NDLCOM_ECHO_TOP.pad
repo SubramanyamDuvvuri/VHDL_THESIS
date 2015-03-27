@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Mar 13 17:48:43 2015
+Thu Mar 26 14:41:08 2015
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -21,7 +21,7 @@ Pinout by Pin Number:
 Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage|Constraint|IO Register|Signal Integrity|
 A1|||GND||||||||||||
 A2|||PROG_B||||||||||||
-A3|TX|IOB|IO_L19P_0|OUTPUT|LVCMOS33|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
+A3|RX|IBUF|IO_L19P_0|INPUT|LVCMOS33|0||||IBUF||LOCATED|NO|NONE|
 A4||DIFFMTB|IO_L18P_0|UNUSED||0|||||||||
 A5||DIFFMTB|IO_L17P_0|UNUSED||0|||||||||
 A6||DIFFMTB|IO_L15P_0|UNUSED||0|||||||||
@@ -37,7 +37,7 @@ A15|||TCK||||||||||||
 A16|||GND||||||||||||
 B1|||TDI||||||||||||
 B2|||TMS||||||||||||
-B3|RX|IBUF|IO_L19N_0|INPUT|LVCMOS33|0||||IBUF||LOCATED|NO|NONE|
+B3|TX|IOB|IO_L19N_0|OUTPUT|LVCMOS33|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 B4||DIFFSTB|IO_L18N_0|UNUSED||0|||||||||
 B5|||VCCO_0|||0|||||3.30||||
 B6||DIFFSTB|IO_L15N_0|UNUSED||0|||||||||
@@ -80,7 +80,7 @@ D10||DIFFMTB|IO_L06P_0|UNUSED||0|||||||||
 D11||DIFFSTB|IO_L03N_0|UNUSED||0|||||||||
 D12||IBUF|IP_0|UNUSED||0|||||||||
 D13||DIFFMTB|IO_L01P_0|UNUSED||0|||||||||
-D14||DIFFSLR|IO_L23N_1/A23|UNUSED||1|||||||||
+D14|LED|IOB|IO_L23N_1/A23|OUTPUT|LVCMOS33|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 D15||DIFFSLR|IO_L22N_1/A21|UNUSED||1|||||||||
 D16||DIFFMLR|IO_L22P_1/A20|UNUSED||1|||||||||
 E1||DIFFSLR|IO_L03N_3|UNUSED||3|||||||||
@@ -97,7 +97,7 @@ E11|||VCCAUX||||||||2.5||||
 E12|||GND||||||||||||
 E13||DIFFMLR|IO_L23P_1/A22|UNUSED||1|||||||||
 E14||DIFFMLR|IO_L20P_1/A18|UNUSED||1|||||||||
-E15|||VCCO_1|||1|||||any******||||
+E15|||VCCO_1|||1|||||3.30||||
 E16||DIFFMLR|IO_L18P_1/A14|UNUSED||1|||||||||
 F1||DIFFMLR|IO_L08P_3|UNUSED||3|||||||||
 F2|||GND||||||||||||
@@ -142,7 +142,7 @@ H8|||VCCINT||||||||1.2||||
 H9|||GND||||||||||||
 H10||DIFFMI_NDT|IP_L13P_1|UNUSED||1|||||||||
 H11||DIFFSI_NDT|IP_L13N_1|UNUSED||1|||||||||
-H12|||VCCO_1|||1|||||any******||||
+H12|||VCCO_1|||1|||||3.30||||
 H13||DIFFMLR|IO_L17P_1/A12|UNUSED||1|||||||||
 H14||DIFFSLR|IO_L14N_1/RHCLK5|UNUSED||1|||||||||
 H15||DIFFMLR|IO_L15P_1/IRDY1/RHCLK6|UNUSED||1|||||||||
@@ -161,7 +161,7 @@ J11||DIFFSI_NDT|IP_L09N_1|UNUSED||1|||||||||
 J12||DIFFMLR|IO_L10P_1/A8|UNUSED||1|||||||||
 J13||DIFFSLR|IO_L10N_1/A9|UNUSED||1|||||||||
 J14||DIFFMLR|IO_L14P_1/RHCLK4|UNUSED||1|||||||||
-J15|||VCCO_1|||1|||||any******||||
+J15|||VCCO_1|||1|||||3.30||||
 J16||DIFFSLR|IO_L12N_1/TRDY1/RHCLK3|UNUSED||1|||||||||
 K1||DIFFSLR|IO_L15N_3/LHCLK7|UNUSED||3|||||||||
 K2|||GND||||||||||||
@@ -225,7 +225,7 @@ N11||DIFFSTB|IO_L16N_2|UNUSED||2|||||||||
 N12||DIFFMTB|IO_L19P_2|UNUSED||2|||||||||
 N13||DIFFMLR|IO_L01P_1/HDC|UNUSED||1|||||||||
 N14||DIFFSLR|IO_L01N_1/LDC2|UNUSED||1|||||||||
-N15|||VCCO_1|||1|||||any******||||
+N15|||VCCO_1|||1|||||3.30||||
 N16||DIFFSLR|IO_L03N_1/A1|UNUSED||1|||||||||
 P1||DIFFSLR|IO_L22N_3|UNUSED||3|||||||||
 P2||DIFFSLR|IO_L23N_3|UNUSED||3|||||||||

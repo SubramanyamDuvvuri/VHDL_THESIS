@@ -11,7 +11,7 @@ Target Device  : xc3s400a
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Fri Mar 13 17:46:19 2015
+Mapped Date    : Thu Mar 26 14:39:09 2015
 
 Design Summary
 --------------
@@ -32,7 +32,7 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                  4 out of     195    2%
+  Number of bonded IOBs:                  5 out of     195    2%
   Number of BUFGMUXs:                     1 out of      24    4%
   Number of RAMB16BWEs:                  11 out of      20   55%
 
@@ -148,6 +148,7 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLK                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| LED                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | RESET                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | RX                                 | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |

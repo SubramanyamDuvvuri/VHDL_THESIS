@@ -34,7 +34,8 @@ entity NDLCOM_ECHO_TOP is
 		PORT ( CLK   : IN STD_LOGIC;
 				 RESET : IN STD_LOGIC;
 				 RX 	 : IN STD_LOGIC;
-				 TX    : OUT STD_LOGIC
+				 TX    : OUT STD_LOGIC;
+				 LED 	  : out std_logic
 				);
 end NDLCOM_ECHO_TOP;
 
@@ -80,5 +81,8 @@ begin
 --							rx_in => RX,
 --							check => LED
 --							);
+
+				LED <= '1' ; 
+				
 end Behavioral;
 

@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Mar 13 17:48:56 2015
+Thu Mar 26 14:41:20 2015
 
 drc -z NDLCOM_ECHO_TOP.ncd NDLCOM_ECHO_TOP.pcf
 

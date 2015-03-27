@@ -169,7 +169,7 @@ Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/
 Architecture fifo_a of Entity fifo is up to date.
 Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/Devices.vhd" in Library work.
 Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/RobotConfig/vhdl/CommonConfig/DeviceClasses.vhd" in Library work.
-Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/designs/iStruct/external/Representations.vhd" in Library work.
+Compiling vhdl file "/home/sduvvuri/Documents/istruct/dev/lib/representations/vhdl/Representations.vhd" in Library work.
 Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd" in Library work.
 Architecture behavioral of Entity bram_dp_simple is up to date.
 Compiling vhdl file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/UART_mod.vhd" in Library work.
@@ -226,21 +226,21 @@ Analyzing generic Entity <NDLCom_wrapper> in library <work> (Architecture <behav
 	BAUD_RATE = 115200
 	CLK_FREQ = 16000000
 	USE_TELEMETRY = true
-WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
-WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
-WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txPPin' of component 'NDLCom'.
-WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 243: Unconnected output port 'txNPin' of component 'NDLCom'.
-WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
-WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
-WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txPPin' of component 'NDLCom'.
-WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 271: Unconnected output port 'txNPin' of component 'NDLCom'.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 250: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 250: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 250: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 250: Unconnected output port 'txNPin' of component 'NDLCom'.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 278: Unconnected input port 'rxPPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:752 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 278: Unconnected input port 'rxNPin' of component 'NDLCom' is tied to default value.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 278: Unconnected output port 'txPPin' of component 'NDLCom'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLCom_wrapper.vhd" line 278: Unconnected output port 'txNPin' of component 'NDLCom'.
 INFO:Xst:2679 - Register <common_recv_addr> in unit <NDLCom_wrapper> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
 Entity <NDLCom_wrapper> analyzed. Unit <NDLCom_wrapper> generated.
 
 Analyzing generic Entity <NDLCom> in library <work> (Architecture <Behavioral>).
 	BAUD_RATE = 921600
 	CLK_FREQ = 20000000
-WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" line 269: Unconnected output port 'match_o' of component 'crc_par_mod'.
+WARNING:Xst:753 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd" line 318: Unconnected output port 'match_o' of component 'crc_par_mod'.
 Entity <NDLCom> analyzed. Unit <NDLCom> generated.
 
 Analyzing generic Entity <bram_dp_simple.2> in library <work> (Architecture <behavioral>).
@@ -518,8 +518,8 @@ WARNING:Xst:646 - Signal <crc_o_s.crc_check_match> is assigned but never used. T
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 1-bit register for signal <recv_error>.
-    Found 8-bit 4-to-1 multiplexer for signal <$varindex0000> created at line 802.
-    Found 8-bit 4-to-1 multiplexer for signal <$varindex0001> created at line 585.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0000> created at line 851.
+    Found 8-bit 4-to-1 multiplexer for signal <$varindex0001> created at line 634.
     Found 8-bit register for signal <crc_i_s.crc_check_buf>.
     Found 1-bit register for signal <crc_i_s.crc_check_buf_new_byte>.
     Found 1-bit register for signal <crc_i_s.crc_check_reset>.
@@ -527,69 +527,69 @@ WARNING:Xst:646 - Signal <crc_o_s.crc_check_match> is assigned but never used. T
     Found 1-bit register for signal <crc_i_s.crc_gen_buf_new_byte>.
     Found 1-bit register for signal <crc_i_s.crc_gen_reset>.
     Found 1-bit register for signal <dataTrigger>.
-    Found 8-bit comparator equal for signal <dataTrigger$cmp_eq0000> created at line 672.
+    Found 8-bit comparator equal for signal <dataTrigger$cmp_eq0000> created at line 721.
     Found 1-bit register for signal <escapeFlag>.
     Found 1-bit register for signal <escapeFlag0>.
     Found 10-bit register for signal <forward_mem_addr_in>.
-    Found 10-bit adder for signal <forward_mem_addr_in$share0000> created at line 359.
+    Found 10-bit adder for signal <forward_mem_addr_in$share0000> created at line 408.
     Found 10-bit register for signal <forward_mem_addr_out>.
-    Found 10-bit adder for signal <forward_mem_addr_out$share0000> created at line 976.
+    Found 10-bit adder for signal <forward_mem_addr_out$share0000> created at line 1025.
     Found 8-bit register for signal <forward_mem_data_in>.
     Found 1-bit register for signal <forward_mem_wea<0>>.
     Found 1-bit register for signal <forwardData>.
     Found 2-bit register for signal <headerCounter>.
-    Found 2-bit adder for signal <headerCounter$addsub0000> created at line 515.
+    Found 2-bit adder for signal <headerCounter$addsub0000> created at line 564.
     Found 2-bit register for signal <headerCounter0>.
-    Found 2-bit adder for signal <headerCounter0$addsub0000> created at line 809.
+    Found 2-bit adder for signal <headerCounter0$addsub0000> created at line 858.
     Found 1-bit register for signal <idleFlag>.
     Found 1-bit register for signal <idleFlag0>.
     Found 1-bit register for signal <idleFlag1>.
     Found 8-bit register for signal <input_mem_addr_out>.
-    Found 8-bit adder for signal <input_mem_addr_out$addsub0000> created at line 846.
+    Found 8-bit adder for signal <input_mem_addr_out$addsub0000> created at line 895.
     Found 1-bit register for signal <inputBufferReady>.
     Found 1-bit register for signal <newData_int>.
     Found 8-bit register for signal <output_mem_addr_in>.
-    Found 8-bit adder for signal <output_mem_addr_in$addsub0000> created at line 588.
+    Found 8-bit adder for signal <output_mem_addr_in$addsub0000> created at line 637.
     Found 8-bit register for signal <output_mem_data_in>.
     Found 1-bit register for signal <output_mem_wea<0>>.
     Found 1-bit register for signal <outputData>.
-    Found 8-bit comparator equal for signal <outputData$cmp_eq0000> created at line 400.
-    Found 8-bit comparator greatequal for signal <readInputState$cmp_ge0000> created at line 843.
-    Found 2-bit comparator less for signal <readInputState$cmp_lt0000> created at line 808.
-    Found 8-bit subtractor for signal <readInputState$sub0000> created at line 843.
-    Found 10-bit adder for signal <readyToSend$add0000> created at line 916.
-    Found 10-bit adder for signal <readyToSend$addsub0000> created at line 916.
-    Found 10-bit comparator greater for signal <readyToSend$cmp_gt0000> created at line 916.
-    Found 10-bit comparator lessequal for signal <readyToSend$cmp_le0000> created at line 916.
-    Found 11-bit comparator less for signal <readyToSend$cmp_lt0000> created at line 916.
-    Found 11-bit comparator less for signal <readyToSend$cmp_lt0001> created at line 916.
-    Found 10-bit subtractor for signal <readyToSend$sub0000> created at line 916.
+    Found 8-bit comparator equal for signal <outputData$cmp_eq0000> created at line 449.
+    Found 8-bit comparator greatequal for signal <readInputState$cmp_ge0000> created at line 892.
+    Found 2-bit comparator less for signal <readInputState$cmp_lt0000> created at line 857.
+    Found 8-bit subtractor for signal <readInputState$sub0000> created at line 892.
+    Found 10-bit adder for signal <readyToSend$add0000> created at line 965.
+    Found 10-bit adder for signal <readyToSend$addsub0000> created at line 965.
+    Found 10-bit comparator greater for signal <readyToSend$cmp_gt0000> created at line 965.
+    Found 10-bit comparator lessequal for signal <readyToSend$cmp_le0000> created at line 965.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0000> created at line 965.
+    Found 11-bit comparator less for signal <readyToSend$cmp_lt0001> created at line 965.
+    Found 10-bit subtractor for signal <readyToSend$sub0000> created at line 965.
     Found 8-bit register for signal <receiverID_buf>.
     Found 32-bit register for signal <recvHeader>.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0002> created at line 400.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0003> created at line 400.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0006> created at line 622.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0007> created at line 622.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0008> created at line 672.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0009> created at line 672.
-    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0021> created at line 622.
-    Found 8-bit comparator greatequal for signal <recvUARTState$cmp_ge0000> created at line 585.
-    Found 2-bit comparator less for signal <recvUARTState$cmp_lt0000> created at line 514.
-    Found 8-bit subtractor for signal <recvUARTState$sub0000> created at line 585.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0002> created at line 449.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0003> created at line 449.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0006> created at line 671.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0007> created at line 671.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0008> created at line 721.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0009> created at line 721.
+    Found 8-bit comparator equal for signal <recvUARTState$cmp_eq0021> created at line 671.
+    Found 8-bit comparator greatequal for signal <recvUARTState$cmp_ge0000> created at line 634.
+    Found 2-bit comparator less for signal <recvUARTState$cmp_lt0000> created at line 563.
+    Found 8-bit subtractor for signal <recvUARTState$sub0000> created at line 634.
     Found 10-bit register for signal <send_mem_addr_in>.
-    Found 10-bit adder for signal <send_mem_addr_in$share0000> created at line 767.
+    Found 10-bit adder for signal <send_mem_addr_in$share0000> created at line 816.
     Found 10-bit register for signal <send_mem_addr_out>.
-    Found 10-bit adder for signal <send_mem_addr_out$share0000> created at line 976.
+    Found 10-bit adder for signal <send_mem_addr_out$share0000> created at line 1025.
     Found 8-bit register for signal <send_mem_data_in>.
     Found 1-bit register for signal <send_mem_wea<0>>.
-    Found 10-bit comparator not equal for signal <sendState$cmp_ne0000> created at line 978.
-    Found 10-bit comparator not equal for signal <sendState$cmp_ne0001> created at line 982.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0000> created at line 1027.
+    Found 10-bit comparator not equal for signal <sendState$cmp_ne0001> created at line 1031.
     Found 1-bit register for signal <startFlag>.
     Found 1-bit register for signal <startTimeoutCounter>.
     Found 1-bit register for signal <timeout>.
-    Found 21-bit comparator less for signal <timeout$cmp_lt0000> created at line 937.
+    Found 21-bit comparator less for signal <timeout$cmp_lt0000> created at line 986.
     Found 21-bit up counter for signal <timeoutCounter>.
-    Found 21-bit comparator greatequal for signal <timeoutCounter$cmp_ge0000> created at line 937.
+    Found 21-bit comparator greatequal for signal <timeoutCounter$cmp_ge0000> created at line 986.
     Found 1-bit register for signal <uart_dataAck>.
     Found 1-bit register for signal <uart_startTx>.
     Found 8-bit register for signal <uart_txData>.
@@ -749,22 +749,22 @@ INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
     Found 8-bit register for signal <isp_din>.
     Found 1-bit register for signal <isp_dout_ack>.
     Found 3-bit register for signal <byteCounter>.
-    Found 3-bit adder for signal <byteCounter$addsub0000> created at line 821.
+    Found 3-bit adder for signal <byteCounter$addsub0000> created at line 828.
     Found 4-bit register for signal <byteCounter0>.
-    Found 4-bit adder for signal <byteCounter0$addsub0000> created at line 899.
+    Found 4-bit adder for signal <byteCounter0$addsub0000> created at line 906.
     Found 7-bit register for signal <byteCounter1>.
-    Found 7-bit adder for signal <byteCounter1$share0000> created at line 958.
+    Found 7-bit adder for signal <byteCounter1$share0000> created at line 965.
     Found 7-bit register for signal <byteCounter2>.
-    Found 7-bit adder for signal <byteCounter2$share0000> created at line 1116.
+    Found 7-bit adder for signal <byteCounter2$share0000> created at line 1123.
     Found 1-bit register for signal <common_recvError>.
     Found 8-bit register for signal <common_send_addr>.
     Found 8-bit adder for signal <common_send_addr$addsub0000> created at line 201.
     Found 8-bit register for signal <common_send_data>.
     Found 1-bit register for signal <common_send_wea<0>>.
     Found 3-bit register for signal <counter>.
-    Found 3-bit adder for signal <counter$addsub0000> created at line 599.
+    Found 3-bit adder for signal <counter$addsub0000> created at line 606.
     Found 4-bit register for signal <dataCounter>.
-    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 692.
+    Found 4-bit adder for signal <dataCounter$addsub0000> created at line 699.
     Found 8-bit register for signal <frameCounter_addr_in>.
     Found 8-bit register for signal <frameCounter_data_in>.
     Found 8-bit adder for signal <frameCounter_data_in$add0001> created at line 201.
@@ -785,17 +785,17 @@ INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
     Found 8-bit register for signal <isp_send_addr>.
     Found 8-bit adder for signal <isp_send_addr$add0001> created at line 201.
     Found 8-bit register for signal <isp_send_data>.
-    Found 8-bit 4-to-1 multiplexer for signal <isp_send_data$mux0001> created at line 1166.
+    Found 8-bit 4-to-1 multiplexer for signal <isp_send_data$mux0001> created at line 1173.
     Found 1-bit register for signal <isp_send_wea<0>>.
     Found 1-bit register for signal <isp_sendAck>.
     Found 1-bit register for signal <isp_sendCmdRequest>.
     Found 1-bit register for signal <isp_sendDataRequest>.
     Found 2-bit register for signal <isp_sendDirection>.
     Found 1-bit register for signal <isp_startSending>.
-    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0000> created at line 992.
-    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0001> created at line 1061.
-    Found 7-bit comparator less for signal <ispSendState$cmp_lt0000> created at line 1147.
-    Found 7-bit comparator less for signal <ispSendState$cmp_lt0001> created at line 1182.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0000> created at line 999.
+    Found 7-bit comparator less for signal <ispRecvState$cmp_lt0001> created at line 1068.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0000> created at line 1154.
+    Found 7-bit comparator less for signal <ispSendState$cmp_lt0001> created at line 1189.
     Found 1-bit register for signal <nc1_dataAck>.
     Found 1-bit register for signal <nc1_startSending>.
     Found 1-bit register for signal <nc2_dataAck>.
@@ -813,19 +813,19 @@ INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
     Found 1-bit register for signal <register_recvReadRequest>.
     Found 1-bit register for signal <register_recvWriteRequest>.
     Found 8-bit register for signal <register_send_addr>.
-    Found 8-bit adder for signal <register_send_addr$addsub0000> created at line 896.
+    Found 8-bit adder for signal <register_send_addr$addsub0000> created at line 903.
     Found 8-bit register for signal <register_send_data>.
     Found 1-bit register for signal <register_send_wea<0>>.
     Found 1-bit register for signal <register_sendAck>.
     Found 2-bit register for signal <register_sendDirection>.
     Found 1-bit register for signal <register_sendRequest>.
     Found 1-bit register for signal <register_startSending>.
-    Found 5-bit comparator less for signal <registerRecvState$cmp_lt0000> created at line 820.
-    Found 5-bit subtractor for signal <registerRecvState$sub0000> created at line 820.
-    Found 4-bit comparator less for signal <registerSendState$cmp_lt0000> created at line 895.
+    Found 5-bit comparator less for signal <registerRecvState$cmp_lt0000> created at line 827.
+    Found 5-bit subtractor for signal <registerRecvState$sub0000> created at line 827.
+    Found 4-bit comparator less for signal <registerSendState$cmp_lt0000> created at line 902.
     Found 2-bit register for signal <sendDirection>.
     Found 1-bit register for signal <sendIspAckRequest>.
-    Found 3-bit comparator less for signal <sendState$cmp_lt0000> created at line 598.
+    Found 3-bit comparator less for signal <sendState$cmp_lt0000> created at line 605.
     Found 4-bit register for signal <sendType>.
     Found 4-bit register for signal <sendType_1>.
     Found 4-bit register for signal <sendType_2>.
@@ -836,8 +836,8 @@ INFO:Xst:1799 - State telemetry is never reached in FSM <recvType>.
     Found 1-bit register for signal <telemetry_sendAck>.
     Found 1-bit register for signal <telemetry_sendRequest>.
     Found 1-bit register for signal <telemetry_startSending>.
-    Found 16-bit 16-to-1 multiplexer for signal <telemetry_values$mux0000> created at line 683.
-    Found 4-bit comparator less for signal <telemetrySendState$cmp_lt0000> created at line 691.
+    Found 16-bit 16-to-1 multiplexer for signal <telemetry_values$mux0000> created at line 690.
+    Found 4-bit comparator less for signal <telemetrySendState$cmp_lt0000> created at line 698.
     Summary:
 	inferred   8 Finite State Machine(s).
 	inferred   3 ROM(s).
@@ -1559,13 +1559,13 @@ Delay:               7.099ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 31.91 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.28 secs
  
 --> 
 
 
-Total memory usage is 628280 kilobytes
+Total memory usage is 628524 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   84 (   0 filtered)

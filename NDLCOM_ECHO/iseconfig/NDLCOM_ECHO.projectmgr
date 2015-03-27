@@ -7,6 +7,7 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom1 - NDLCom - Behavioral</ClosedNode>
          <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom1 - NDLCom - Behavioral/uart_hs_inst - uart_hs_mod - behaviour</ClosedNode>
          <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom2 - NDLCom - Behavioral</ClosedNode>
          <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/spiprom_inst - simple_spiprom_interface - Behavioral</ClosedNode>
@@ -18,13 +19,13 @@
          <ClosedNode>/NDLComBasicExample - Behavioral |home|sduvvuri|fpgaSVN|FPGA|designs|NDLCom|examples|basic|trunk|NDLComBasicExample.vhd/spiprom_inst - simple_spiprom_interface - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>NDLCom1 - NDLCom - Behavioral (/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd)</SelectedItem>
+         <SelectedItem>/home/sduvvuri/thesis.git/NDLCOM_ECHO/pins.ucf (/home/sduvvuri/thesis.git/NDLCOM_ECHO/pins.ucf)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000029c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000029c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000441000000020000000000000000000000000200000064ffffffff000000810000000300000002000004410000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>NDLCom1 - NDLCom - Behavioral (/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/trunk/NDLCom.vhd)</CurrentItem>
+      <CurrentItem>/home/sduvvuri/thesis.git/NDLCOM_ECHO/pins.ucf (/home/sduvvuri/thesis.git/NDLCOM_ECHO/pins.ucf)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -49,7 +50,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000750000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000006520000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>asynch_sercomm_config_pack.vhd</CurrentItem>
+      <CurrentItem>/home/sduvvuri/Documents/istruct/dev/lib/representations/vhdl/Representations.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -59,14 +60,12 @@
          <ClosedNode>decode_8b10b</ClosedNode>
          <ClosedNode>encode_8b10b</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>NDLCom_config.vhd</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000014a000000010001000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000119000000010001000100000000000000000000000064ffffffff000000810000000000000001000001190000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>NDLCom_config.vhd</CurrentItem>
+      <CurrentItem>decode_8b10b</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -80,31 +79,31 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000131000000010000000100000000000000000000000064ffffffff000000810000000000000001000001310000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom1 - NDLCom - Behavioral</ClosedNode>
          <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom1 - NDLCom - Behavioral/uart_hs_inst - uart_hs_mod - behaviour</ClosedNode>
          <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/NDLCom_wrapper - NDLCom_wrapper - Behavioral/NDLCom2 - NDLCom - Behavioral</ClosedNode>
-         <ClosedNode>/NDLCOM_ECHO_TOP - Behavioral |home|sduvvuri|thesis.git|NDLCOM_ECHO|NDLCOM_ECHO_TOP.vhd/NDLCOM_BASIC - NDLComBasicExample - Behavioral/spiprom_inst - simple_spiprom_interface - Behavioral</ClosedNode>
          <ClosedNode>/NDLComBasicExample - Behavioral |home|sduvvuri|fpgaSVN|FPGA|designs|NDLCom|examples|basic|trunk|NDLComBasicExample.vhd/NDLCom_wrapper - NDLCom_wrapper - Behavioral</ClosedNode>
          <ClosedNode>/NDLComBasicExample - Behavioral |home|sduvvuri|fpgaSVN|FPGA|designs|NDLCom|examples|basic|trunk|NDLComBasicExample.vhd/spiprom_inst - simple_spiprom_interface - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>NDLCOM_BASIC - NDLComBasicExample - Behavioral (/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd)</SelectedItem>
+         <SelectedItem>NDLCOM_CONTROLLER - Behavioral (/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_CONTROLLER.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000029c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000029c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000441000000020000000000000000000000000200000064ffffffff000000810000000300000002000004410000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>NDLCOM_BASIC - NDLComBasicExample - Behavioral (/home/sduvvuri/fpgaSVN/FPGA/designs/NDLCom/examples/basic/trunk/NDLComBasicExample.vhd)</CurrentItem>
+      <CurrentItem>NDLCOM_CONTROLLER - Behavioral (/home/sduvvuri/thesis.git/NDLCOM_ECHO/NDLCOM_CONTROLLER.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -112,41 +111,42 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Utilities</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Utilities</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000020f000000be01000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>User Constraints</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>User Constraints</CurrentItem>
    </ItemView>
    <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -271,4 +271,18 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>encode_8b10b_lut.vhd (/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001cb000000020000000000000000000000000000000064ffffffff000000810000000000000002000001390000000100000000000000920000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>encode_8b10b_lut.vhd (/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd)</CurrentItem>
+   </ItemView>
+   <CopyAdditionalFiles/>
 </Project>

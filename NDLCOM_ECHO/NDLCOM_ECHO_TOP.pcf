@@ -1,11 +1,12 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Mar 13 17:46:26 2015
+// Written by: Map P.20131013 on Thu Mar 26 14:39:16 2015
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "RX" LOCATE = SITE "B3" LEVEL 1;
-COMP "TX" LOCATE = SITE "A3" LEVEL 1;
+COMP "RX" LOCATE = SITE "A3" LEVEL 1;
+COMP "TX" LOCATE = SITE "B3" LEVEL 1;
 COMP "CLK" LOCATE = SITE "C10" LEVEL 1;
+COMP "LED" LOCATE = SITE "D14" LEVEL 1;
 COMP "RESET" LOCATE = SITE "H4" LEVEL 1;
 SCHEMATIC END;
 
