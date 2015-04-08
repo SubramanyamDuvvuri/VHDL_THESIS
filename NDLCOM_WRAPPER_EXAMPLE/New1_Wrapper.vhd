@@ -51,7 +51,7 @@ architecture Behavioral of New1_Wrapper is
  signal readyToSend :     std_logic := '1';
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
- signal sendFrameCounter: std_logic_vector(7 downto 0) ;
+ signal sendFrameCounter: std_logic_vector(7 downto 0) := "00000000";
  signal sendLength :      std_logic_vector(7 downto 0) :=x"02" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) := "00000000";
@@ -104,16 +104,16 @@ NDLCom_example : entity work.NDLCom(Behavioral)
                    recv_error       => recv_error 
 						);
 
-			START_CONTROL:process (CLK)
-			begin	
-			if ( CLK'event and CLK = '1') then  		
-				if starttx = '1' then
-					startSending <= '1';
-				else
-					startSending <= '0';
-				end if;
-			end if;
-			end process START_CONTROL;
+--			START_CONTROL:process (CLK)
+--			begin	
+--			if ( CLK'event and CLK = '1') then  		
+--				if starttx = '1' then
+--					startSending <= '1';
+--				else
+--					startSending <= '0';
+--				end if;
+--			end if;
+--			end process START_CONTROL;
 			LED <= '1';
 			
 
