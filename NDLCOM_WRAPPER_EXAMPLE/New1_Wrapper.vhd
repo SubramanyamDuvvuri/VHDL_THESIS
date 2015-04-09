@@ -39,7 +39,7 @@ entity New1_Wrapper is
 				RESET: in std_logic ;
 				--NODEID : in std_logic_vector := "00001010" ;
 				starttx : in std_logic;
- 				en : in std_logic;
+ 				--en : in std_logic;
 				RX : in std_logic ;
 				TX : out std_logic;
 				LED : out std_logic		
@@ -51,10 +51,10 @@ architecture Behavioral of New1_Wrapper is
  signal readyToSend :     std_logic := '1';
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
- signal sendFrameCounter: std_logic_vector(7 downto 0) := "00000000";
+ signal sendFrameCounter: std_logic_vector(7 downto 0) ;
  signal sendLength :      std_logic_vector(7 downto 0) :=x"02" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
- signal send_addr :       std_logic_vector(7 downto 0) := "00000000";
+ signal send_addr :       std_logic_vector(7 downto 0) ;
  signal  send_data:       std_logic_vector (7 downto 0); 
  signal newData  :        std_logic  := '0';
  signal dataAck  :        std_logic  := '1';
@@ -62,7 +62,7 @@ architecture Behavioral of New1_Wrapper is
  signal recvFrameCounter: std_logic_vector(7 downto 0) := "00000000";
  signal recvLength:       std_logic_vector(7 downto 0) := "00000000";
  signal recv_addr:        std_logic_vector(7 downto 0) := "00000000";
- signal recv_data:        std_logic_vector(7 downto 0) := "00000000";
+ signal recv_data:        std_logic_vector(7 downto 0) ;
  signal recv_error:       std_logic := '0'; 
  --############################################################
 --			signal sendLength_counter : std_logic_vector (7 downto 0) := "00000001";
@@ -75,6 +75,12 @@ architecture Behavioral of New1_Wrapper is
 
 type send_frames is ( input,output );
 	signal send_frame : send_frames;
+	
+type array_data is array ( 2 downto 0)  of std_logic_vector (7 downto 0);
+signal arr : array_data;	
+	
+	
+	
 begin
 
 NDLCom_example : entity work.NDLCom(Behavioral)
@@ -104,16 +110,16 @@ NDLCom_example : entity work.NDLCom(Behavioral)
                    recv_error       => recv_error 
 						);
 
---			START_CONTROL:process (CLK)
---			begin	
---			if ( CLK'event and CLK = '1') then  		
---				if starttx = '1' then
---					startSending <= '1';
---				else
---					startSending <= '0';
---				end if;
---			end if;
---			end process START_CONTROL;
+			START_CONTROL:process (CLK)
+			begin	
+			if ( CLK'event and CLK = '1') then  		
+				if starttx = '1' then
+					startSending <= '1';
+				else
+					startSending <= '0';
+				end if;
+			end if;
+			end process START_CONTROL;
 			LED <= '1';
 			
 
@@ -150,41 +156,42 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --			end if;	
 --		end if;		
 --	end process;
-
-process(clk)
-	variable length_counter : std_logic_vector( 7 downto 0):= "00000000";
-	variable length_counter2 : std_logic_vector( 7 downto 0)	:= "00000000";
-	begin 
-		if ( clk' event and clk = '1' ) then 
-			if en = '1' then
-		
-				case send_frame is
-						when input =>
-										if ( length_counter /= sendLength) then
-												length_counter :=length_counter + 1;
-												send_frame <= output;
-												
-										end if;
-										send_frame <= output;
-										startSending <= '1' ;
-						when output => 
-												startSending <= '1';
-											if (length_counter2 /= length_counter) then
-												send_addr <= send_addr + '1';
-												send_data <= send_data + '1';
-												sendFrameCounter <= sendFrameCounter + '1' ;
-												send_frame <=input;
-												startSending <= '0';
-											end if;
-											sendFrameCounter <= sendFrameCounter + '1';
-											startSending <= '0' ;
-				end case;
-			else
-				startSending <= '0';
-			end if;	
-		end if;		
-	end process;
-
+--####################################################################
+--					USING FSM
+--####################################################################
+--process(clk)
+--	variable length_counter : std_logic_vector( 7 downto 0):= "00000000";
+--	variable length_counter2 : std_logic_vector( 7 downto 0)	:= "00000000";
+--	begin 
+--		if ( clk' event and clk = '1' ) then 
+--			if en = '1' then
+--		
+--				case send_frame is
+--						when input =>
+--										if ( length_counter /= sendLength) then
+--												length_counter :=length_counter + 1;
+--												send_frame <= output;
+--										end if;
+--										send_frame <= output;
+--										startSending <= '1' ;
+--						when output => 
+--												startSending <= '1';
+--											if (length_counter2 /= length_counter) then
+--												send_addr <= send_addr + '1';
+--												send_data <= send_data + '1';
+--												sendFrameCounter <= sendFrameCounter + '1' ;
+--												send_frame <=input;
+--												startSending <= '0';
+--											end if;
+--											sendFrameCounter <= sendFrameCounter + '1';
+--											startSending <= '0' ;
+--				end case;
+--			else
+--				startSending <= '0';
+--			end if;	
+--		end if;		
+--	end process;
+----------------------------------------------------------------------------------		 
 			
 --			SEND_CONTROL:process(clk,sendLength,send_addr,send_data,sendFrameCounter )
 ----			variable sendLength_counter : std_logic_vector (7 downto 0) := "00000000";
@@ -231,29 +238,27 @@ process(clk)
 --end process;
 
 -------------------------------------------------------------
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- Using array without for loop
+-------------------------------------------------------------
+	arr (0)<= "10101000";
+	arr (1)<= "10100000";
+	arr (2)<= "10101000";
+		process( clk ) 
+		variable i : integer:= 0;
+		begin 
+		if clk'event  and clk = '1' then 
+--			if( i /= (to_integer (unsigned (sendLength )))-1) then
+			if( i /= 1) then
+				send_data <= arr(i);
+				send_addr <= send_addr +1 ;
+				i := i+1;
+			else 
+				i := 0;
+				
+			end if;	
+		end if;
+		end process;
 	
 end Behavioral;
+
 
