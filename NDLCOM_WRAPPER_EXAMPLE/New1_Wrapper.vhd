@@ -52,7 +52,7 @@ architecture Behavioral of New1_Wrapper is
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
  signal sendFrameCounter: std_logic_vector(7 downto 0) ;
- signal sendLength :      std_logic_vector(7 downto 0) :=x"02" ;
+ signal sendLength :      std_logic_vector(7 downto 0) :=x"03" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) ;
  signal  send_data:       std_logic_vector (7 downto 0); 
@@ -240,15 +240,15 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 -------------------------------------------------------------
 -- Using array without for loop
 -------------------------------------------------------------
-	arr (0)<= "10101000";
-	arr (1)<= "10100000";
-	arr (2)<= "10101000";
+	arr (0)<= x"bb";
+	arr (1)<= x"cc";
+	arr (2)<= x"dd";
 		process( clk ) 
 		variable i : integer:= 0;
 		begin 
 		if clk'event  and clk = '1' then 
 --			if( i /= (to_integer (unsigned (sendLength )))-1) then
-			if( i /= 1) then
+			if( i /= 3) then
 				send_data <= arr(i);
 				send_addr <= send_addr +1 ;
 				i := i+1;
