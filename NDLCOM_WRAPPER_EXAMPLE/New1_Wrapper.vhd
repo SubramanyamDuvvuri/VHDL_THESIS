@@ -51,7 +51,7 @@ architecture Behavioral of New1_Wrapper is
  signal readyToSend :     std_logic := '1';
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
- signal sendFrameCounter: std_logic_vector(7 downto 0) :="00000000";
+ signal sendFrameCounter: std_logic_vector(7 downto 0) :="00000001";
  signal sendLength :      std_logic_vector(7 downto 0) := x"06" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) :="00000000";
@@ -64,6 +64,14 @@ architecture Behavioral of New1_Wrapper is
  signal recv_addr:        std_logic_vector(7 downto 0) := "00000000";
  signal recv_data:        std_logic_vector(7 downto 0) ;
  signal recv_error:       std_logic := '0'; 
+ 
+ 
+ 
+ signal frameCounter_addr_in  : std_logic_vector(7 downto 0);
+ signal frameCounter_data_in  : std_logic_vector(7 downto 0);
+ signal frameCounter_wea      : std_logic_vector(0 downto 0);
+ signal frameCounter_addr_out : std_logic_vector(7 downto 0);
+ signal frameCounter_data_out : std_logic_vector(7 downto 0);
  --############################################################
 --			signal sendLength_counter : std_logic_vector (7 downto 0) := "00000001";
 --			signal send_addr_counter : std_logic_vector (7 downto 0) := "00000000";
@@ -79,7 +87,7 @@ type send_frames is ( input,output );
 type array_data is array ( 0 to 255)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
-type send_packets is ( write_data, wait_time , transmit_data ) ;
+type send_packets is ( write_data, wait_time , transmit_data, inc_fc ) ;
 signal send_packet : send_packets;	
 	
 begin
@@ -110,6 +118,17 @@ NDLCom_example : entity work.NDLCom(Behavioral)
                    recv_data        => recv_data,
                    recv_error       => recv_error 
 						);
+						
+						
+			frameCounter_buffer : entity work.bram_dp_simple
+        generic map ( ADDRWIDTH => 8,
+                      DATAWIDTH => 8 )
+        port map ( clk   => CLK,
+                   we    => frameCounter_wea(0),
+                   waddr => frameCounter_addr_in,
+                   wdata => frameCounter_data_in,
+                   raddr => frameCounter_addr_out,
+                   rdata => frameCounter_data_out);
 
 --			START_CONTROL:process (CLK)
 --			begin	
@@ -262,25 +281,60 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --Using array with FSM		
 ---------------------------------------------------------------------
 
+--		process (CLK)
+--		variable i : integer := 0 ; 		
+--		begin 
+--			if ( clk'event and clk ='1') then
+--				if en = '1' then	
+--					case send_packet is 
+--							
+--						when	write_data =>
+--												 startSending  <= '0';
+--													
+--												if( i < (to_integer (unsigned (sendLength )))) then
+--															send_data <= arr(i);
+--															i := i + 1;
+--															send_packet <= wait_time;
+--												else
+--															sendFrameCounter <= sendFrameCounter +1;
+--															send_packet <= transmit_data;
+--															
+--															
+--												end if;
+--						when	wait_time => 
+--															send_addr  <= send_addr + 1;
+--															send_packet <= write_data ;
+--															
+--						when	transmit_data	=>
+--														   i := 0;
+--															startSending  <= '1';
+--															 
+--															send_addr <= "00000000";
+--														   send_packet <= write_data;
+--															
+--														   
+--					end case; 
+--				end if;		
+--			end if;
+--		end process;
+
 		process (CLK)
-		variable i : integer := 0 ; 		
+		variable i : integer := 0 ; 
+		variable counter : integer := (to_integer(unsigned ( sendLength ))) + 5;  	
 		begin 
 			if ( clk'event and clk ='1') then
 				if en = '1' then	
 					case send_packet is 
 							
-						when	write_data =>
-												 startSending  <= '0';
-													
-												if( i < (to_integer (unsigned (sendLength )))) then
+						when	write_data =>								
+												if(i<(to_integer (unsigned (sendLength)))) then
 															send_data <= arr(i);
 															i := i + 1;
+															counter := counter - 1 ; 
 															send_packet <= wait_time;
+															
 												else
-															
-															send_packet <= transmit_data;
-															
-															
+															send_packet <= transmit_data;			
 												end if;
 						when	wait_time => 
 															send_addr  <= send_addr + 1;
@@ -289,12 +343,15 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 						when	transmit_data	=>
 														   i := 0;
 															startSending  <= '1';
-															
 															 
 															send_addr <= "00000000";
-														   send_packet <= write_data;
+														   send_packet <= inc_FC;
+								
+						when inc_FC =>				
 															
-														   
+														   sendFrameCounter <= sendFrameCounter +1;
+															startSending  <= '0';
+															send_packet <= write_data;
 					end case; 
 				end if;		
 			end if;
