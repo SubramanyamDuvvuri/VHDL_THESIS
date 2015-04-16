@@ -39,7 +39,7 @@ entity New1_Wrapper is
 				RESET: in std_logic ;
 				--NODEID : in std_logic_vector := "00001010" ;
 				--starttx : in std_logic;
-				en : in std_logic;
+				--en : in std_logic;
 				RX : in std_logic ;
 				TX : out std_logic;
 				LED : out std_logic		
@@ -87,7 +87,7 @@ type send_frames is ( input,output );
 type array_data is array ( 0 to 255)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
-type send_packets is ( write_data, wait_time , transmit_data, inc_fc ) ;
+type send_packets is ( write_data, wait_time , transmit_data) ;
 signal send_packet : send_packets;	
 	
 begin
@@ -319,40 +319,44 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --		end process;
 
 		process (CLK)
-		variable i : integer := 0 ; 
-		variable counter : integer := (to_integer(unsigned ( sendLength ))) + 5;  	
+		variable i : integer := 0 ;   	
 		begin 
 			if ( clk'event and clk ='1') then
-				if en = '1' then	
-					case send_packet is 
+				if RESET = '1' then
+					send_packet<= write_data;	
+					else 
+					startsending <= '0';		
+					
+							case send_packet is 
 							
-						when	write_data =>								
-												if(i<(to_integer (unsigned (sendLength)))) then
+								when	write_data =>								
+												 if( i < 3 ) then
 															send_data <= arr(i);
-															i := i + 1;
-															counter := counter - 1 ; 
+															i := i + 1;	
+															--counter := counter - 1 ; 
 															send_packet <= wait_time;
 															
 												else
+															 sendFrameCounter <= sendFrameCounter +1;
 															send_packet <= transmit_data;			
 												end if;
-						when	wait_time => 
+								when	wait_time => 
 															send_addr  <= send_addr + 1;
 															send_packet <= write_data ;
 															
-						when	transmit_data	=>
+								when	transmit_data	=>
 														   i := 0;
 															startSending  <= '1';
 															 
 															send_addr <= "00000000";
-														   send_packet <= inc_FC;
-								
-						when inc_FC =>				
-															
-														   sendFrameCounter <= sendFrameCounter +1;
-															startSending  <= '0';
-															send_packet <= write_data;
+														   send_packet <= write_data;
+--								when inc_FC =>				
+--															
+--														   sendFrameCounter <= sendFrameCounter +1;
+--															startSending  <= '0';
+--															send_packet <= write_data;
 					end case; 
+								
 				end if;		
 			end if;
 		end process;
