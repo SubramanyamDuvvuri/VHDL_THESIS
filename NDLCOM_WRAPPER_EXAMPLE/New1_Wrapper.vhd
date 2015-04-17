@@ -52,7 +52,7 @@ architecture Behavioral of New1_Wrapper is
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
  signal sendFrameCounter: std_logic_vector(7 downto 0) :="00000001";
- signal sendLength :      std_logic_vector(7 downto 0) := x"03" ;
+ signal sendLength :      std_logic_vector(7 downto 0) := x"06" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) :="00000000";
  signal  send_data:       std_logic_vector (7 downto 0); 
@@ -93,12 +93,12 @@ constant TIMEOUT_COUNTER_MAX : integer := CLK_FREQ/10;
 type array_data is array ( 0 to 6)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
---type send_packets is ( write_data, wait_time , transmit_data) ;
-----signal send_packet : send_packets;	
+type send_packets is (idle,write_data, transmit_data) ;
+signal send_packet : send_packets;	
 
-type packet_tx is ( idle_state , sendsend_data , add_inc ,write_data); 
-signal packet: packet_tx;
-	
+--type packet_tx is ( idle_state , sendsend_data , add_inc ,write_data); 
+--signal packet: packet_tx;
+--	
 begin
 
 NDLCom_example : entity work.NDLCom(Behavioral)
@@ -284,11 +284,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 -------------------------------------------------------------
 -- Using array without for loop or FSM
 -------------------------------------------------------------
-	arr (0)<= x"88";
-	arr (1)<= x"cc";
-	arr (2)<= x"dd";
-	arr (3) <= x"ee";
-	arr (4) <= x"00";
+	
 --		process( clk ) 
 --		variable i : integer:= 0;
 --		begin 
@@ -342,137 +338,142 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --			end if;
 --		end process;
 
---------------  process (CLK)
---------------		variable i : integer := 0 ;
---------------		variable idleflag : integer := 0;	
---------------		begin 
---------------			if ( clk'event and clk ='1') then
---------------				if RESET = '1' then
---------------					send_packet<= write_data;	
---------------					else 
---------------					startsending <= '0';		
---------------							if en = '1' then 
---------------								if idleflag = 1 then 
---------------									idleflag := 0 ;
---------------								else	
---------------									case send_packet is 
---------------									when	write_data =>								
---------------												 if( i < 3 ) then
---------------															send_data <= arr(i);
---------------															i := i + 1;	
---------------															--counter := counter - 1 ; 
---------------															send_packet <= wait_time;
---------------												 else
---------------															 
---------------															 send_packet <= transmit_data;			
---------------												 end if;
---------------										when	wait_time => 
---------------															idleflag := 1; 
---------------															send_addr  <= send_addr + 1;
---------------															send_packet<= write_data ;
---------------										when	transmit_data	=>
---------------														   i := 0;
---------------															startSending  <= '1';
---------------															
---------------															sendFrameCounter <= sendFrameCounter +1;
---------------															send_addr <= "00000000";
---------------														   send_packet <= write_data;
---------------															
-----------------								when inc_FC =>				
-----------------															
-----------------														   sendFrameCounter <= sendFrameCounter +1;
-----------------															startSending  <= '0';
-----------------															send_packet <= write_data;
---------------								   end case; 
---------------							end if;	
---------------						end if;	
---------------				  end if;		
---------------			 end if;
---------------		 end process;
+		arr (0)<= x"88";
+		arr (1)<= x"cc";
+		arr (2)<= x"dd";
+		arr (3) <= x"ee";
+		arr (5) <= x"01";
+		
+		process (CLK)
+		variable i : integer := 0 ;
+		variable idleflag : integer := 0;	
+		begin 
+		  if (clk'event and clk ='1') then
+				if RESET = '1' then
+					 send_addr <= (others => '1');
+					 send_packet<= write_data;	
+				else 
+					-- defaults
+					 startsending <= '0';		
+					 send_wea <= "0";
+					
+					 if en = '1' then 					-- interface to start sending
+						 if idleflag = 1 then 
+							 idleflag := 0 ;
+						 else	
+							 case send_packet is 
+									when idle =>
+													if readyToSend = '1' then
+														send_packet <= write_data;
+													else
+														send_packet <= idle ; 	
+													end if;		
+									when	write_data =>								
+													if (i < 6 ) then
+														 send_data <= arr(i);
+														 send_addr <= send_addr + 1;
+														 send_wea  <= "1";
+														 i := i + 1;	
+														 send_packet <= write_data;
+													else
+														 send_packet <= transmit_data;			
+													end if;
+									when	transmit_data	=>
+													i := 0;
+													startSending  <= '1';
+													sendFrameCounter <= sendFrameCounter +1;
+													send_addr <= (others => '1');
+													send_packet <= idle ;							
+							 end case; 
+						 end if;	
+					 end if;	
+				end if;		
+			end if;
+		end process;
 
-	timeoutProcess : process (CLK)
-        variable timeoutCounter : integer range 0 to TIMEOUT_COUNTER_MAX;
-    begin
-        if CLK = '1' and CLK'event then
-            if RESET = '1' then
-                timeoutCounter := 0;
-                timeout        <= '0';
-            else
-                -- default
-                timeout <= '0';
-
-                if startTimeoutCounter = '1' then
-                    timeoutCounter := 0;
-                else
-                    if timeoutCounter < TIMEOUT_COUNTER_MAX then
-                        timeoutCounter := timeoutCounter + 1;
-                    else
-                        timeout        <= '1';
-                        timeoutCounter := 0;
-                    end if;
-                end if;
-            end if;
-        end if;
-    end process timeoutProcess;
-	 
-	 
-			process ( clk )
-			variable flag_start :integer := 0;
-			variable flag_idle : integer := 0;
-			variable i : integer  := 0 ;
-			begin 
-					if (clk'event and clk= '1' ) then 
-						if reset = '1' then  
-							packet <= idle_state;
-							flag_start := 0 ;
-							flag_idle := 0 ;
-							send_addr <= (others =>('0'));
-							
-							else
-							startSending  <= '0';
-									if ( en = '1' ) then 
-										if (flag_idle = 1) then
-											flag_idle := 0 ;
-										else
-											case packet is
-													when idle_state =>
-																			if readyToSend = '1' then 
-																				Flag_idle  := 1;
-																				Flag_start := 1;
-																				packet <= write_data ;	
-																			end if;
-															
-													when sendsend_data =>
-																				startSending  <= '1';
-																			if Flag_start = 0 then 
-																				packet <= idle_state;
-																			else 
-																				startTimeoutcounter <= '1';
-																				packet <= write_data;
-																			end if;
-													when add_inc =>	
-																				if timeout <= '1' then
-																					packet <= idle_state;
-																				else	
-																					send_addr  <= send_addr + 1;
-																					packet <= write_data;
-																				end if;
-													when write_data =>			
-																																										
-																				
-																						send_data <= arr(i);
-																						i := i + 1;																						
-																						packet <= add_inc;
-																				else														 
-																						packet <= sendsend_data;																											
-																						end if;
-																						
-											end case;
-									end if;
-								end if;																	
-					end if;
-				end if;
-		end process;			
+----	timeoutProcess : process (CLK)
+----        variable timeoutCounter : integer range 0 to TIMEOUT_COUNTER_MAX;
+----    begin
+----        if CLK = '1' and CLK'event then
+----            if RESET = '1' then
+----                timeoutCounter := 0;
+----                timeout        <= '0';
+----            else
+----                -- default
+----                timeout <= '0';
+----
+----                if startTimeoutCounter = '1' then
+----                    timeoutCounter := 0;
+----                else
+----                    if timeoutCounter < TIMEOUT_COUNTER_MAX then
+----                        timeoutCounter := timeoutCounter + 1;
+----                    else
+----                        timeout        <= '1';
+----                        timeoutCounter := 0;
+----                    end if;
+----                end if;
+----            end if;
+----        end if;
+----    end process timeoutProcess;
+----	 
+----	 
+----			process ( clk )
+----			variable flag_start :integer := 0;
+----			variable flag_idle : integer := 0;
+----			variable i : integer  := 0 ;
+----			begin 
+----					if (clk'event and clk= '1' ) then 
+----						if reset = '1' then  
+----							packet <= idle_state;
+----							flag_start := 0 ;
+----							flag_idle := 0 ;
+----							send_addr <= (others =>('0'));
+----							
+----							else
+----							startSending  <= '0';
+----									if ( en = '1' ) then 
+----										if (flag_idle = 1) then
+----											flag_idle := 0 ;
+----										else
+----											case packet is
+----													when idle_state =>
+----																			if readyToSend = '1' then 
+----																				Flag_idle  := 1;
+----																				Flag_start := 1;
+----																				packet <= write_data ;	
+----																			end if;
+----															
+----													when sendsend_data =>
+----																				startSending  <= '1';
+----																			if Flag_start = 0 then 
+----																				packet <= idle_state;
+----																			else 
+----																				startTimeoutcounter <= '1';
+----																				packet <= write_data;
+----																			end if;
+----													when add_inc =>	
+----																				if timeout <= '1' then
+----																					packet <= idle_state;
+----																				else	
+----																					send_addr  <= send_addr + 1;
+----																					packet <= write_data;
+----																				end if;
+----													when write_data =>			
+----																																										
+----																				
+----																						send_data <= arr(i);
+----																						i := i + 1;																						
+----																						packet <= add_inc;
+----																				else														 
+----																						packet <= sendsend_data;																											
+----																						end if;
+----																						
+----											end case;
+----									end if;
+----								end if;																	
+----					end if;
+----				end if;
+----		end process;			
 end Behavioral;
-
-
+----
+----
