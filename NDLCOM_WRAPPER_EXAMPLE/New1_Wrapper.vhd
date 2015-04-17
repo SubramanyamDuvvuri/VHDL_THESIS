@@ -33,13 +33,13 @@ use IEEE.std_logic_unsigned.ALL;
 
 entity New1_Wrapper is
 		generic ( CLK_FREQ      : integer := 16000000; 
-					BAUD_RATE     : integer := 115200);	
+					BAUD_RATE     : integer :=  115200);	
 		port ( 
 				CLK : in std_logic ; 
 				RESET: in std_logic ;
 				--NODEID : in std_logic_vector := "00001010" ;
-				--starttx : in std_logic;
-				en : in std_logic;
+				starttx : in std_logic;
+				--en : in std_logic;
 				RX : in std_logic ;
 				TX : out std_logic;
 				LED : out std_logic		
@@ -47,7 +47,6 @@ entity New1_Wrapper is
 end New1_Wrapper;
 
 architecture Behavioral of New1_Wrapper is
-
  signal readyToSend :     std_logic := '1';
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
@@ -55,15 +54,25 @@ architecture Behavioral of New1_Wrapper is
  signal sendLength :      std_logic_vector(7 downto 0) := x"06" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) :="00000000";
- signal  send_data:       std_logic_vector (7 downto 0); 
+ signal send_data:       std_logic_vector (7 downto 0); 
  signal newData  :        std_logic  := '0';
  signal dataAck  :        std_logic  := '1';
- signal recvSender :      std_logic_vector(7 downto 0) := "00000000";
- signal recvFrameCounter: std_logic_vector(7 downto 0) := "00000000";
- signal recvLength:       std_logic_vector(7 downto 0) := "00000000";
- signal recv_addr:        std_logic_vector(7 downto 0) := "00000000";
+ signal recvSender :      std_logic_vector(7 downto 0) ;
+ signal recvFrameCounter: std_logic_vector(7 downto 0) ;
+ signal recvLength:       std_logic_vector(7 downto 0) ;
+ signal recv_addr:        std_logic_vector(7 downto 0) ;
  signal recv_data:        std_logic_vector(7 downto 0) ;
- signal recv_error:       std_logic := '0'; 
+ signal recv_error:       std_logic := '0';
+
+
+
+
+
+signal receive_nd_send_data : std_logic_vector (7 downto 0);
+signal receive_nd_send_length : std_logic_vector (7 downto 0);
+signal receive_nd_send_addr : std_logic_vector (7 downto 0);
+signal receive_nd_send_recvSender : std_logic_vector ( 7 downto 0) ;
+signal receive_nd_send_recvFrameCounter : std_logic_vector ( 7 downto 0 ) ;
  --############################################################
 --			signal sendLength_counter : std_logic_vector (7 downto 0) := "00000001";
 --			signal send_addr_counter : std_logic_vector (7 downto 0) := "00000000";
@@ -71,16 +80,17 @@ architecture Behavioral of New1_Wrapper is
 --			signal send_data_counter : std_logic_vector (7 downto 0) := x"aa";
 --			signal counter : std_logic_vector ( 7 downto 0 ) := "00000000";
 
-
-
 type send_frames is ( input,output );
 	signal send_frame : send_frames;
+
 	
-type array_data is array ( 0 to 255)  of std_logic_vector (7 downto 0);
+type array_data is array ( 0 to 150)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
+
 type send_packets is ( write_data, wait_time , transmit_data ) ;
 signal send_packet : send_packets;	
+
 	
 begin
 
@@ -110,17 +120,17 @@ NDLCom_example : entity work.NDLCom(Behavioral)
                    recv_data        => recv_data,
                    recv_error       => recv_error 
 						);
-
---			START_CONTROL:process (CLK)
---			begin	
---			if ( CLK'event and CLK = '1') then  		
---				if starttx = '1' then
---					startSending <= '1';
---				else
---					startSending <= '0';
---				end if;
---			end if;
---			end process START_CONTROL;
+						
+			START_CONTROL:process (CLK)
+			begin	
+			if ( CLK'event and CLK = '1') then  		
+				if starttx = '1' then
+					startSending <= '1';
+				else
+					startSending <= '0';
+				end if;
+			end if;
+			end process START_CONTROL;
 		LED <= '1';
 --			
 
@@ -241,11 +251,13 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 -------------------------------------------------------------
 -- Using array without for loop or FSM
 -------------------------------------------------------------
+
 	arr (0)<= x"88";
 	arr (1)<= x"cc";
 	arr (2)<= x"dd";
 	arr (3) <= x"ee";
 	arr (4) <= x"00";
+	
 --		process( clk ) 
 --		variable i : integer:= 0;
 --		begin 
@@ -262,43 +274,48 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --Using array with FSM		
 ---------------------------------------------------------------------
 
-		process (CLK)
-		variable i : integer := 0 ; 		
-		begin 
-			if ( clk'event and clk ='1') then
-				if en = '1' then	
-					case send_packet is  
-							
-						when	write_data =>
-												 startSending  <= '0';
-													
-												if( i < (to_integer (unsigned (sendLength )))) then
-															send_data <= arr(i);
-															i := i + 1;
-															send_packet <= wait_time;
-												else
-															
-															send_packet <= transmit_data;
-															
-															
-												end if;
-						when	wait_time => 
-															send_addr  <= send_addr + 1;
-															send_packet <= write_data ;
-															
-						when	transmit_data	=>
-														   i := 0;
-															startSending  <= '1';
-															
-															 
-															send_addr <= "00000000";
-														   send_packet <= write_data;
-															
-														   
-					end case; 
-				end if;		
-			end if;
-		end process;
+		
+----Sending:process (CLK)
+----variable i : integer := 0 ; 		
+----	begin 
+----	if ( clk'event and clk ='1') then
+----		if en = '1' then	
+----			case send_packet is  
+----				when	write_data =>
+----												 startSending  <= '0';
+----													
+----												if( i < (to_integer (unsigned (sendLength )))) then
+----															send_data <= arr(i);
+----															i := i + 1;
+----															send_packet <= wait_time;
+----												else
+----															send_packet <= transmit_data;
+----												end if;
+----				when	wait_time => 
+----															send_addr  <= send_addr + 1;
+----															send_packet <= write_data ;
+----				when	transmit_data	=>
+----														   i := 0;
+----															startSending  <= '1';
+----															send_addr <= "00000000";
+----														   send_packet <= write_data;
+----			end case; 
+----		end if;		
+----	end if;
+----end process Sending; 
+----
+
+
+Receiving: process (clk)
+variable flag : integer := 0;  
+begin
+		if (clk'event and clk = '1' ) then
+				receive_nd_send_data   <= recv_data;
+				receive_nd_send_length <= recvLength;
+				receive_nd_send_recvFrameCounter<=recvFrameCounter;
+				sendLength <= receive_nd_send_length ;
+				send_data  <= receive_nd_send_data ;
+				sendFrameCounter<= receive_nd_send_recvFrameCounter;
+		end if;
+end process Receiving;		
 end Behavioral;
-
-
