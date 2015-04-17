@@ -421,7 +421,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 			variable flag_idle : integer := 0;
 			variable i : integer  := 0 ;
 			begin 
-					if (clk'event and clk = '1' ) then 
+					if (clk'event and clk= '1' ) then 
 						if reset = '1' then  
 							packet <= idle_state;
 							flag_start := 0 ;
@@ -437,10 +437,10 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 											case packet is
 													when idle_state =>
 																			if readyToSend = '1' then 
-																				Flag_idle         := 1;
-																				Flag_start            := 1;
+																				Flag_idle  := 1;
+																				Flag_start := 1;
 																				packet <= write_data ;	
-																		end if;
+																			end if;
 															
 													when sendsend_data =>
 																				startSending  <= '1';
@@ -459,7 +459,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 																				end if;
 													when write_data =>			
 																																										
-																				if( i < 3 ) then
+																				
 																						send_data <= arr(i);
 																						i := i + 1;																						
 																						packet <= add_inc;
@@ -469,8 +469,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 																						
 											end case;
 									end if;
-								end if;			
-																						
+								end if;																	
 					end if;
 				end if;
 		end process;			
