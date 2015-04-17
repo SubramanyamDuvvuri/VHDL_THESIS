@@ -39,7 +39,7 @@ entity New1_Wrapper is
 				RESET: in std_logic ;
 				--NODEID : in std_logic_vector := "00001010" ;
 				--starttx : in std_logic;
-				--en : in std_logic;
+				en : in std_logic;
 				RX : in std_logic ;
 				TX : out std_logic;
 				LED : out std_logic		
@@ -52,7 +52,7 @@ architecture Behavioral of New1_Wrapper is
  signal startSending:     std_logic := '0';
  signal sendReceiver:     std_logic_vector(7 downto 0) :="00000001";
  signal sendFrameCounter: std_logic_vector(7 downto 0) :="00000001";
- signal sendLength :      std_logic_vector(7 downto 0) := x"06" ;
+ signal sendLength :      std_logic_vector(7 downto 0) := x"03" ;
  signal send_wea  :       std_logic_vector(0 downto 0) := "1";
  signal send_addr :       std_logic_vector(7 downto 0) :="00000000";
  signal  send_data:       std_logic_vector (7 downto 0); 
@@ -67,11 +67,11 @@ architecture Behavioral of New1_Wrapper is
  
  
  
- signal frameCounter_addr_in  : std_logic_vector(7 downto 0);
- signal frameCounter_data_in  : std_logic_vector(7 downto 0);
- signal frameCounter_wea      : std_logic_vector(0 downto 0);
- signal frameCounter_addr_out : std_logic_vector(7 downto 0);
- signal frameCounter_data_out : std_logic_vector(7 downto 0);
+-- signal frameCounter_addr_in  : std_logic_vector(7 downto 0);
+-- signal frameCounter_data_in  : std_logic_vector(7 downto 0);
+-- signal frameCounter_wea      : std_logic_vector(0 downto 0);
+-- signal frameCounter_addr_out : std_logic_vector(7 downto 0);
+-- signal frameCounter_data_out : std_logic_vector(7 downto 0);
  --############################################################
 --			signal sendLength_counter : std_logic_vector (7 downto 0) := "00000001";
 --			signal send_addr_counter : std_logic_vector (7 downto 0) := "00000000";
@@ -81,14 +81,23 @@ architecture Behavioral of New1_Wrapper is
 
 
 
-type send_frames is ( input,output );
-	signal send_frame : send_frames;
-	
-type array_data is array ( 0 to 255)  of std_logic_vector (7 downto 0);
+--type send_frames is ( input,output );
+--	signal send_frame : send_frames;
+----	
+constant TIMEOUT_COUNTER_MAX : integer := CLK_FREQ/10;
+    signal startTimeoutCounter   : std_logic;
+    signal timeout               : std_logic;
+
+
+
+type array_data is array ( 0 to 6)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
-type send_packets is ( write_data, wait_time , transmit_data) ;
-signal send_packet : send_packets;	
+--type send_packets is ( write_data, wait_time , transmit_data) ;
+----signal send_packet : send_packets;	
+
+type packet_tx is ( idle_state , sendsend_data , add_inc ,write_data); 
+signal packet: packet_tx;
 	
 begin
 
@@ -116,19 +125,34 @@ NDLCom_example : entity work.NDLCom(Behavioral)
                    recvLength       => recvLength,
                    recv_addr        => recv_addr,
                    recv_data        => recv_data,
-                   recv_error       => recv_error 
+                   recv_error       => recv_error
+						
 						);
 						
+----store_data_addr : entity work.bram_dp_simple
+----        generic map (ADDRWIDTH => MEM_ADDR_WIDTH,
+----                     DATAWIDTH => 8)
+----        port map (clk   => CLK,
+----                  we    => store_mem_wea(0),
+----                  waddr => store_mem_addr_in,
+----                  wdata => store_mem_data_in,
+----                  raddr => store_mem_addr_out,
+----                  rdata => store_mem_data_out
+----						);
+--				
+--						
 						
-			frameCounter_buffer : entity work.bram_dp_simple
-        generic map ( ADDRWIDTH => 8,
-                      DATAWIDTH => 8 )
-        port map ( clk   => CLK,
-                   we    => frameCounter_wea(0),
-                   waddr => frameCounter_addr_in,
-                   wdata => frameCounter_data_in,
-                   raddr => frameCounter_addr_out,
-                   rdata => frameCounter_data_out);
+						
+--						
+--			frameCounter_buffer : entity work.bram_dp_simple
+--        generic map ( ADDRWIDTH => 8,
+--                      DATAWIDTH => 8 )
+--        port map ( clk   => CLK,
+--                   we    => frameCounter_wea(0),
+--                   waddr => frameCounter_addr_in,
+--                   wdata => frameCounter_data_in,
+--                   raddr => frameCounter_addr_out,
+--                   rdata => frameCounter_data_out);
 
 --			START_CONTROL:process (CLK)
 --			begin	
@@ -318,48 +342,138 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 --			end if;
 --		end process;
 
-		process (CLK)
-		variable i : integer := 0 ;   	
-		begin 
-			if ( clk'event and clk ='1') then
-				if RESET = '1' then
-					send_packet<= write_data;	
-					else 
-					startsending <= '0';		
-					
-							case send_packet is 
+--------------  process (CLK)
+--------------		variable i : integer := 0 ;
+--------------		variable idleflag : integer := 0;	
+--------------		begin 
+--------------			if ( clk'event and clk ='1') then
+--------------				if RESET = '1' then
+--------------					send_packet<= write_data;	
+--------------					else 
+--------------					startsending <= '0';		
+--------------							if en = '1' then 
+--------------								if idleflag = 1 then 
+--------------									idleflag := 0 ;
+--------------								else	
+--------------									case send_packet is 
+--------------									when	write_data =>								
+--------------												 if( i < 3 ) then
+--------------															send_data <= arr(i);
+--------------															i := i + 1;	
+--------------															--counter := counter - 1 ; 
+--------------															send_packet <= wait_time;
+--------------												 else
+--------------															 
+--------------															 send_packet <= transmit_data;			
+--------------												 end if;
+--------------										when	wait_time => 
+--------------															idleflag := 1; 
+--------------															send_addr  <= send_addr + 1;
+--------------															send_packet<= write_data ;
+--------------										when	transmit_data	=>
+--------------														   i := 0;
+--------------															startSending  <= '1';
+--------------															
+--------------															sendFrameCounter <= sendFrameCounter +1;
+--------------															send_addr <= "00000000";
+--------------														   send_packet <= write_data;
+--------------															
+----------------								when inc_FC =>				
+----------------															
+----------------														   sendFrameCounter <= sendFrameCounter +1;
+----------------															startSending  <= '0';
+----------------															send_packet <= write_data;
+--------------								   end case; 
+--------------							end if;	
+--------------						end if;	
+--------------				  end if;		
+--------------			 end if;
+--------------		 end process;
+
+	timeoutProcess : process (CLK)
+        variable timeoutCounter : integer range 0 to TIMEOUT_COUNTER_MAX;
+    begin
+        if CLK = '1' and CLK'event then
+            if RESET = '1' then
+                timeoutCounter := 0;
+                timeout        <= '0';
+            else
+                -- default
+                timeout <= '0';
+
+                if startTimeoutCounter = '1' then
+                    timeoutCounter := 0;
+                else
+                    if timeoutCounter < TIMEOUT_COUNTER_MAX then
+                        timeoutCounter := timeoutCounter + 1;
+                    else
+                        timeout        <= '1';
+                        timeoutCounter := 0;
+                    end if;
+                end if;
+            end if;
+        end if;
+    end process timeoutProcess;
+	 
+	 
+			process ( clk )
+			variable flag_start :integer := 0;
+			variable flag_idle : integer := 0;
+			variable i : integer  := 0 ;
+			begin 
+					if (clk'event and clk = '1' ) then 
+						if reset = '1' then  
+							packet <= idle_state;
+							flag_start := 0 ;
+							flag_idle := 0 ;
+							send_addr <= (others =>('0'));
 							
-								when	write_data =>								
-												 if( i < 3 ) then
-															send_data <= arr(i);
-															i := i + 1;	
-															--counter := counter - 1 ; 
-															send_packet <= wait_time;
+							else
+							startSending  <= '0';
+									if ( en = '1' ) then 
+										if (flag_idle = 1) then
+											flag_idle := 0 ;
+										else
+											case packet is
+													when idle_state =>
+																			if readyToSend = '1' then 
+																				Flag_idle         := 1;
+																				Flag_start            := 1;
+																				packet <= write_data ;	
+																		end if;
 															
-												else
-															 sendFrameCounter <= sendFrameCounter +1;
-															send_packet <= transmit_data;			
-												end if;
-								when	wait_time => 
-															send_addr  <= send_addr + 1;
-															send_packet <= write_data ;
-															
-								when	transmit_data	=>
-														   i := 0;
-															startSending  <= '1';
-															 
-															send_addr <= "00000000";
-														   send_packet <= write_data;
---								when inc_FC =>				
---															
---														   sendFrameCounter <= sendFrameCounter +1;
---															startSending  <= '0';
---															send_packet <= write_data;
-					end case; 
-								
-				end if;		
-			end if;
-		end process;
+													when sendsend_data =>
+																				startSending  <= '1';
+																			if Flag_start = 0 then 
+																				packet <= idle_state;
+																			else 
+																				startTimeoutcounter <= '1';
+																				packet <= write_data;
+																			end if;
+													when add_inc =>	
+																				if timeout <= '1' then
+																					packet <= idle_state;
+																				else	
+																					send_addr  <= send_addr + 1;
+																					packet <= write_data;
+																				end if;
+													when write_data =>			
+																																										
+																				if( i < 3 ) then
+																						send_data <= arr(i);
+																						i := i + 1;																						
+																						packet <= add_inc;
+																				else														 
+																						packet <= sendsend_data;																											
+																						end if;
+																						
+											end case;
+									end if;
+								end if;			
+																						
+					end if;
+				end if;
+		end process;			
 end Behavioral;
 
 
