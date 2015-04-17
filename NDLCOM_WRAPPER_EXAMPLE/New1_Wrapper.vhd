@@ -267,7 +267,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 		begin 
 			if ( clk'event and clk ='1') then
 				if en = '1' then	
-					case send_packet is 
+					case send_packet is  
 							
 						when	write_data =>
 												 startSending  <= '0';
