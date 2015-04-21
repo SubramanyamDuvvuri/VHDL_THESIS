@@ -73,24 +73,14 @@ signal receive_nd_send_length : std_logic_vector (7 downto 0);
 signal receive_nd_send_addr : std_logic_vector (7 downto 0);
 signal receive_nd_send_recvSender : std_logic_vector ( 7 downto 0) ;
 signal receive_nd_send_recvFrameCounter : std_logic_vector ( 7 downto 0 ) ;
- --############################################################
---			signal sendLength_counter : std_logic_vector (7 downto 0) := "00000001";
---			signal send_addr_counter : std_logic_vector (7 downto 0) := "00000000";
---			signal sendFrameCounter_counter : std_logic_vector (7 downto 0) := "00000001";
---			signal send_data_counter : std_logic_vector (7 downto 0) := x"aa";
---			signal counter : std_logic_vector ( 7 downto 0 ) := "00000000";
-
-type send_frames is ( input,output );
-	signal send_frame : send_frames;
+ 
 
 	
 type array_data is array ( 0 to 150)  of std_logic_vector (7 downto 0);
 signal arr : array_data := (others => ( others => '0'));	
 	
-
-type send_packets is ( write_data, wait_time , transmit_data ) ;
-signal send_packet : send_packets;	
-
+type echo_TXRX is ( idle , receive , echo );
+signal echo_data :echo_TXRX; 
 	
 begin
 
@@ -132,125 +122,7 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 			end if;
 			end process START_CONTROL;
 		LED <= '1';
---			
 
---	process(clk)
---	variable length_counter : std_logic_vector( 7 downto 0):= "00000000";
---	variable length_counter2 : std_logic_vector( 7 downto 0)	:= "00000000";
---	begin 
---		if ( clk' event and clk = '1' ) then 
---			if en = '1' then
---		
---				case send_frame is
---						when input =>
---										if ( length_counter /= sendLength) then
---												length_counter :=length_counter + 1;
---												send_frame <= output;
---												
---										end if;
---										send_frame <= output;
---										--startSending <= '1' ;
---						when output => 
---												startSending <= '1';
---											if (length_counter2 /= length_counter) then
---												send_addr <= send_addr + '1';
---												send_data <= send_data + '1';
---												--sendFrameCounter <= sendFrameCounter + '1' ;
---												send_frame <=input;
---												startSending <= '0'
---											end if;
---											sendFrameCounter <= sendFrameCounter + '1';
---											--startSending <= '0' ;
---				end case;
---			else
---				startSending <= '0';
---			end if;	
---		end if;		
---	end process;
---####################################################################
---					USING FSM
---####################################################################
---process(clk)
---	variable length_counter : std_logic_vector( 7 downto 0):= "00000000";
---	variable length_counter2 : std_logic_vector( 7 downto 0)	:= "00000000";
---	begin 
---		if ( clk' event and clk = '1' ) then 
---			if en = '1' then
---		
---				case send_frame is
---						when input =>
---										if ( length_counter /= sendLength) then
---												length_counter :=length_counter + 1;
---												send_frame <= output;
---										end if;
---										send_frame <= output;
---										startSending <= '1' ;
---						when output => 
---												startSending <= '1';
---											if (length_counter2 /= length_counter) then
---												send_addr <= send_addr + '1';
---												send_data <= send_data + '1';
---												sendFrameCounter <= sendFrameCounter + '1' ;
---												send_frame <=input;
---												startSending <= '0';
---											end if;
---											sendFrameCounter <= sendFrameCounter + '1';
---											startSending <= '0' ;
---				end case;
---			else
---				startSending <= '0';
---			end if;	
---		end if;		
---	end process;
-----------------------------------------------------------------------------------		 
-			
---			SEND_CONTROL:process(clk,sendLength,send_addr,send_data,sendFrameCounter )
-----			variable sendLength_counter : std_logic_vector (7 downto 0) := "00000000";
-----			variable send_addr_counter : std_logic_vector (7 downto 0) := "00000000";
-----			variable sendFrameCounter_counter : std_logic_vector (7 downto 0) := "00000001";
-----			variable send_data_counter : std_logic_vector (7 downto 0) := x"aa";
-----			variable counter : std_logic_vector ( 7 downto 0 ) := "00000000";
---			begin
---				if (CLK'event and CLK = '1' ) then 
---					if (counter = "00001010") then
---						counter <= "00000000";	
---						sendLength_counter <= "00000001";
---						send_addr_counter <= "00000000";
---						send_data_counter <= x"aa";	
---					else	
---						sendFrameCounter<= sendFrameCounter_counter 
---						sendLength <= sendLength_counter;
---						send_addr	<= send_addr_counter;
---						send_data	<= send_data_counter;
---						sendFrameCounter<= sendFrameCounter_counter ;
---						--############################################
---						counter <= counter +"00000001";
---						sendLength_counter <= sendLength_counter +"00000001";
---						sendFrameCounter_counter <= sendFrameCounter_counter +'1';
---						send_addr_counter <= send_addr_counter +"00000001" ;
---						send_data_counter <= send_data_counter +"00000001" ;
---					end if;
---				end if;
---			end process SEND_CONTROL; 
-
--------------------------------------------------------
--- variable giving the input
--------------------------------------------------------
-
-																											
---process
---   variable cntvar: std_logic_vector (7 downto 0):= "00000000" ;
---begin
---   cntvar := send_data;
---   for i in 0 to 10 loop
---       cntvar := cntvar + 1;
---   end loop;
---   send_data <= cntvar;
---end process;
-
--------------------------------------------------------------
--- Using array without for loop or FSM
--------------------------------------------------------------
 
 	arr (0)<= x"88";
 	arr (1)<= x"cc";
@@ -258,64 +130,27 @@ NDLCom_example : entity work.NDLCom(Behavioral)
 	arr (3) <= x"ee";
 	arr (4) <= x"00";
 	
---		process( clk ) 
---		variable i : integer:= 0;
---		begin 
---		if clk'event  and clk = '1' then 
-----			if( i /= (to_integer (unsigned (sendLength )))-1) then
---			if( i /= 3) then
---				send_data <= arr(i);
---				send_addr <= send_addr +1 ;
---				i := i+1;
---			end if;	
+
+--
+--Receiving: process (clk)
+--variable flag : integer := 0;  
+--begin
+--		if (clk'event and clk = '1' ) then
+--				receive_nd_send_data   <= recv_data;
+--				receive_nd_send_length <= recvLength;
+--				receive_nd_send_recvFrameCounter<=recvFrameCounter;
+--				sendLength <= receive_nd_send_length ;
+--				send_data  <= receive_nd_send_data ;
+--				sendFrameCounter<= receive_nd_send_recvFrameCounter;
 --		end if;
---		end process;
---------------------------------------------------------------------
---Using array with FSM		
----------------------------------------------------------------------
+--end process Receiving;		
 
+		Sending_Receiving: process (clk)
+		begin 
+				if RESET = '1' ;
+				
 		
-----Sending:process (CLK)
-----variable i : integer := 0 ; 		
-----	begin 
-----	if ( clk'event and clk ='1') then
-----		if en = '1' then	
-----			case send_packet is  
-----				when	write_data =>
-----												 startSending  <= '0';
-----													
-----												if( i < (to_integer (unsigned (sendLength )))) then
-----															send_data <= arr(i);
-----															i := i + 1;
-----															send_packet <= wait_time;
-----												else
-----															send_packet <= transmit_data;
-----												end if;
-----				when	wait_time => 
-----															send_addr  <= send_addr + 1;
-----															send_packet <= write_data ;
-----				when	transmit_data	=>
-----														   i := 0;
-----															startSending  <= '1';
-----															send_addr <= "00000000";
-----														   send_packet <= write_data;
-----			end case; 
-----		end if;		
-----	end if;
-----end process Sending; 
-----
 
 
-Receiving: process (clk)
-variable flag : integer := 0;  
-begin
-		if (clk'event and clk = '1' ) then
-				receive_nd_send_data   <= recv_data;
-				receive_nd_send_length <= recvLength;
-				receive_nd_send_recvFrameCounter<=recvFrameCounter;
-				sendLength <= receive_nd_send_length ;
-				send_data  <= receive_nd_send_data ;
-				sendFrameCounter<= receive_nd_send_recvFrameCounter;
-		end if;
-end process Receiving;		
+
 end Behavioral;
