@@ -33,7 +33,7 @@ use IEEE.std_logic_unsigned.ALL;
 
 entity New_NDLCOM_ROUTING_Top is
 			generic ( CLK_FREQ      : integer := 16000000; 
-						 BAUD_RATE     :  integer :=  926100);	
+						 BAUD_RATE     :  integer := 115200);	
 	port ( 	CLK    : in std_logic;
 				RST : in std_logic;
 				RX : in std_logic_vector(0 downto 0) ;
@@ -90,7 +90,7 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
    signal error_debug1 : std_logic_vector(15 downto 0);
    signal error_debug2 : std_logic_vector(15 downto 0);
 	
-	type array_data is array ( 0 to 6)  of std_logic_vector (7 downto 0);
+	type array_data is array ( 0 to 250)  of std_logic_vector (7 downto 0);
    signal arr : array_data := (others => ( others => '0'));	
 	
 	type send_packets is (idle,write_data, transmit_data) ;
@@ -200,5 +200,11 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 					end if;		
 				end if;
 			end process;
+			
+			
+			
+			
+			
+			
 end Behavioral;
 
