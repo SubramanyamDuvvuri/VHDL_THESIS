@@ -99,6 +99,9 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 	type receive_packets is ( idle, receive_data , write_data ) ;
 	signal receive_packet : receive_packets; 
 	
+	
+	type echo_datas is ( idle , receive , write_data , echo );
+	signal echo_data : echo_datas;
 	------------------------------------------------------------------
 	signal receive_send_recvSender : std_logic_vector (7 downto 0);
 	signal receive_send_recvLength : std_logic_vector (7 downto 0) ;	
@@ -160,98 +163,84 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 			 
 			 
 			 ---LED CHECK----
-			  LED <= '1' ;
+			  --LED <= '1' ;
 			-----------------
-			receiving:process (clk)
-			variable idleflag_receive : integer := 0;
-			variable i : integer := 0;
-			begin 
-					if ( clk'event and clk = '1' ) then
-							if ( RST = '1') then 
-								recv_addr <= (others =>'0') ;
-								receive_packet<=receive_data;
-							else
-								dataAck <= '1';
-								receive_send_recvLength<=recvLength;
-								case receive_packet is
-									
-									when idle =>
-													if newData = '1' then 
-														dataAck <= '1';
-														receive_packet <= receive_data;
-													else
-														receive_packet <= idle ;
-													end if;
-									when receive_data	=>
-														i := 0;
-														recv_addr <= (others =>	'0');
-														receive_packet <= write_data;
-														idleflag_receive := 1;
-													
-									when write_data =>
-													if ( i < to_integer (unsigned(receive_send_recvLength))) then 
-															arr (i) <= recv_data;
-															recv_addr<= recv_addr +1;
-															i := i+1;
-			
-			else
-															receive_packet <= idle ; 
-												
-													end if;	
-								end case;
-							end if;			
-					end if;
-			end process;
-			
--------------------------------------------------------	
 		
-			sending :process (CLK)
-			variable i : integer := 0 ;
-			variable idleflag_send : integer := 0;	
-			begin 
-			  if (clk'event and clk ='1') then
-					if RST = '1' then
-						 send_addr <= (others => '1');
-						 send_packet<= write_data;	
-					else 
-						-- defaults
-						 startsending <= '0';		
-						 send_wea <= "0";
-						
-											-- interface to start sending
-							 if idleflag_send = 1 then 
-								 idleflag_send := 0 ;
-							 else	
-								 case send_packet is 
-										when idle =>
-														if readyToSend = '1' then
-															send_packet <= write_data;
-														else
-															send_packet <= idle ; 	
-														end if;		
-										when	write_data =>								
-														if (i < 6 ) then
-															 send_data <= arr(i);
-															 send_addr <= send_addr + 1;
-															 send_wea  <= "1";
-															 i := i + 1;	
-															 send_packet <= write_data;
-														elsif ( newData = '1' ) then  
-															 sendLength <= receive_send_recvLength ;
-															 send_packet <= transmit_data;			
-														end if;
-										when	transmit_data	=>
-														i := 0;
-														startSending  <= '1';
-														sendFrameCounter <= sendFrameCounter +1;
-														send_addr <= (others => '1');
-														send_packet <= idle ;							
-								 end case; 
-							 end if;	
-						 end if;	
-							
+		Sending_Receiving: process (clk)
+		variable i : integer := 0;
+		variable j : integer := 0 ;
+		begin 
+			if(clk'event and clk = '1' ) then
+				if RST = '1' then 
+					startSending <= '0';
+					echo_data <= idle;
+					i := 0;
+					j := 0;
+					send_addr <= (others => '0');
+					recv_addr <= (others => '0');
+				else
+						--defaults
+					startSending <= '0';
+					send_wea <= "0";
+					dataack <= '0';
+						case echo_data is
+									when idle 	 =>   
+															if readytosend = '1' then
+																  echo_data <= receive;
+																  receive_send_recvLength <= recvLength;
+																  sendLength <= receive_send_recvLength ;
+															else 
+																  echo_data <= idle;
+															end if;	  
+									when receive =>
+															if ( i< (to_integer(unsigned (receive_send_recvLength)))) then
+																	arr (i)<= recv_data;
+																	recv_addr <= recv_addr +1 ;
+																	i := i +1;
+																	echo_data<= receive;
+															else
+																	echo_data <= write_data;
+															end if;		
+									when write_data =>
+															if (j < ( to_integer ( unsigned (receive_send_recvLength)))) then
+																	send_data <= arr (j) ;
+																	send_addr <= send_addr + 1;
+																	send_wea  <= "1";
+																	j := j + 1 ;
+																	echo_data <= write_data;
+															elsif (newData = '1')  then
+																	dataack <= '1';
+																	echo_data <= echo; 
+															end if;	
+									when echo    => 		
+																	i := 0;
+																	j := 0 ;
+																	startSending <= '1' ;
+																	sendFrameCounter <=sendFramecounter+1;
+																	send_addr <= (others => '0');
+																	recv_addr <= (others => '0');
+																	echo_data <= idle ; 
+															 
+						end case;							
 				end if;
-			end process;
+			end if;		
+		end process;
+		
+		process (clk)
+		
+		begin
+		    if clk'event and clk='1' then
+			     if rst='1' then
+				     LED <= '0';
+				  else
+				     if newData='1' then
+					      LED <= '1';
+						else
+							LED<= '0';
+					  end if;
+				  end if;
+		    end if;
+	   end process;
 
 end Behavioral;
 
