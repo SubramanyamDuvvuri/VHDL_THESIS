@@ -1,0 +1,1767 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: New_NDLCOM_ROUTING_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "New_NDLCOM_ROUTING_Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "New_NDLCOM_ROUTING_Top"
+Output Format                      : NGC
+Target Device                      : xc3s400a-4-ft256
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : New_NDLCOM_ROUTING_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : ()
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd" into library encode_8b10b
+Parsing package <encode_8b10b_pkg>.
+Parsing package body <encode_8b10b_pkg>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_pkg.vhd" into library decode_8b10b
+Parsing package <decode_8b10b_pkg>.
+Parsing package body <decode_8b10b_pkg>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd" into library encode_8b10b
+Parsing entity <encode_8b10b_lut_base>.
+Parsing architecture <xilinx> of entity <encode_8b10b_lut_base>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut_base.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_lut_base>.
+Parsing architecture <xilinx> of entity <decode_8b10b_lut_base>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_disp.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_disp>.
+Parsing architecture <xilinx> of entity <decode_8b10b_disp>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd" into library encode_8b10b
+Parsing entity <encode_8b10b_lut>.
+Parsing architecture <xilinx> of entity <encode_8b10b_lut>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd" into library encode_8b10b
+Parsing entity <encode_8b10b_bram>.
+Parsing architecture <xilinx> of entity <encode_8b10b_bram>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_lut.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_lut>.
+Parsing architecture <xilinx> of entity <decode_8b10b_lut>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_bram.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_bram>.
+Parsing architecture <xilinx> of entity <decode_8b10b_bram>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd" into library encode_8b10b
+Parsing entity <encode_8b10b_rtl>.
+Parsing architecture <xilinx> of entity <encode_8b10b_rtl>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_rtl.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_rtl>.
+Parsing architecture <xilinx> of entity <decode_8b10b_rtl>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd" into library work
+Parsing entity <bram_dp_simple>.
+Parsing architecture <behavioral> of entity <bram_dp_simple>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_frontend.vhd" into library Spartan6
+Parsing entity <asynch_sercomm_tx_frontend>.
+Parsing architecture <Behavioral> of entity <asynch_sercomm_tx_frontend>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_frontend.vhd" into library Spartan6
+Parsing package <asynch_sercomm_rx_frontend_pack>.
+Parsing package body <asynch_sercomm_rx_frontend_pack>.
+Parsing entity <asynch_sercomm_rx_frontend>.
+Parsing architecture <Behavioral> of entity <asynch_sercomm_rx_frontend>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_config_pack.vhd" into library Spartan6
+Parsing package <asynch_sercomm_config_pack>.
+Parsing package body <asynch_sercomm_config_pack>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd" into library encode_8b10b
+Parsing entity <encode_8b10b_top>.
+Parsing architecture <xilinx> of entity <encode_8b10b_top>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/decode_8b10b/decode_8b10b_top.vhd" into library decode_8b10b
+Parsing entity <decode_8b10b_top>.
+Parsing architecture <xilinx> of entity <decode_8b10b_top>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_config.vhd" into library work
+Parsing package <NDLCom_config>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/fifo_module/trunk/fast_fifo.vhd" into library work
+Parsing entity <fast_fifo>.
+Parsing architecture <Behavioral> of entity <fast_fifo>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_tx_top.vhd" into library Spartan6
+Parsing entity <asynch_sercomm_tx_top>.
+Parsing architecture <Behavioral> of entity <asynch_sercomm_tx_top>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Spartan6/asynch_sercomm_rx_top.vhd" into library Spartan6
+Parsing entity <asynch_sercomm_rx_top>.
+Parsing architecture <Behavioral> of entity <asynch_sercomm_rx_top>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Examples/statistik tool/UART_mod.vhd" into library work
+Parsing entity <uart_mod>.
+Parsing architecture <Behavioral> of entity <uart_mod>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLComLS.vhd" into library work
+Parsing entity <NDLComLS>.
+Parsing architecture <Behavioral> of entity <ndlcomls>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLComHS.vhd" into library work
+Parsing entity <NDLComHS>.
+Parsing architecture <Behavioral> of entity <ndlcomhs>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/DFKI_Pack/trunk/dfki_pack.vhd" into library work
+Parsing package <dfki_pack>.
+Parsing package body <dfki_pack>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd" into library work
+Parsing entity <crc_par_mod>.
+Parsing architecture <Behavioral> of entity <crc_par_mod>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_pack.vhd" into library work
+Parsing package <crc_pack>.
+Parsing package body <crc_pack>.
+Parsing VHDL file "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" into library work
+Parsing entity <NDLCom_top>.
+Parsing architecture <Behavioral> of entity <ndlcom_top>.
+Parsing VHDL file "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" into library work
+Parsing entity <New_NDLCOM_ROUTING_Top>.
+Parsing architecture <Behavioral> of entity <new_ndlcom_routing_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <New_NDLCOM_ROUTING_Top> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 49: Using initial value "0" for hs_rx_p since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 50: Using initial value "0" for hs_rx_n since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 52: Using initial value "00" for hs_txdata_trigger since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 54: Using initial value "00" for hs_rxdata_kflag since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 55: Using initial value "00" for hs_rxdata_codeerr since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 56: Using initial value "00" for hs_rxdata_disperr since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 57: Using initial value "00" for hs_rxdata_trigger since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 58: Using initial value '0' for ls_txready since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 59: Using initial value "00000000" for ls_rxdata since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 60: Using initial value '0' for ls_newdata since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 61: Using initial value '0' for ls_rxerr since it is never assigned
+WARNING:HDLCompiler:871 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 71: Using initial value '0' for clear_last_error since it is never assigned
+
+Elaborating entity <NDLCom_top> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 193: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 194: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 195: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 196: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 197: Range is empty (null range)
+
+Elaborating entity <bram_dp_simple> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <fast_fifo> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <bram_dp_simple> (architecture <behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 317: Range is empty (null range)
+
+Elaborating entity <NDLComLS> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <uart_mod> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Examples/statistik tool/UART_mod.vhd" Line 100: Assignment to txstate_as_vector ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Examples/statistik tool/UART_mod.vhd" Line 211: Assignment to rxstate_as_vector ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Examples/statistik tool/UART_mod.vhd" Line 365: Assignment to rxackstate_as_vector ignored, since the identifier is never used
+
+Elaborating entity <crc_par_mod> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:746 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" Line 1200: Range is empty (null range)
+WARNING:HDLCompiler:1127 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" Line 169: Assignment to sendlength ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <New_NDLCOM_ROUTING_Top>.
+    Related source file is "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd".
+        CLK_FREQ = 16000000
+        BAUD_RATE = 115200
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <hs_tx_p> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <hs_tx_n> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <hs_txData_Kflag> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <ls_txData> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <recvSender> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <recvFrameCounter> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <last_error> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <error_debug1> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <error_debug2> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <ls_startTx> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <ls_dataAck> of the instance <routing_test> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/New_NDLCOM_ROUTING_Top.vhd" line 114: Output port <error> of the instance <routing_test> is unconnected or connected to loadless signal.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <arr>, simulation mismatch.
+    Found 251x8-bit dual-port RAM <Mram_arr> for signal <arr>.
+    Found 2-bit register for signal <echo_data>.
+    Found 32-bit register for signal <Sending_Receiving.i>.
+    Found 32-bit register for signal <Sending_Receiving.j>.
+    Found 8-bit register for signal <send_addr>.
+    Found 8-bit register for signal <recv_addr>.
+    Found 1-bit register for signal <send_wea>.
+    Found 1-bit register for signal <dataAck>.
+    Found 8-bit register for signal <send_data>.
+    Found 8-bit register for signal <sendFrameCounter>.
+    Found 1-bit register for signal <LED>.
+    Found 1-bit register for signal <startSending>.
+    Found finite state machine <FSM_0> for signal <echo_data>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <recv_addr[7]_GND_6_o_add_5_OUT> created at line 198.
+    Found 32-bit adder for signal <Sending_Receiving.i[31]_GND_6_o_add_6_OUT> created at line 199.
+    Found 8-bit adder for signal <send_addr[7]_GND_6_o_add_12_OUT> created at line 207.
+    Found 32-bit adder for signal <Sending_Receiving.j[31]_GND_6_o_add_13_OUT> created at line 209.
+    Found 8-bit adder for signal <sendFrameCounter[7]_GND_6_o_add_19_OUT> created at line 219.
+    Found 32-bit comparator greater for signal <GND_6_o_Sending_Receiving.i[31]_LessThan_4_o> created at line 196
+    Found 32-bit comparator greater for signal <GND_6_o_Sending_Receiving.j[31]_LessThan_11_o> created at line 205
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 100 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <New_NDLCOM_ROUTING_Top> synthesized.
+
+Synthesizing Unit <NDLCom_top>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd".
+        CLK_FREQ = 16000000
+        NUMBER_OF_HS_PORTS = 0
+        NUMBER_OF_LS_PORTS = 1
+        LS_BAUD_RATE = 115200
+WARNING:Xst:647 - Input <hs_rx_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_rx_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_txData_trigger> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_rxData_Kflag> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_rxData_CodeErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_rxData_DispErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hs_rxData_trigger> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" line 304: Output port <full> of the instance <output_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" line 391: Output port <match_o> of the instance <crcGen> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLCom_top.vhd" line 405: Output port <match_o> of the instance <crcCheck> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <hs_tx_p> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <hs_tx_n> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <hs_txData_Kflag> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 16-bit register for signal <error_debug1>.
+    Found 16-bit register for signal <error_debug2>.
+    Found 8-bit register for signal <encoder.byteCounter>.
+    Found 1-bit register for signal <encoder.escapeFlag>.
+    Found 1-bit register for signal <encoder.readNextInput>.
+    Found 8-bit register for signal <encoder.inputFifo(7:0)>.
+    Found 1-bit register for signal <encoder.escapeFifo(0)>.
+    Found 8-bit register for signal <crc_i_s_crc_gen_buf>.
+    Found 1-bit register for signal <crc_i_s_crc_gen_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s_crc_gen_reset>.
+    Found 8-bit register for signal <output_fifo_din>.
+    Found 1-bit register for signal <output_fifo_wr>.
+    Found 8-bit register for signal <input_mem_addr_out>.
+    Found 1-bit register for signal <inputBufferReady>.
+    Found 3-bit register for signal <encoderState>.
+    Found 31-bit register for signal <decoder.actualPort>.
+    Found 1-bit register for signal <decoder.escapeFlag>.
+    Found 2-bit register for signal <decoder.headerCounter>.
+    Found 16-bit register for signal <decoder.crc_recv_value>.
+    Found 8-bit register for signal <crc_i_s_crc_check_buf>.
+    Found 1-bit register for signal <crc_i_s_crc_check_buf_new_byte>.
+    Found 1-bit register for signal <crc_i_s_crc_check_reset>.
+    Found 1-bit register for signal <receive_fifo_rd>.
+    Found 8-bit register for signal <output_mem_addr_in>.
+    Found 1-bit register for signal <output_mem_wea>.
+    Found 8-bit register for signal <output_mem_data_in>.
+    Found 8-bit register for signal <recvHeader(0)>.
+    Found 8-bit register for signal <recvHeader(1)>.
+    Found 8-bit register for signal <recvHeader(2)>.
+    Found 8-bit register for signal <recvHeader(3)>.
+    Found 1-bit register for signal <err_decode>.
+    Found 1-bit register for signal <dataTrigger>.
+    Found 3-bit register for signal <decoderState>.
+    Found 21-bit register for signal <decoder_timeoutProcess.timeoutCounter>.
+    Found 1-bit register for signal <decoder_timeout>.
+    Found 1-bit register for signal <decoder_timeoutProcess.timerState>.
+    Found 1-bit register for signal <newData_int>.
+    Found 2-bit register for signal <rxHandShakeState>.
+    Found 1-bit register for signal <routingTable(0)>.
+    Found 1-bit register for signal <routingTable(1)>.
+    Found 1-bit register for signal <routingTable(2)>.
+    Found 1-bit register for signal <routingTable(3)>.
+    Found 1-bit register for signal <routingTable(4)>.
+    Found 1-bit register for signal <routingTable(5)>.
+    Found 1-bit register for signal <routingTable(6)>.
+    Found 1-bit register for signal <routingTable(7)>.
+    Found 1-bit register for signal <routingTable(8)>.
+    Found 1-bit register for signal <routingTable(9)>.
+    Found 1-bit register for signal <routingTable(10)>.
+    Found 1-bit register for signal <routingTable(11)>.
+    Found 1-bit register for signal <routingTable(12)>.
+    Found 1-bit register for signal <routingTable(13)>.
+    Found 1-bit register for signal <routingTable(14)>.
+    Found 1-bit register for signal <routingTable(15)>.
+    Found 1-bit register for signal <routingTable(16)>.
+    Found 1-bit register for signal <routingTable(17)>.
+    Found 1-bit register for signal <routingTable(18)>.
+    Found 1-bit register for signal <routingTable(19)>.
+    Found 1-bit register for signal <routingTable(20)>.
+    Found 1-bit register for signal <routingTable(21)>.
+    Found 1-bit register for signal <routingTable(22)>.
+    Found 1-bit register for signal <routingTable(23)>.
+    Found 1-bit register for signal <routingTable(24)>.
+    Found 1-bit register for signal <routingTable(25)>.
+    Found 1-bit register for signal <routingTable(26)>.
+    Found 1-bit register for signal <routingTable(27)>.
+    Found 1-bit register for signal <routingTable(28)>.
+    Found 1-bit register for signal <routingTable(29)>.
+    Found 1-bit register for signal <routingTable(30)>.
+    Found 1-bit register for signal <routingTable(31)>.
+    Found 1-bit register for signal <routingTable(32)>.
+    Found 1-bit register for signal <routingTable(33)>.
+    Found 1-bit register for signal <routingTable(34)>.
+    Found 1-bit register for signal <routingTable(35)>.
+    Found 1-bit register for signal <routingTable(36)>.
+    Found 1-bit register for signal <routingTable(37)>.
+    Found 1-bit register for signal <routingTable(38)>.
+    Found 1-bit register for signal <routingTable(39)>.
+    Found 1-bit register for signal <routingTable(40)>.
+    Found 1-bit register for signal <routingTable(41)>.
+    Found 1-bit register for signal <routingTable(42)>.
+    Found 1-bit register for signal <routingTable(43)>.
+    Found 1-bit register for signal <routingTable(44)>.
+    Found 1-bit register for signal <routingTable(45)>.
+    Found 1-bit register for signal <routingTable(46)>.
+    Found 1-bit register for signal <routingTable(47)>.
+    Found 1-bit register for signal <routingTable(48)>.
+    Found 1-bit register for signal <routingTable(49)>.
+    Found 1-bit register for signal <routingTable(50)>.
+    Found 1-bit register for signal <routingTable(51)>.
+    Found 1-bit register for signal <routingTable(52)>.
+    Found 1-bit register for signal <routingTable(53)>.
+    Found 1-bit register for signal <routingTable(54)>.
+    Found 1-bit register for signal <routingTable(55)>.
+    Found 1-bit register for signal <routingTable(56)>.
+    Found 1-bit register for signal <routingTable(57)>.
+    Found 1-bit register for signal <routingTable(58)>.
+    Found 1-bit register for signal <routingTable(59)>.
+    Found 1-bit register for signal <routingTable(60)>.
+    Found 1-bit register for signal <routingTable(61)>.
+    Found 1-bit register for signal <routingTable(62)>.
+    Found 1-bit register for signal <routingTable(63)>.
+    Found 1-bit register for signal <routingTable(64)>.
+    Found 1-bit register for signal <routingTable(65)>.
+    Found 1-bit register for signal <routingTable(66)>.
+    Found 1-bit register for signal <routingTable(67)>.
+    Found 1-bit register for signal <routingTable(68)>.
+    Found 1-bit register for signal <routingTable(69)>.
+    Found 1-bit register for signal <routingTable(70)>.
+    Found 1-bit register for signal <routingTable(71)>.
+    Found 1-bit register for signal <routingTable(72)>.
+    Found 1-bit register for signal <routingTable(73)>.
+    Found 1-bit register for signal <routingTable(74)>.
+    Found 1-bit register for signal <routingTable(75)>.
+    Found 1-bit register for signal <routingTable(76)>.
+    Found 1-bit register for signal <routingTable(77)>.
+    Found 1-bit register for signal <routingTable(78)>.
+    Found 1-bit register for signal <routingTable(79)>.
+    Found 1-bit register for signal <routingTable(80)>.
+    Found 1-bit register for signal <routingTable(81)>.
+    Found 1-bit register for signal <routingTable(82)>.
+    Found 1-bit register for signal <routingTable(83)>.
+    Found 1-bit register for signal <routingTable(84)>.
+    Found 1-bit register for signal <routingTable(85)>.
+    Found 1-bit register for signal <routingTable(86)>.
+    Found 1-bit register for signal <routingTable(87)>.
+    Found 1-bit register for signal <routingTable(88)>.
+    Found 1-bit register for signal <routingTable(89)>.
+    Found 1-bit register for signal <routingTable(90)>.
+    Found 1-bit register for signal <routingTable(91)>.
+    Found 1-bit register for signal <routingTable(92)>.
+    Found 1-bit register for signal <routingTable(93)>.
+    Found 1-bit register for signal <routingTable(94)>.
+    Found 1-bit register for signal <routingTable(95)>.
+    Found 1-bit register for signal <routingTable(96)>.
+    Found 1-bit register for signal <routingTable(97)>.
+    Found 1-bit register for signal <routingTable(98)>.
+    Found 1-bit register for signal <routingTable(99)>.
+    Found 1-bit register for signal <routingTable(100)>.
+    Found 1-bit register for signal <routingTable(101)>.
+    Found 1-bit register for signal <routingTable(102)>.
+    Found 1-bit register for signal <routingTable(103)>.
+    Found 1-bit register for signal <routingTable(104)>.
+    Found 1-bit register for signal <routingTable(105)>.
+    Found 1-bit register for signal <routingTable(106)>.
+    Found 1-bit register for signal <routingTable(107)>.
+    Found 1-bit register for signal <routingTable(108)>.
+    Found 1-bit register for signal <routingTable(109)>.
+    Found 1-bit register for signal <routingTable(110)>.
+    Found 1-bit register for signal <routingTable(111)>.
+    Found 1-bit register for signal <routingTable(112)>.
+    Found 1-bit register for signal <routingTable(113)>.
+    Found 1-bit register for signal <routingTable(114)>.
+    Found 1-bit register for signal <routingTable(115)>.
+    Found 1-bit register for signal <routingTable(116)>.
+    Found 1-bit register for signal <routingTable(117)>.
+    Found 1-bit register for signal <routingTable(118)>.
+    Found 1-bit register for signal <routingTable(119)>.
+    Found 1-bit register for signal <routingTable(120)>.
+    Found 1-bit register for signal <routingTable(121)>.
+    Found 1-bit register for signal <routingTable(122)>.
+    Found 1-bit register for signal <routingTable(123)>.
+    Found 1-bit register for signal <routingTable(124)>.
+    Found 1-bit register for signal <routingTable(125)>.
+    Found 1-bit register for signal <routingTable(126)>.
+    Found 1-bit register for signal <routingTable(127)>.
+    Found 1-bit register for signal <routingTable(128)>.
+    Found 1-bit register for signal <routingTable(129)>.
+    Found 1-bit register for signal <routingTable(130)>.
+    Found 1-bit register for signal <routingTable(131)>.
+    Found 1-bit register for signal <routingTable(132)>.
+    Found 1-bit register for signal <routingTable(133)>.
+    Found 1-bit register for signal <routingTable(134)>.
+    Found 1-bit register for signal <routingTable(135)>.
+    Found 1-bit register for signal <routingTable(136)>.
+    Found 1-bit register for signal <routingTable(137)>.
+    Found 1-bit register for signal <routingTable(138)>.
+    Found 1-bit register for signal <routingTable(139)>.
+    Found 1-bit register for signal <routingTable(140)>.
+    Found 1-bit register for signal <routingTable(141)>.
+    Found 1-bit register for signal <routingTable(142)>.
+    Found 1-bit register for signal <routingTable(143)>.
+    Found 1-bit register for signal <routingTable(144)>.
+    Found 1-bit register for signal <routingTable(145)>.
+    Found 1-bit register for signal <routingTable(146)>.
+    Found 1-bit register for signal <routingTable(147)>.
+    Found 1-bit register for signal <routingTable(148)>.
+    Found 1-bit register for signal <routingTable(149)>.
+    Found 1-bit register for signal <routingTable(150)>.
+    Found 1-bit register for signal <routingTable(151)>.
+    Found 1-bit register for signal <routingTable(152)>.
+    Found 1-bit register for signal <routingTable(153)>.
+    Found 1-bit register for signal <routingTable(154)>.
+    Found 1-bit register for signal <routingTable(155)>.
+    Found 1-bit register for signal <routingTable(156)>.
+    Found 1-bit register for signal <routingTable(157)>.
+    Found 1-bit register for signal <routingTable(158)>.
+    Found 1-bit register for signal <routingTable(159)>.
+    Found 1-bit register for signal <routingTable(160)>.
+    Found 1-bit register for signal <routingTable(161)>.
+    Found 1-bit register for signal <routingTable(162)>.
+    Found 1-bit register for signal <routingTable(163)>.
+    Found 1-bit register for signal <routingTable(164)>.
+    Found 1-bit register for signal <routingTable(165)>.
+    Found 1-bit register for signal <routingTable(166)>.
+    Found 1-bit register for signal <routingTable(167)>.
+    Found 1-bit register for signal <routingTable(168)>.
+    Found 1-bit register for signal <routingTable(169)>.
+    Found 1-bit register for signal <routingTable(170)>.
+    Found 1-bit register for signal <routingTable(171)>.
+    Found 1-bit register for signal <routingTable(172)>.
+    Found 1-bit register for signal <routingTable(173)>.
+    Found 1-bit register for signal <routingTable(174)>.
+    Found 1-bit register for signal <routingTable(175)>.
+    Found 1-bit register for signal <routingTable(176)>.
+    Found 1-bit register for signal <routingTable(177)>.
+    Found 1-bit register for signal <routingTable(178)>.
+    Found 1-bit register for signal <routingTable(179)>.
+    Found 1-bit register for signal <routingTable(180)>.
+    Found 1-bit register for signal <routingTable(181)>.
+    Found 1-bit register for signal <routingTable(182)>.
+    Found 1-bit register for signal <routingTable(183)>.
+    Found 1-bit register for signal <routingTable(184)>.
+    Found 1-bit register for signal <routingTable(185)>.
+    Found 1-bit register for signal <routingTable(186)>.
+    Found 1-bit register for signal <routingTable(187)>.
+    Found 1-bit register for signal <routingTable(188)>.
+    Found 1-bit register for signal <routingTable(189)>.
+    Found 1-bit register for signal <routingTable(190)>.
+    Found 1-bit register for signal <routingTable(191)>.
+    Found 1-bit register for signal <routingTable(192)>.
+    Found 1-bit register for signal <routingTable(193)>.
+    Found 1-bit register for signal <routingTable(194)>.
+    Found 1-bit register for signal <routingTable(195)>.
+    Found 1-bit register for signal <routingTable(196)>.
+    Found 1-bit register for signal <routingTable(197)>.
+    Found 1-bit register for signal <routingTable(198)>.
+    Found 1-bit register for signal <routingTable(199)>.
+    Found 1-bit register for signal <routingTable(200)>.
+    Found 1-bit register for signal <routingTable(201)>.
+    Found 1-bit register for signal <routingTable(202)>.
+    Found 1-bit register for signal <routingTable(203)>.
+    Found 1-bit register for signal <routingTable(204)>.
+    Found 1-bit register for signal <routingTable(205)>.
+    Found 1-bit register for signal <routingTable(206)>.
+    Found 1-bit register for signal <routingTable(207)>.
+    Found 1-bit register for signal <routingTable(208)>.
+    Found 1-bit register for signal <routingTable(209)>.
+    Found 1-bit register for signal <routingTable(210)>.
+    Found 1-bit register for signal <routingTable(211)>.
+    Found 1-bit register for signal <routingTable(212)>.
+    Found 1-bit register for signal <routingTable(213)>.
+    Found 1-bit register for signal <routingTable(214)>.
+    Found 1-bit register for signal <routingTable(215)>.
+    Found 1-bit register for signal <routingTable(216)>.
+    Found 1-bit register for signal <routingTable(217)>.
+    Found 1-bit register for signal <routingTable(218)>.
+    Found 1-bit register for signal <routingTable(219)>.
+    Found 1-bit register for signal <routingTable(220)>.
+    Found 1-bit register for signal <routingTable(221)>.
+    Found 1-bit register for signal <routingTable(222)>.
+    Found 1-bit register for signal <routingTable(223)>.
+    Found 1-bit register for signal <routingTable(224)>.
+    Found 1-bit register for signal <routingTable(225)>.
+    Found 1-bit register for signal <routingTable(226)>.
+    Found 1-bit register for signal <routingTable(227)>.
+    Found 1-bit register for signal <routingTable(228)>.
+    Found 1-bit register for signal <routingTable(229)>.
+    Found 1-bit register for signal <routingTable(230)>.
+    Found 1-bit register for signal <routingTable(231)>.
+    Found 1-bit register for signal <routingTable(232)>.
+    Found 1-bit register for signal <routingTable(233)>.
+    Found 1-bit register for signal <routingTable(234)>.
+    Found 1-bit register for signal <routingTable(235)>.
+    Found 1-bit register for signal <routingTable(236)>.
+    Found 1-bit register for signal <routingTable(237)>.
+    Found 1-bit register for signal <routingTable(238)>.
+    Found 1-bit register for signal <routingTable(239)>.
+    Found 1-bit register for signal <routingTable(240)>.
+    Found 1-bit register for signal <routingTable(241)>.
+    Found 1-bit register for signal <routingTable(242)>.
+    Found 1-bit register for signal <routingTable(243)>.
+    Found 1-bit register for signal <routingTable(244)>.
+    Found 1-bit register for signal <routingTable(245)>.
+    Found 1-bit register for signal <routingTable(246)>.
+    Found 1-bit register for signal <routingTable(247)>.
+    Found 1-bit register for signal <routingTable(248)>.
+    Found 1-bit register for signal <routingTable(249)>.
+    Found 1-bit register for signal <routingTable(250)>.
+    Found 1-bit register for signal <routingTable(251)>.
+    Found 1-bit register for signal <routingTable(252)>.
+    Found 1-bit register for signal <routingTable(253)>.
+    Found 1-bit register for signal <routingTable(254)>.
+    Found 1-bit register for signal <routingTable(255)>.
+    Found 1-bit register for signal <ForwardDEMUXs[0].ForwardDEMUX.idleFlag>.
+    Found 1-bit register for signal <ForwardDEMUXs[0].ForwardDEMUX.escapeFlag>.
+    Found 8-bit register for signal <ForwardDEMUXs[0].ForwardDEMUX.receiverId>.
+    Found 1-bit register for signal <forward_fifo_rd(0)>.
+    Found 1-bit register for signal <forward_request(0)>.
+    Found 1-bit register for signal <broadcast_request(0)>.
+    Found 1-bit register for signal <forward_data_valid(0)>.
+    Found 1-bit register for signal <forward_tmp_valid(0)>.
+    Found 1-bit register for signal <startDemuxTimer(0)>.
+    Found 1-bit register for signal <err_demux(0)>.
+    Found 4-bit register for signal <demuxState(0)>.
+    Found 8-bit register for signal <forward_tmp_data(0)>.
+    Found 21-bit register for signal <ForwardDEMUXs[0].demux_timeoutProcess.timeoutCounter>.
+    Found 1-bit register for signal <demux_timeout(0)>.
+    Found 1-bit register for signal <ForwardDEMUXs[0].demux_timeoutProcess.timerState>.
+    Found 1-bit register for signal <ForwardDEMUXs[1].ForwardDEMUX.idleFlag>.
+    Found 1-bit register for signal <ForwardDEMUXs[1].ForwardDEMUX.escapeFlag>.
+    Found 8-bit register for signal <ForwardDEMUXs[1].ForwardDEMUX.receiverId>.
+    Found 2-bit register for signal <ForwardDEMUXs[1].ForwardDEMUX.broadcast_acks>.
+    Found 1-bit register for signal <forward_fifo_rd(1)>.
+    Found 1-bit register for signal <forward_request(1)>.
+    Found 1-bit register for signal <broadcast_request(1)>.
+    Found 1-bit register for signal <forward_data_valid(1)>.
+    Found 1-bit register for signal <forward_tmp_valid(1)>.
+    Found 1-bit register for signal <startDemuxTimer(1)>.
+    Found 1-bit register for signal <err_demux(1)>.
+    Found 4-bit register for signal <demuxState(1)>.
+    Found 8-bit register for signal <forward_tmp_data(1)>.
+    Found 21-bit register for signal <ForwardDEMUXs[1].demux_timeoutProcess.timeoutCounter>.
+    Found 1-bit register for signal <demux_timeout(1)>.
+    Found 1-bit register for signal <ForwardDEMUXs[1].demux_timeoutProcess.timerState>.
+    Found 1-bit register for signal <ForwardMUXs[0].ForwardMUX.actualRxPort>.
+    Found 1-bit register for signal <send_fifo_wr>.
+    Found 8-bit register for signal <send_fifo_din(0)>.
+    Found 2-bit register for signal <forward_ack(0)>.
+    Found 1-bit register for signal <muxState>.
+    Found 16-bit register for signal <last_error>.
+    Found finite state machine <FSM_1> for signal <encoderState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <decoderState>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 47                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | checkfifos                                     |
+    | Power Up State     | checkfifos                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <rxHandShakeState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <demuxState_0>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 37                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | readstartflag                                  |
+    | Power Up State     | readstartflag                                  |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_5> for signal <ForwardDEMUXs[1].ForwardDEMUX.broadcast_acks>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 1                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <demuxState_1>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 39                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 7                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | readstartflag                                  |
+    | Power Up State     | readstartflag                                  |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <input_mem_addr_out[7]_GND_12_o_add_25_OUT> created at line 1241.
+    Found 9-bit adder for signal <n2184> created at line 593.
+    Found 2-bit adder for signal <decoder.headerCounter[1]_GND_12_o_add_164_OUT> created at line 821.
+    Found 8-bit adder for signal <output_mem_addr_in[7]_GND_12_o_add_197_OUT> created at line 1241.
+    Found 8-bit adder for signal <output_mem_addr_in[7]_GND_12_o_add_198_OUT> created at line 1241.
+    Found 21-bit adder for signal <decoder_timeoutProcess.timeoutCounter[20]_GND_12_o_add_299_OUT> created at line 1000.
+    Found 21-bit adder for signal <ForwardDEMUXs[0].demux_timeoutProcess.timeoutCounter[20]_GND_12_o_add_377_OUT> created at line 1305.
+    Found 21-bit adder for signal <ForwardDEMUXs[1].demux_timeoutProcess.timeoutCounter[20]_GND_12_o_add_452_OUT> created at line 1305.
+    Found 1-bit adder for signal <ForwardMUXs[0].ForwardMUX.actualRxPort[0]_PWR_12_o_add_462_OUT(0)> created at line 1348.
+    Found 1-bit adder for signal <GND_12_o_PWR_12_o_add_467_OUT(0)> created at line 1348.
+    Found 2 bit to 4 bit decoder compact to one-hot for signal <decoder.headerCounter[1]_Decoder_153_OUT> created at line 815
+    Found 1 bit to 2 bit decoder compact to one-hot for signal <n2010> created at line 951
+    Found 8 bit to 256 bit decoder compact to one-hot for signal <sender_id[0][7]_Decoder_315_OUT> created at line 1068
+    Found 1 bit to 2 bit decoder compact to one-hot for signal <n2078> created at line 1176
+    Found 1 bit to 2 bit decoder compact to one-hot for signal <n2121> created at line 1176
+    Found 1 bit to 2 bit decoder compact to one-hot for signal <GND_12_o_Decoder_464_OUT> created at line 1355
+    Found 1 bit to 2 bit decoder compact to one-hot for signal <GND_12_o_Decoder_469_OUT> created at line 1355
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <routingTable>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <routingTable>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 8-bit 4-to-1 multiplexer for signal <decoder.headerCounter[1]_recvHeader[3][7]_wide_mux_199_OUT> created at line 869.
+    Found 1-bit 7-to-1 multiplexer for signal <decoderState[2]_GND_12_o_Mux_239_o> created at line 708.
+    Found 1-bit 256-to-1 multiplexer for signal <n2222> created at line 1167.
+    Found 1-bit 256-to-1 multiplexer for signal <PWR_12_o_forward_fifo_dout[1][7]_equal_398_o> created at line 1167.
+    Found 11-bit comparator greater for signal <output_fifo_remaining[10]_GND_12_o_LessThan_25_o> created at line 422
+    Found 8-bit comparator greater for signal <encoder.byteCounter[7]_GND_12_o_LessThan_44_o> created at line 550
+    Found 9-bit comparator greater for signal <GND_12_o_INV_78_o> created at line 582
+    Found 2-bit comparator greater for signal <decoder.headerCounter[1]_PWR_12_o_LessThan_164_o> created at line 820
+    Found 8-bit comparator greater for signal <n0238> created at line 869
+    Found 16-bit comparator equal for signal <crc_o_s_crc_check_value[15]_receive_fifo_dout[0][7]_equal_226_o> created at line 932
+    Found 21-bit comparator greater for signal <decoder_timeoutProcess.timeoutCounter[20]_PWR_12_o_LessThan_299_o> created at line 999
+    Found 1-bit comparator greater for signal <GND_12_o_forward_fifo_dout[0][7]_LessThan_327_o> created at line 1171
+    Found 21-bit comparator greater for signal <ForwardDEMUXs[0].demux_timeoutProcess.timeoutCounter[20]_PWR_12_o_LessThan_377_o> created at line 1304
+    Found 1-bit comparator greater for signal <GND_12_o_forward_fifo_dout[1][7]_LessThan_397_o> created at line 1171
+    Found 21-bit comparator greater for signal <ForwardDEMUXs[1].demux_timeoutProcess.timeoutCounter[20]_PWR_12_o_LessThan_452_o> created at line 1304
+    Found 1-bit comparator greater for signal <ForwardMUXs[0].ForwardMUX.actualRxPort[0]_PWR_12_o_LessThan_462_o> created at line 1347
+    Found 1-bit comparator greater for signal <GND_12_o_PWR_12_o_LessThan_467_o> created at line 1347
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred 565 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred 234 Multiplexer(s).
+	inferred   7 Decoder(s).
+	inferred   6 Finite State Machine(s).
+Unit <NDLCom_top> synthesized.
+
+Synthesizing Unit <bram_dp_simple_1>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+        ADDRWIDTH = 8
+        DATAWIDTH = 8
+    Found 256x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_1> synthesized.
+
+Synthesizing Unit <fast_fifo>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/fifo_module/trunk/fast_fifo.vhd".
+        ADDRWIDTH = 10
+        DATAWIDTH = 8
+    Found 11-bit register for signal <fifo_access.remaining_int>.
+    Found 11-bit register for signal <remaining>.
+    Found 1-bit register for signal <empty>.
+    Found 10-bit register for signal <waddr>.
+    Found 8-bit register for signal <wdata>.
+    Found 10-bit register for signal <raddr>.
+    Found 2-bit register for signal <prefetch>.
+    Found 8-bit register for signal <data_out(0)>.
+    Found 8-bit register for signal <data_out(1)>.
+    Found 8-bit register for signal <data_out(2)>.
+    Found 2-bit register for signal <fifo_access.data_count>.
+    Found 10-bit adder for signal <waddr[9]_GND_14_o_add_1_OUT> created at line 1241.
+    Found 11-bit adder for signal <fifo_access.remaining_int[10]_GND_14_o_add_5_OUT> created at line 100.
+    Found 2-bit adder for signal <fifo_access.data_count[1]_GND_14_o_add_19_OUT> created at line 111.
+    Found 2-bit adder for signal <fifo_access.data_count[1]_GND_14_o_add_38_OUT> created at line 124.
+    Found 10-bit adder for signal <raddr[9]_GND_14_o_add_45_OUT> created at line 1241.
+    Found 2-bit subtractor for signal <GND_14_o_GND_14_o_sub_5_OUT(1:0)> created at line 99.
+    Found 11-bit subtractor for signal <GND_14_o_GND_14_o_sub_12_OUT(10:0)> created at line 106.
+    Found 2 bit to 4 bit decoder compact to one-hot for signal <n0100> created at line 110
+    Found 2 bit to 4 bit decoder compact to one-hot for signal <n0118> created at line 123
+    Found 10-bit comparator equal for signal <full_int> created at line 62
+    Found 2-bit comparator greater for signal <GND_14_o_fifo_access.data_count[1]_LessThan_4_o> created at line 96
+    Found 2-bit comparator greater for signal <fifo_access.data_count[1]_PWR_14_o_LessThan_13_o> created at line 107
+    Found 10-bit comparator equal for signal <waddr[9]_raddr[9]_equal_15_o> created at line 107
+    Found 2-bit comparator greater for signal <fifo_access.data_count[1]_PWR_14_o_LessThan_44_o> created at line 129
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  79 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   2 Decoder(s).
+Unit <fast_fifo> synthesized.
+
+Synthesizing Unit <bram_dp_simple_2>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/MEM_Controller/BRAM/trunk/rtl/bram_dp_simple.vhd".
+        ADDRWIDTH = 10
+        DATAWIDTH = 8
+    Found 1024x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bram_dp_simple_2> synthesized.
+
+Synthesizing Unit <NDLComLS>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLComLS.vhd".
+        CLK_FREQ = 16000000
+        BAUD_RATE = 115200
+        STORE_FORWARD = true
+WARNING:Xst:647 - Input <rxData_sim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <txReady_sim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <newData_sim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rxErr_sim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/sduvvuri/fpgaSVN/FPGA/lib/NDLCom/branches/new_ndlcom/NDLComLS.vhd" line 133: Output port <full> of the instance <send_fifo> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <txData_sim> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <startTx_sim> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <dataAck_sim> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <send_fifo_rd> equivalent to <startTx_int> has been removed
+    Found 1-bit register for signal <startTx_int>.
+    Found 1-bit register for signal <receiveMonitor.escapeFlag>.
+    Found 1-bit register for signal <receiveMonitor.receiveFlag>.
+    Found 1-bit register for signal <receiveMonitor.forwardFlag>.
+    Found 8-bit register for signal <receiveMonitor.receive_buffer_data(0)>.
+    Found 8-bit register for signal <receiveMonitor.receive_buffer_data(1)>.
+    Found 8-bit register for signal <receiveMonitor.receive_buffer_data(2)>.
+    Found 2-bit register for signal <receiveMonitor.receive_buffer_counter>.
+    Found 8-bit register for signal <receiveMonitor.forward_buffer_data(0)>.
+    Found 8-bit register for signal <receiveMonitor.forward_buffer_data(1)>.
+    Found 8-bit register for signal <receiveMonitor.forward_buffer_data(2)>.
+    Found 2-bit register for signal <receiveMonitor.forward_buffer_counter>.
+    Found 8-bit register for signal <receive_fifo_din>.
+    Found 1-bit register for signal <receive_fifo_wr>.
+    Found 8-bit register for signal <forward_fifo_din>.
+    Found 1-bit register for signal <forward_fifo_wr>.
+    Found 1-bit register for signal <forward_msg_available>.
+    Found 1-bit register for signal <dataAck>.
+    Found 8-bit register for signal <sender_id>.
+    Found 1-bit register for signal <new_sender_id>.
+    Found 1-bit register for signal <error_bufferFull_int>.
+    Found 1-bit register for signal <error_brokenMsg>.
+    Found 2-bit register for signal <receiveState>.
+    Found finite state machine <FSM_7> for signal <receiveState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | receivestartflag                               |
+    | Power Up State     | receivestartflag                               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <receiveMonitor.receive_buffer_counter[1]_GND_16_o_add_97_OUT> created at line 449.
+    Found 2-bit adder for signal <receiveMonitor.forward_buffer_counter[1]_GND_16_o_add_106_OUT> created at line 454.
+    Found 2-bit subtractor for signal <GND_16_o_GND_16_o_sub_141_OUT(1:0)> created at line 480.
+    Found 2-bit subtractor for signal <GND_16_o_GND_16_o_sub_153_OUT(1:0)> created at line 491.
+    Found 2 bit to 4 bit decoder compact to one-hot for signal <n0342> created at line 448
+    Found 2 bit to 4 bit decoder compact to one-hot for signal <n0351> created at line 453
+    Found 1-bit 3-to-1 multiplexer for signal <receiveState[1]_newData_Mux_122_o> created at line 297.
+    Found 1-bit 4-to-1 multiplexer for signal <receiveState[1]_GND_16_o_Mux_125_o> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.receive_buffer_data[0][7]_wide_mux_128_OUT> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.receive_buffer_data[1][7]_wide_mux_129_OUT> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.receive_buffer_data[2][7]_wide_mux_130_OUT> created at line 297.
+    Found 2-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.receive_buffer_counter[1]_wide_mux_131_OUT> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.forward_buffer_data[0][7]_wide_mux_132_OUT> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.forward_buffer_data[1][7]_wide_mux_133_OUT> created at line 297.
+    Found 8-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.forward_buffer_data[2][7]_wide_mux_134_OUT> created at line 297.
+    Found 2-bit 4-to-1 multiplexer for signal <receiveState[1]_receiveMonitor.forward_buffer_counter[1]_wide_mux_135_OUT> created at line 297.
+    Found 11-bit comparator lessequal for signal <send_fifo_remaining[10]_GND_16_o_LessThan_1_o> created at line 121
+    Found 11-bit comparator greater for signal <receive_fifo_remaining[10]_GND_16_o_LessThan_2_o> created at line 125
+    Found 11-bit comparator greater for signal <forward_fifo_remaining[10]_GND_16_o_LessThan_3_o> created at line 126
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  87 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred 107 Multiplexer(s).
+	inferred   2 Decoder(s).
+	inferred   1 Finite State Machine(s).
+Unit <NDLComLS> synthesized.
+
+Synthesizing Unit <uart_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/Examples/statistik tool/UART_mod.vhd".
+        CLK_FREQ = 16000000
+        BAUDRATE = 115200
+    Found 1-bit register for signal <tx_o>.
+    Found 3-bit register for signal <txBitCnt>.
+    Found 8-bit register for signal <txWaitCnt>.
+    Found 3-bit register for signal <rxWeight>.
+    Found 8-bit register for signal <rxInput>.
+    Found 3-bit register for signal <rxState>.
+    Found 1-bit register for signal <rxTrigger>.
+    Found 1-bit register for signal <rxSync>.
+    Found 1-bit register for signal <rxErr_o>.
+    Found 8-bit register for signal <rxData_o>.
+    Found 7-bit register for signal <sampleCnt>.
+    Found 7-bit register for signal <highCnt>.
+    Found 4-bit register for signal <dataCnt>.
+    Found 1-bit register for signal <rxAckState>.
+    Found 2-bit register for signal <txState>.
+    Found finite state machine <FSM_8> for signal <rxState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_9> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <GND_17_o_GND_17_o_sub_77_OUT> created at line 313.
+    Found 3-bit adder for signal <txBitCnt[2]_GND_17_o_add_11_OUT> created at line 154.
+    Found 8-bit adder for signal <txWaitCnt[7]_GND_17_o_add_19_OUT> created at line 169.
+    Found 3-bit adder for signal <rxWeight[2]_GND_17_o_add_35_OUT> created at line 194.
+    Found 4-bit adder for signal <dataCnt[3]_GND_17_o_add_75_OUT> created at line 310.
+    Found 7-bit adder for signal <sampleCnt[6]_GND_17_o_add_91_OUT> created at line 332.
+    Found 7-bit adder for signal <highCnt[6]_GND_17_o_add_93_OUT> created at line 339.
+    Found 3-bit subtractor for signal <GND_17_o_GND_17_o_sub_38_OUT(2:0)> created at line 196.
+    Found 3 bit to 8 bit decoder compact to one-hot for signal <dataCnt[2]_Decoder_80_OUT> created at line 318
+    Found 1-bit 8-to-1 multiplexer for signal <txBitCnt[2]_txData_i[7]_Mux_4_o> created at line 138.
+    Found 1-bit 8-to-1 multiplexer for signal <txBitCnt[2]_txData_i[7]_Mux_12_o> created at line 154.
+    Found 8-bit comparator greater for signal <txWaitCnt[7]_PWR_21_o_LessThan_8_o> created at line 147
+    Found 3-bit comparator greater for signal <txBitCnt[2]_PWR_21_o_LessThan_10_o> created at line 152
+    Found 3-bit comparator greater for signal <rxWeight[2]_PWR_21_o_LessThan_35_o> created at line 193
+    Found 3-bit comparator greater for signal <GND_17_o_rxWeight[2]_LessThan_37_o> created at line 195
+    Found 3-bit comparator greater for signal <GND_17_o_rxWeight[2]_LessThan_41_o> created at line 199
+    Found 7-bit comparator greater for signal <sampleCnt[6]_PWR_21_o_LessThan_49_o> created at line 250
+    Found 4-bit comparator greater for signal <dataCnt[3]_PWR_21_o_LessThan_66_o> created at line 288
+    Found 7-bit comparator greater for signal <sampleCnt[6]_PWR_21_o_LessThan_72_o> created at line 301
+    Found 8-bit comparator greater for signal <n0077> created at line 313
+    Found 7-bit comparator greater for signal <n0087> created at line 316
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred  38 Multiplexer(s).
+	inferred   1 Decoder(s).
+	inferred   2 Finite State Machine(s).
+Unit <uart_mod> synthesized.
+
+Synthesizing Unit <crc_par_mod>.
+    Related source file is "/home/sduvvuri/fpgaSVN/FPGA/lib/CRC/trunk/rtl/crc_par_mod.vhd".
+        POLYNOMIAL = "0001000000100001"
+        INIT_VALUE = "1111111111111111"
+        DATA_WIDTH = 8
+        SYNC_RESET = 1
+    Found 1-bit register for signal <match_o>.
+    Found 16-bit register for signal <crc>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+Unit <crc_par_mod> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 1024x8-bit dual-port RAM                              : 4
+ 251x8-bit dual-port RAM                               : 1
+ 256x8-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 54
+ 1-bit adder                                           : 2
+ 10-bit adder                                          : 8
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 4
+ 2-bit adder                                           : 11
+ 2-bit subtractor                                      : 6
+ 21-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 3-bit addsub                                          : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 7
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 423
+ 1-bit register                                        : 324
+ 10-bit register                                       : 8
+ 11-bit register                                       : 8
+ 16-bit register                                       : 6
+ 2-bit register                                        : 12
+ 21-bit register                                       : 3
+ 3-bit register                                        : 2
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 55
+# Comparators                                          : 48
+ 1-bit comparator greater                              : 4
+ 10-bit comparator equal                               : 8
+ 11-bit comparator greater                             : 3
+ 11-bit comparator lessequal                           : 1
+ 16-bit comparator equal                               : 1
+ 2-bit comparator greater                              : 13
+ 21-bit comparator greater                             : 3
+ 3-bit comparator greater                              : 4
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 1
+ 7-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 514
+ 1-bit 2-to-1 multiplexer                              : 228
+ 1-bit 256-to-1 multiplexer                            : 2
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 11-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 38
+ 2-bit 4-to-1 multiplexer                              : 2
+ 21-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 196
+ 8-bit 4-to-1 multiplexer                              : 7
+# Decoders                                             : 18
+ 1-of-2 decoder                                        : 5
+ 1-of-256 decoder                                      : 1
+ 1-of-4 decoder                                        : 11
+ 1-of-8 decoder                                        : 1
+# FSMs                                                 : 10
+# Xors                                                 : 58
+ 1-bit xor2                                            : 16
+ 15-bit xor2                                           : 32
+ 8-bit xor2                                            : 10
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_8> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_8> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_9> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_9> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_0> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_0> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_1> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_1> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_2> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_2> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_10> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_10> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_3> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_3> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_4> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_4> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_5> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_5> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_6> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_6> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_7> in Unit <send_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_7> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_8> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_8> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_9> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_9> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_0> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_0> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_1> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_1> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_2> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_2> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_10> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_10> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_3> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_3> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_4> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_4> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_5> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_5> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_6> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_6> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_7> in Unit <receive_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_7> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_8> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_8> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_9> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_9> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_0> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_0> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_1> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_1> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_2> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_2> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_10> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_10> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_3> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_3> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_4> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_4> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_5> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_5> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_6> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_6> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_7> in Unit <forward_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_7> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_8> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_8> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_9> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_9> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_0> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_0> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_1> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_1> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_2> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_2> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_10> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_10> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_3> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_3> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_4> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_4> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_5> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_5> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_6> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_6> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_7> in Unit <output_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_7> 
+WARNING:Xst:2404 -  FFs/Latches <last_error<15:11>> (without init value) have a constant value of 0 in block <NDLCom_top>.
+WARNING:Xst:2404 -  FFs/Latches <error_debug1<15:4>> (without init value) have a constant value of 0 in block <NDLCom_top>.
+
+Synthesizing (advanced) Unit <NDLCom_top>.
+The following registers are absorbed into counter <output_mem_addr_in>: 1 register on signal <output_mem_addr_in>.
+The following registers are absorbed into counter <decoder.headerCounter>: 1 register on signal <decoder.headerCounter>.
+INFO:Xst:3226 - The RAM <output_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <output_buffer_inst/rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <output_mem_wea> | high     |
+    |     addrA          | connected to signal <(output_mem_addr_in(7),output_mem_addr_in(6),output_mem_addr_in(5),output_mem_addr_in(4),output_mem_addr_in(3),output_mem_addr_in(2),output_mem_addr_in(1),output_mem_addr_in(0))> |          |
+    |     diA            | connected to signal <(output_mem_data_in(7),output_mem_data_in(6),output_mem_data_in(5),output_mem_data_in(4),output_mem_data_in(3),output_mem_data_in(2),output_mem_data_in(1),output_mem_data_in(0))> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <(recv_addr(7),recv_addr(6),recv_addr(5),recv_addr(4),recv_addr(3),recv_addr(2),recv_addr(1),recv_addr(0))> |          |
+    |     doB            | connected to signal <recv_data>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <input_buffer_inst/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <input_mem_addr_out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <send_wea>      | high     |
+    |     addrA          | connected to signal <(send_addr(7),send_addr(6),send_addr(5),send_addr(4),send_addr(3),send_addr(2),send_addr(1),send_addr(0))> |          |
+    |     diA            | connected to signal <(send_data(7),send_data(6),send_data(5),send_data(4),send_data(3),send_data(2),send_data(1),send_data(0))> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <(encoderState[2]_X_12_o_wide_mux_85_OUT(7)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(6)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(5)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(4)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(3)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(2)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(1)_0,encoderState[2]_X_12_o_wide_mux_85_OUT(0)_0)> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <NDLCom_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <New_NDLCOM_ROUTING_Top>.
+The following registers are absorbed into counter <sendFrameCounter>: 1 register on signal <sendFrameCounter>.
+The following registers are absorbed into counter <Sending_Receiving.i>: 1 register on signal <Sending_Receiving.i>.
+The following registers are absorbed into counter <send_addr>: 1 register on signal <send_addr>.
+The following registers are absorbed into counter <Sending_Receiving.j>: 1 register on signal <Sending_Receiving.j>.
+The following registers are absorbed into counter <recv_addr>: 1 register on signal <recv_addr>.
+INFO:Xst:3226 - The RAM <Mram_arr> will be implemented as a BLOCK RAM, absorbing the following register(s): <send_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 251-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <(Sending_Receiving.i(7),Sending_Receiving.i(6),Sending_Receiving.i(5),Sending_Receiving.i(4),Sending_Receiving.i(3),Sending_Receiving.i(2),Sending_Receiving.i(1),Sending_Receiving.i(0))> |          |
+    |     diA            | connected to signal <(recv_data(7),recv_data(6),recv_data(5),recv_data(4),recv_data(3),recv_data(2),recv_data(1),recv_data(0))> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 251-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     enB            | connected to internal node          | low      |
+    |     addrB          | connected to signal <(Sending_Receiving.j(7),Sending_Receiving.j(6),Sending_Receiving.j(5),Sending_Receiving.j(4),Sending_Receiving.j(3),Sending_Receiving.j(2),Sending_Receiving.j(1),Sending_Receiving.j(0))> |          |
+    |     doB            | connected to signal <send_data>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <New_NDLCOM_ROUTING_Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bram_dp_simple_2>.
+INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <(waddr(9),waddr(8),waddr(7),waddr(6),waddr(5),waddr(4),waddr(3),waddr(2),waddr(1),waddr(0))> |          |
+    |     diA            | connected to signal <(wdata(7),wdata(6),wdata(5),wdata(4),wdata(3),wdata(2),wdata(1),wdata(0))> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <(raddr(9),raddr(8),raddr(7),raddr(6),raddr(5),raddr(4),raddr(3),raddr(2),raddr(1),raddr(0))> |          |
+    |     doB            | connected to signal <rdata>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <bram_dp_simple_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fast_fifo>.
+The following registers are absorbed into counter <waddr>: 1 register on signal <waddr>.
+The following registers are absorbed into counter <raddr>: 1 register on signal <raddr>.
+Unit <fast_fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_mod>.
+The following registers are absorbed into counter <rxWeight>: 1 register on signal <rxWeight>.
+The following registers are absorbed into counter <dataCnt>: 1 register on signal <dataCnt>.
+The following registers are absorbed into counter <txBitCnt>: 1 register on signal <txBitCnt>.
+The following registers are absorbed into counter <txWaitCnt>: 1 register on signal <txWaitCnt>.
+Unit <uart_mod> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 1024x8-bit dual-port block RAM                        : 4
+ 251x8-bit dual-port block RAM                         : 1
+ 256x8-bit dual-port block RAM                         : 2
+# Adders/Subtractors                                   : 40
+ 1-bit adder                                           : 2
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 4
+ 2-bit adder                                           : 10
+ 2-bit subtractor                                      : 6
+ 21-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 19
+ 10-bit up counter                                     : 8
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 3-bit updown counter                                  : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 5
+# Registers                                            : 942
+ Flip-Flops                                            : 942
+# Comparators                                          : 48
+ 1-bit comparator greater                              : 4
+ 10-bit comparator equal                               : 8
+ 11-bit comparator greater                             : 3
+ 11-bit comparator lessequal                           : 1
+ 16-bit comparator equal                               : 1
+ 2-bit comparator greater                              : 13
+ 21-bit comparator greater                             : 3
+ 3-bit comparator greater                              : 4
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 1
+ 7-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 596
+ 1-bit 2-to-1 multiplexer                              : 320
+ 1-bit 256-to-1 multiplexer                            : 2
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 9
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 11-bit 2-to-1 multiplexer                             : 8
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 37
+ 2-bit 4-to-1 multiplexer                              : 2
+ 21-bit 2-to-1 multiplexer                             : 6
+ 7-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 187
+ 8-bit 4-to-1 multiplexer                              : 6
+# Decoders                                             : 18
+ 1-of-2 decoder                                        : 5
+ 1-of-256 decoder                                      : 1
+ 1-of-4 decoder                                        : 11
+ 1-of-8 decoder                                        : 1
+# FSMs                                                 : 10
+# Xors                                                 : 58
+ 1-bit xor2                                            : 16
+ 15-bit xor2                                           : 32
+ 8-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <last_error_9> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <last_error_7> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <last_error_6> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <last_error_5> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <last_error_4> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <last_error_3> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_15> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_14> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_13> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_12> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_11> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_10> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_9> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_8> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_7> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_6> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_5> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_4> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_3> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_2> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_1> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug2_0> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_8> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_8> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_9> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_9> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_0> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_0> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_1> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_1> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_2> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_2> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_10> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_10> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_3> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_3> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_4> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_4> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_5> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_5> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_6> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_6> 
+INFO:Xst:2261 - The FF/Latch <fifo_access.remaining_int_7> in Unit <fast_fifo> is equivalent to the following FF/Latch, which will be removed : <remaining_7> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <echo_data[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 00
+ receive    | 01
+ write_data | 10
+ echo       | 11
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_3> on signal <rxHandShakeState[1:2]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00
+ waitack     | 01
+ waittrigger | 10
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_4> on signal <demuxState_0[1:4]> with user encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ readstartflag         | 0000
+ readreceiverid        | 0001
+ waitack               | 0010
+ broadcast_setrequest1 | 0011
+ broadcast_setrequest2 | 0100
+ broadcast_waitack     | 0101
+ writestartflag        | 0110
+ writereceiverid       | 0111
+ forwarddata           | 1000
+-----------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_6> on signal <demuxState_1[1:4]> with user encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ readstartflag         | 0000
+ readreceiverid        | 0001
+ waitack               | 0010
+ broadcast_setrequest1 | 0011
+ broadcast_setrequest2 | 0100
+ broadcast_waitack     | 0101
+ writestartflag        | 0110
+ writereceiverid       | 0111
+ forwarddata           | 1000
+-----------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_1> on signal <encoderState[1:3]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 000
+ writestartflag    | 001
+ writeheaderbyte   | 010
+ writedata         | 011
+ writecrcupperbyte | 100
+ writecrclowerbyte | 101
+ writestopflag     | 110
+-------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_5> on signal <ForwardDEMUXs[1].ForwardDEMUX.broadcast_acks[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 10
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/FSM_2> on signal <decoderState[1:3]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ checkfifos       | 000
+ readstartflag    | 001
+ readreceiverid   | 010
+ readheaderbyte   | 011
+ readdata         | 100
+ readcrclowerbyte | 101
+ readcrcupperbyte | 110
+ readstopflag     | 111
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/NDLComLS_Ports[0].NDLComLS_Port/FSM_7> on signal <receiveState[1:2]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ receivestartflag  | 00
+ receivereceiverid | 01
+ receivesenderid   | 10
+ receivedata       | 11
+-------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/FSM_8> on signal <rxState[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000
+ startbit   | 001
+ waitstate  | 010
+ databit    | 011
+ stopbit    | 100
+ resetcycle | 101
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/FSM_9> on signal <txState[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ startbit | 01
+ databit  | 11
+ stopbit  | 10
+----------------------
+WARNING:Xst:1710 - FF/Latch <error_debug1_2> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <error_debug1_3> (without init value) has a constant value of 0 in block <NDLCom_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_8> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_9> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_10> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_11> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_12> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_13> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_14> of sequential type is unconnected in block <NDLCom_top>.
+WARNING:Xst:2677 - Node <decoder.crc_recv_value_15> of sequential type is unconnected in block <NDLCom_top>.
+
+Optimizing unit <New_NDLCOM_ROUTING_Top> ...
+
+Optimizing unit <NDLCom_top> ...
+
+Optimizing unit <NDLComLS> ...
+
+Optimizing unit <fast_fifo> ...
+
+Optimizing unit <uart_mod> ...
+
+Optimizing unit <crc_par_mod> ...
+WARNING:Xst:2677 - Node <routing_test/error_debug1_1> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/error_debug1_0> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/last_error_10> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/last_error_8> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/last_error_2> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/last_error_1> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/last_error_0> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/err_decode> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/err_demux_1> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/err_demux_0> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/NDLComLS_Ports[0].NDLComLS_Port/error_brokenMsg> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/crcCheck/match_o> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+WARNING:Xst:2677 - Node <routing_test/crcGen/match_o> of sequential type is unconnected in block <New_NDLCOM_ROUTING_Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block New_NDLCOM_ROUTING_Top, actual ratio is 37.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1075
+ Flip-Flops                                            : 1075
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : New_NDLCOM_ROUTING_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3313
+#      GND                         : 1
+#      INV                         : 35
+#      LUT1                        : 195
+#      LUT2                        : 245
+#      LUT2_D                      : 7
+#      LUT2_L                      : 7
+#      LUT3                        : 642
+#      LUT3_D                      : 24
+#      LUT3_L                      : 6
+#      LUT4                        : 1041
+#      LUT4_D                      : 105
+#      LUT4_L                      : 48
+#      MUXCY                       : 430
+#      MUXF5                       : 132
+#      MUXF6                       : 35
+#      MUXF7                       : 16
+#      MUXF8                       : 8
+#      VCC                         : 1
+#      XORCY                       : 335
+# FlipFlops/Latches                : 1075
+#      FD                          : 52
+#      FDE                         : 40
+#      FDR                         : 92
+#      FDRE                        : 585
+#      FDRS                        : 258
+#      FDRSE                       : 9
+#      FDS                         : 5
+#      FDSE                        : 34
+# RAMS                             : 7
+#      RAMB16BWE                   : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400aft256-4 
+
+ Number of Slices:                     1352  out of   3584    37%  
+ Number of Slice Flip Flops:           1075  out of   7168    14%  
+ Number of 4 input LUTs:               2355  out of   7168    32%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    195     2%  
+ Number of BRAMs:                         7  out of     20    35%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 1082  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.701ns (Maximum Frequency: 93.449MHz)
+   Minimum input arrival time before clock: 6.364ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 10.701ns (frequency: 93.449MHz)
+  Total number of paths / destination ports: 93880 / 2280
+-------------------------------------------------------------------------
+Delay:               10.701ns (Levels of Logic = 6)
+  Source:            routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/rxData_o_0 (FF)
+  Destination:       routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveMonitor.receive_buffer_data_2_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/rxData_o_0 to routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveMonitor.receive_buffer_data_2_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            14   0.591   1.143  routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/rxData_o_0 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/re.UART_inst/rxData_o_0)
+     LUT3_D:I0->O          5   0.648   0.713  routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveMonitor.escapeFlag_receiveMonitor.escapeFlag_OR_38_o21 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveMonitor.escapeFlag_receiveMonitor.escapeFlag_OR_38_o2)
+     LUT3:I1->O           16   0.643   1.037  routing_test/NDLComLS_Ports[0].NDLComLS_Port/GND_16_o_rxData[7]_equal_50_o(7)2 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/GND_16_o_rxData[7]_equal_50_o)
+     LUT4_D:I3->O         13   0.648   1.015  routing_test/NDLComLS_Ports[0].NDLComLS_Port/Mmux_receiveMonitor.escapeFlag_GND_16_o_MUX_169_o138 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/Mmux_receiveMonitor.escapeFlag_GND_16_o_MUX_169_o138)
+     LUT3_D:I2->LO         1   0.648   0.103  routing_test/NDLComLS_Ports[0].NDLComLS_Port/Mmux_receiveState[1]_receiveMonitor.forward_buffer_counter[1]_wide_mux_135_OUT12721 (N902)
+     LUT4:I3->O            4   0.648   0.590  routing_test/NDLComLS_Ports[0].NDLComLS_Port/Mmux_receiveState[1]_receiveMonitor.forward_buffer_counter[1]_wide_mux_135_OUT128 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveState[1]_receiveMonitor.receive_buffer_counter[1]_wide_mux_131_OUT(1))
+     LUT4:I3->O            8   0.648   0.757  routing_test/NDLComLS_Ports[0].NDLComLS_Port/Reset_OR_DriverANDClockEnable1 (routing_test/NDLComLS_Ports[0].NDLComLS_Port/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.869          routing_test/NDLComLS_Ports[0].NDLComLS_Port/receiveMonitor.receive_buffer_data_2_0
+    ----------------------------------------
+    Total                     10.701ns (5.343ns logic, 5.358ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1312 / 1312
+-------------------------------------------------------------------------
+Offset:              6.364ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       routing_test/routingTable(255)_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to routing_test/routingTable(255)_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           972   0.849   1.583  RST_IBUF (RST_IBUF)
+     LUT4:I0->O           64   0.648   1.352  routing_test/_n255411 (routing_test/_n25541)
+     LUT4:I1->O            1   0.643   0.420  routing_test/_n27781 (routing_test/_n2778)
+     FDRS:R                    0.869          routing_test/routingTable(121)_0
+    ----------------------------------------
+    Total                      6.364ns (3.009ns logic, 3.355ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            LED (FF)
+  Destination:       LED (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: LED to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             2   0.591   0.447  LED (LED_OBUF)
+     OBUF:I->O                 4.520          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   10.701|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.16 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+
+Total memory usage is 416052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   91 (   0 filtered)
+Number of infos    :   78 (   0 filtered)
+

@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 24 17:06:40 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK" LOCATE = SITE "C10" LEVEL 1;
+COMP "RST" LOCATE = SITE "H4" LEVEL 1;
+COMP "RX(0)" LOCATE = SITE "B12" LEVEL 1;
+COMP "TX(0)" LOCATE = SITE "A8" LEVEL 1;
+COMP "LED" LOCATE = SITE "D14" LEVEL 1;
+SCHEMATIC END;
+

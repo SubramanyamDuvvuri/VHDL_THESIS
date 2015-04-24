@@ -1,0 +1,43 @@
+V3 23
+EN encode/encode_8b10b_bram 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB std/TEXTIO 1381692176 LB encode_8b10b PH encode_8b10b/encode_8b10b_pkg 0
+AR encode/encode_8b10b_bram/xilinx 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_bram.vhd \
+      EN encode/encode_8b10b_bram 0
+EN encode/encode_8b10b_lut 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd \
+      PB ieee/std_logic_1164 1381692176 LB encode_8b10b
+AR encode/encode_8b10b_lut/xilinx 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut.vhd \
+      EN encode/encode_8b10b_lut 0 CP encode_8b10b/encode_8b10b_lut_base
+EN encode/encode_8b10b_lut_base 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      LB encode_8b10b PH encode_8b10b/encode_8b10b_pkg 0
+AR encode/encode_8b10b_lut_base/xilinx 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_lut_base.vhd \
+      EN encode/encode_8b10b_lut_base 0
+PH encode/encode_8b10b_pkg 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_misc 1381692178 \
+      PB std/TEXTIO 1381692176
+PB encode/encode_8b10b_pkg 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_pkg.vhd \
+      PH encode/encode_8b10b_pkg 0
+EN encode/encode_8b10b_rtl 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd \
+      PB ieee/std_logic_1164 1381692176 LB encode_8b10b \
+      PH encode_8b10b/encode_8b10b_pkg 0
+AR encode/encode_8b10b_rtl/xilinx 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_rtl.vhd \
+      EN encode/encode_8b10b_rtl 0 CP encode_8b10b/encode_8b10b_lut \
+      CP encode_8b10b/encode_8b10b_bram
+EN encode/encode_8b10b_top 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd \
+      PB ieee/std_logic_1164 1381692176 LB encode_8b10b \
+      PH encode_8b10b/encode_8b10b_pkg 0
+AR encode/encode_8b10b_top/xilinx 0 \
+      FL /home/sduvvuri/fpgaSVN/FPGA/lib/Comm_Async_Serial_HS/trunk/encode_8b10b/encode_8b10b_top.vhd \
+      EN encode/encode_8b10b_top 0 CP encode_8b10b/encode_8b10b_rtl

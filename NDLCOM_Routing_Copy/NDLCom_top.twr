@@ -1,0 +1,191 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/sduvvuri/Documents/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce
+-filter
+/home/sduvvuri/thesis.git/NDLCOM_Routing/New_NDLCOM_Routing/iseconfig/filter.filter
+-intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NDLCom_top.twx NDLCom_top.ncd -o
+NDLCom_top.twr NDLCom_top.pcf
+
+Design file:              NDLCom_top.ncd
+Physical constraint file: NDLCom_top.pcf
+Device,package,speed:     xc3s400a,ft256,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+-------------------+------------+------------+------------------+--------+
+                   |Max Setup to|Max Hold to |                  | Clock  |
+Source             | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-------------------+------------+------------+------------------+--------+
+NODE_ID(0)         |   10.299(R)|   -3.625(R)|CLK_BUFGP         |   0.000|
+NODE_ID(1)         |    9.514(R)|   -2.458(R)|CLK_BUFGP         |   0.000|
+NODE_ID(2)         |   10.432(R)|   -3.684(R)|CLK_BUFGP         |   0.000|
+NODE_ID(3)         |    9.160(R)|   -3.138(R)|CLK_BUFGP         |   0.000|
+NODE_ID(4)         |    9.618(R)|   -3.331(R)|CLK_BUFGP         |   0.000|
+NODE_ID(5)         |    8.936(R)|   -2.638(R)|CLK_BUFGP         |   0.000|
+NODE_ID(6)         |    9.834(R)|   -3.065(R)|CLK_BUFGP         |   0.000|
+NODE_ID(7)         |    9.623(R)|   -3.366(R)|CLK_BUFGP         |   0.000|
+RST                |    9.252(R)|    0.481(R)|CLK_BUFGP         |   0.000|
+clear_last_error   |    2.208(R)|   -0.002(R)|CLK_BUFGP         |   0.000|
+dataAck            |    1.993(R)|   -0.276(R)|CLK_BUFGP         |   0.000|
+ls_rx(0)           |    3.567(R)|   -0.989(R)|CLK_BUFGP         |   0.000|
+recv_addr(0)       |    1.500(R)|   -0.267(R)|CLK_BUFGP         |   0.000|
+recv_addr(1)       |    1.563(R)|   -0.317(R)|CLK_BUFGP         |   0.000|
+recv_addr(2)       |    0.628(R)|    0.431(R)|CLK_BUFGP         |   0.000|
+recv_addr(3)       |    0.775(R)|    0.314(R)|CLK_BUFGP         |   0.000|
+recv_addr(4)       |    0.625(R)|    0.434(R)|CLK_BUFGP         |   0.000|
+recv_addr(5)       |    0.568(R)|    0.479(R)|CLK_BUFGP         |   0.000|
+recv_addr(6)       |    0.407(R)|    0.608(R)|CLK_BUFGP         |   0.000|
+recv_addr(7)       |    0.660(R)|    0.405(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(0)|    6.604(R)|   -1.766(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(1)|    7.631(R)|   -1.593(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(2)|    7.355(R)|   -1.840(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(3)|    6.844(R)|   -1.680(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(4)|    7.500(R)|   -2.522(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(5)|    7.662(R)|   -2.050(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(6)|    8.359(R)|   -2.810(R)|CLK_BUFGP         |   0.000|
+sendFrameCounter(7)|    6.660(R)|   -1.812(R)|CLK_BUFGP         |   0.000|
+sendLength(0)      |    7.613(R)|   -1.606(R)|CLK_BUFGP         |   0.000|
+sendLength(1)      |    6.925(R)|   -1.028(R)|CLK_BUFGP         |   0.000|
+sendLength(2)      |    7.541(R)|   -1.441(R)|CLK_BUFGP         |   0.000|
+sendLength(3)      |    6.951(R)|   -1.248(R)|CLK_BUFGP         |   0.000|
+sendLength(4)      |    7.452(R)|   -1.453(R)|CLK_BUFGP         |   0.000|
+sendLength(5)      |    7.448(R)|   -1.229(R)|CLK_BUFGP         |   0.000|
+sendLength(6)      |    7.341(R)|   -1.348(R)|CLK_BUFGP         |   0.000|
+sendLength(7)      |    7.382(R)|   -1.251(R)|CLK_BUFGP         |   0.000|
+sendReceiver(0)    |    7.150(R)|   -1.813(R)|CLK_BUFGP         |   0.000|
+sendReceiver(1)    |    7.863(R)|   -1.779(R)|CLK_BUFGP         |   0.000|
+sendReceiver(2)    |    7.252(R)|   -2.095(R)|CLK_BUFGP         |   0.000|
+sendReceiver(3)    |    7.489(R)|   -1.476(R)|CLK_BUFGP         |   0.000|
+sendReceiver(4)    |    7.087(R)|   -1.602(R)|CLK_BUFGP         |   0.000|
+sendReceiver(5)    |    7.285(R)|   -1.064(R)|CLK_BUFGP         |   0.000|
+sendReceiver(6)    |    7.171(R)|   -1.585(R)|CLK_BUFGP         |   0.000|
+sendReceiver(7)    |    7.764(R)|   -0.930(R)|CLK_BUFGP         |   0.000|
+send_addr(0)       |    0.384(R)|    0.597(R)|CLK_BUFGP         |   0.000|
+send_addr(1)       |    0.384(R)|    0.597(R)|CLK_BUFGP         |   0.000|
+send_addr(2)       |    0.633(R)|    0.398(R)|CLK_BUFGP         |   0.000|
+send_addr(3)       |    0.850(R)|    0.225(R)|CLK_BUFGP         |   0.000|
+send_addr(4)       |    1.057(R)|    0.059(R)|CLK_BUFGP         |   0.000|
+send_addr(5)       |    0.705(R)|    0.341(R)|CLK_BUFGP         |   0.000|
+send_addr(6)       |    0.463(R)|    0.534(R)|CLK_BUFGP         |   0.000|
+send_addr(7)       |    0.625(R)|    0.405(R)|CLK_BUFGP         |   0.000|
+send_data(0)       |    0.617(R)|    0.332(R)|CLK_BUFGP         |   0.000|
+send_data(1)       |    0.632(R)|    0.320(R)|CLK_BUFGP         |   0.000|
+send_data(2)       |    0.400(R)|    0.506(R)|CLK_BUFGP         |   0.000|
+send_data(3)       |    0.275(R)|    0.605(R)|CLK_BUFGP         |   0.000|
+send_data(4)       |    0.538(R)|    0.395(R)|CLK_BUFGP         |   0.000|
+send_data(5)       |    0.398(R)|    0.507(R)|CLK_BUFGP         |   0.000|
+send_data(6)       |    0.563(R)|    0.375(R)|CLK_BUFGP         |   0.000|
+send_data(7)       |    0.410(R)|    0.497(R)|CLK_BUFGP         |   0.000|
+send_wea(0)        |    2.635(R)|    0.304(R)|CLK_BUFGP         |   0.000|
+startSending       |    2.075(R)|   -0.248(R)|CLK_BUFGP         |   0.000|
+-------------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+-------------------+------------+------------------+--------+
+                   | clk (edge) |                  | Clock  |
+Destination        |   to PAD   |Internal Clock(s) | Phase  |
+-------------------+------------+------------------+--------+
+error              |   15.202(R)|CLK_BUFGP         |   0.000|
+error_debug1(0)    |    7.107(R)|CLK_BUFGP         |   0.000|
+error_debug1(1)    |    7.017(R)|CLK_BUFGP         |   0.000|
+last_error(0)      |    8.528(R)|CLK_BUFGP         |   0.000|
+last_error(1)      |    8.026(R)|CLK_BUFGP         |   0.000|
+last_error(2)      |    9.398(R)|CLK_BUFGP         |   0.000|
+last_error(8)      |    7.837(R)|CLK_BUFGP         |   0.000|
+last_error(10)     |    8.115(R)|CLK_BUFGP         |   0.000|
+ls_tx(0)           |    8.005(R)|CLK_BUFGP         |   0.000|
+newData            |    9.213(R)|CLK_BUFGP         |   0.000|
+readyToSend        |   11.044(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(0)|    7.509(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(1)|    7.552(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(2)|    7.863(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(3)|    7.213(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(4)|    7.862(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(5)|    7.892(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(6)|    7.905(R)|CLK_BUFGP         |   0.000|
+recvFrameCounter(7)|    7.467(R)|CLK_BUFGP         |   0.000|
+recvLength(0)      |    7.306(R)|CLK_BUFGP         |   0.000|
+recvLength(1)      |    8.798(R)|CLK_BUFGP         |   0.000|
+recvLength(2)      |    8.505(R)|CLK_BUFGP         |   0.000|
+recvLength(3)      |    7.882(R)|CLK_BUFGP         |   0.000|
+recvLength(4)      |    7.109(R)|CLK_BUFGP         |   0.000|
+recvLength(5)      |    7.671(R)|CLK_BUFGP         |   0.000|
+recvLength(6)      |    7.917(R)|CLK_BUFGP         |   0.000|
+recvLength(7)      |    7.789(R)|CLK_BUFGP         |   0.000|
+recvSender(0)      |    7.961(R)|CLK_BUFGP         |   0.000|
+recvSender(1)      |    7.940(R)|CLK_BUFGP         |   0.000|
+recvSender(2)      |    7.279(R)|CLK_BUFGP         |   0.000|
+recvSender(3)      |    7.270(R)|CLK_BUFGP         |   0.000|
+recvSender(4)      |    6.945(R)|CLK_BUFGP         |   0.000|
+recvSender(5)      |    7.190(R)|CLK_BUFGP         |   0.000|
+recvSender(6)      |    7.215(R)|CLK_BUFGP         |   0.000|
+recvSender(7)      |    7.572(R)|CLK_BUFGP         |   0.000|
+recv_data(0)       |    9.251(R)|CLK_BUFGP         |   0.000|
+recv_data(1)       |    9.119(R)|CLK_BUFGP         |   0.000|
+recv_data(2)       |    9.316(R)|CLK_BUFGP         |   0.000|
+recv_data(3)       |    9.006(R)|CLK_BUFGP         |   0.000|
+recv_data(4)       |    9.362(R)|CLK_BUFGP         |   0.000|
+recv_data(5)       |    9.362(R)|CLK_BUFGP         |   0.000|
+recv_data(6)       |    8.975(R)|CLK_BUFGP         |   0.000|
+recv_data(7)       |    9.220(R)|CLK_BUFGP         |   0.000|
+-------------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   10.162|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+dataAck        |newData        |    8.571|
+startSending   |readyToSend    |    8.234|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Apr 23 16:29:02 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 402 MB
+
+
+

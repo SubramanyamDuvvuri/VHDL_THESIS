@@ -1,0 +1,9 @@
+NET "CLK" LOC  = "C10" | IOSTANDARD = LVCMOS33;
+
+NET "RST"  LOC  = "H4" | IOSTANDARD = LVCMOS33;
+NET "RX[0]"  LOC = "B12" | IOSTANDARD = LVCMOS33;
+NET "TX[0]" LOC = "A8" | IOSTANDARD = LVCMOS33;
+#NET "en" LOC = "K3" | IOSTANDARD = LVCMOS33;
+#NET "starttx" LOC = "K3" | IOSTANDARD = LVCMOS33;
+#############################################
+NET "LED" LOC = "D14" |IOSTANDARD = LVCMOS33 ; 
