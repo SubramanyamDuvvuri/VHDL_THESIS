@@ -38,7 +38,7 @@ entity New_NDLCOM_ROUTING_Top is
 				RST : in std_logic;
 				RX : in std_logic_vector(0 downto 0) ;
 				TX : out std_logic_vector( 0 downto 0);
-				en : in std_logic;
+				--en : in std_logic;
 				LED : out std_logic
 			);		
 end New_NDLCOM_ROUTING_Top;
@@ -96,6 +96,17 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 	type send_packets is (idle,write_data, transmit_data) ;
 	signal send_packet : send_packets;	
 	
+	type receive_packets is ( idle, receive_data , write_data ) ;
+	signal receive_packet : receive_packets; 
+	
+	------------------------------------------------------------------
+	signal receive_send_recvSender : std_logic_vector (7 downto 0);
+	signal receive_send_recvLength : std_logic_vector (7 downto 0) ;	
+	signal receive_send_recv_data  : std_logic_vector (7 downto 0) ; 
+	
+	
+	
+	
 	begin
 	routing_test:entity work.NDLCOM_top(Behavioral)
 	generic map ( CLK_FREQ  => CLK_FREQ,
@@ -146,17 +157,57 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
           error_debug1 => error_debug1,
           error_debug2 => error_debug2
 			 );
-				LED <= '1' ;
+			 
+			 
+			 ---LED CHECK----
+			  LED <= '1' ;
+			-----------------
+			receiving:process (clk)
+			variable idleflag_receive : integer := 0;
+			variable i : integer := 0;
+			begin 
+					if ( clk'event and clk = '1' ) then
+							if ( RST = '1') then 
+								recv_addr <= (others =>'0') ;
+								receive_packet<=receive_data;
+							else
+								dataAck <= '1';
+								receive_send_recvLength<=recvLength;
+								case receive_packet is
+									
+									when idle =>
+													if newData = '1' then 
+														dataAck <= '1';
+														receive_packet <= receive_data;
+													else
+														receive_packet <= idle ;
+													end if;
+									when receive_data	=>
+														i := 0;
+														recv_addr <= (others =>	'0');
+														receive_packet <= write_data;
+														idleflag_receive := 1;
+													
+									when write_data =>
+													if ( i < to_integer (unsigned(receive_send_recvLength))) then 
+															arr (i) <= recv_data;
+															recv_addr<= recv_addr +1;
+															i := i+1;
 			
-			arr (0)<= x"88";
-			arr (1)<= x"cc";
-			arr (2)<= x"dd";
-			arr (3) <= x"ee";
-			arr (5) <= x"01";
+			else
+															receive_packet <= idle ; 
+												
+													end if;	
+								end case;
+							end if;			
+					end if;
+			end process;
 			
-			process (CLK)
+-------------------------------------------------------	
+		
+			sending :process (CLK)
 			variable i : integer := 0 ;
-			variable idleflag : integer := 0;	
+			variable idleflag_send : integer := 0;	
 			begin 
 			  if (clk'event and clk ='1') then
 					if RST = '1' then
@@ -167,9 +218,9 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 						 startsending <= '0';		
 						 send_wea <= "0";
 						
-						 if en = '1' then 					-- interface to start sending
-							 if idleflag = 1 then 
-								 idleflag := 0 ;
+											-- interface to start sending
+							 if idleflag_send = 1 then 
+								 idleflag_send := 0 ;
 							 else	
 								 case send_packet is 
 										when idle =>
@@ -185,7 +236,8 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 															 send_wea  <= "1";
 															 i := i + 1;	
 															 send_packet <= write_data;
-														else
+														elsif ( newData = '1' ) then  
+															 sendLength <= receive_send_recvLength ;
 															 send_packet <= transmit_data;			
 														end if;
 										when	transmit_data	=>
@@ -197,14 +249,9 @@ architecture Behavioral of New_NDLCOM_ROUTING_Top is
 								 end case; 
 							 end if;	
 						 end if;	
-					end if;		
+							
 				end if;
 			end process;
-			
-			
-			
-			
-			
-			
+
 end Behavioral;
 
